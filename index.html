@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#251632">
+
+    <title>Classen Purple | Login</title>
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+    <div class="phone-shell">
+
+        <div class="phone-top">
+            <span class="phone-speaker"></span>
+            <span class="phone-camera"></span>
+        </div>
+
+        <div class="phone-screen">
+
+            <main class="login-page">
+                <a href="settings.html" class="page-settings-btn login-settings-btn" aria-label="Settings" title="Settings">⚙</a>
+
+                <div class="login-logo">💜</div>
+
+                <h1>Classen Purple</h1>
+
+                <p class="login-subtitle">
+                    Our little world, just for us.
+                </p>
+
+                <div class="login-illustration">
+                    <div class="heart heart-one">❤️</div>
+                    <div class="heart heart-two">💜</div>
+                    <div class="couple-icon">💑</div>
+                    <div class="heart heart-three">💕</div>
+                </div>
+
+                <div class="login-card">
+
+                    <h2>Welcome Back!</h2>
+
+                    <p class="login-description">
+                        Sign in to enter our special little world.
+                    </p>
+
+                    <form id="loginForm">
+
+                        <label for="email">Email address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            class="input"
+                            placeholder="Enter your email"
+                            autocomplete="username"
+                            required
+                        >
+
+                        <label for="password">Password</label>
+
+                        <div class="password-wrapper">
+                            <input
+                                type="password"
+                                id="password"
+                                class="input"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                aria-label="Show password"
+                            >👁️</button>
+                        </div>
+
+                        <p id="loginError" class="login-error"></p>
+
+                        <button
+                            type="submit"
+                            id="loginButton"
+                            class="btn login-button"
+                        >
+                            Enter Our World 💜
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <footer class="login-footer">
+                    Made with love ❤️
+                    <br>
+                    Baby & Hubby
+                </footer>
+
+            </main>
+
+        </div>
+    </div>
+
+    <script type="module" src="./js/login.js"></script>
+
+</body>
+</html>

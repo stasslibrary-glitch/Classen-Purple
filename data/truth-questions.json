@@ -1,0 +1,1202 @@
+[
+    {
+        "id":  "truth_001",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What was the first thing you noticed about me?"
+    },
+    {
+        "id":  "truth_002",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What is your favorite little thing I do without realizing it?"
+    },
+    {
+        "id":  "truth_003",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "When did you first feel butterflies because of me?"
+    },
+    {
+        "id":  "truth_004",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What nickname do you secretly love when I call you?"
+    },
+    {
+        "id":  "truth_005",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "Which of our simple moments feels the most romantic to you?"
+    },
+    {
+        "id":  "truth_006",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What is one romantic dream you hope we make real together?"
+    },
+    {
+        "id":  "truth_007",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "When do you feel most loved by me?"
+    },
+    {
+        "id":  "truth_008",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What song makes you think of us the most?"
+    },
+    {
+        "id":  "truth_009",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What is a small romantic surprise that would make your day?"
+    },
+    {
+        "id":  "truth_010",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What part of our love story makes you smile every time?"
+    },
+    {
+        "id":  "truth_011",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What fear about love have I helped you heal?"
+    },
+    {
+        "id":  "truth_012",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "How has loving me changed the way you see relationships?"
+    },
+    {
+        "id":  "truth_013",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What romantic promise do you want us to keep forever?"
+    },
+    {
+        "id":  "truth_014",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What is your favorite way for us to say goodnight?"
+    },
+    {
+        "id":  "truth_015",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What moment made you realize we had something special?"
+    },
+    {
+        "id":  "truth_016",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What does a truly loving partnership mean to you now?"
+    },
+    {
+        "id":  "truth_017",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What do you love most about my smile?"
+    },
+    {
+        "id":  "truth_018",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "If you could relive one romantic date with me, which would it be?"
+    },
+    {
+        "id":  "truth_019",
+        "category":  "romantic-confessions",
+        "difficulty":  "easy",
+        "question":  "What is one sweet thing you have wanted to tell me lately?"
+    },
+    {
+        "id":  "truth_020",
+        "category":  "romantic-confessions",
+        "difficulty":  "easy",
+        "question":  "When did I last make your heart feel really full?"
+    },
+    {
+        "id":  "truth_021",
+        "category":  "romantic-confessions",
+        "difficulty":  "medium",
+        "question":  "What is a romantic thought you have about me but rarely say out loud?"
+    },
+    {
+        "id":  "truth_022",
+        "category":  "romantic-confessions",
+        "difficulty":  "medium",
+        "question":  "What is one thing about us that makes you feel lucky?"
+    },
+    {
+        "id":  "truth_023",
+        "category":  "romantic-confessions",
+        "difficulty":  "hard",
+        "question":  "What is the deepest reason you choose me?"
+    },
+    {
+        "id":  "truth_024",
+        "category":  "romantic-confessions",
+        "difficulty":  "hard",
+        "question":  "What is one vulnerable truth about your feelings for me?"
+    },
+    {
+        "id":  "truth_025",
+        "category":  "romantic-confessions",
+        "difficulty":  "easy",
+        "question":  "What is your favorite compliment to receive from me?"
+    },
+    {
+        "id":  "truth_026",
+        "category":  "romantic-confessions",
+        "difficulty":  "medium",
+        "question":  "What do you hope I always feel when I am with you?"
+    },
+    {
+        "id":  "truth_027",
+        "category":  "flirting",
+        "difficulty":  "easy",
+        "question":  "What do I do that instantly charms you?"
+    },
+    {
+        "id":  "truth_028",
+        "category":  "flirting",
+        "difficulty":  "easy",
+        "question":  "What is your favorite flirty look I give you?"
+    },
+    {
+        "id":  "truth_029",
+        "category":  "flirting",
+        "difficulty":  "medium",
+        "question":  "If we were meeting for the first time today, what would you say to impress me?"
+    },
+    {
+        "id":  "truth_030",
+        "category":  "flirting",
+        "difficulty":  "medium",
+        "question":  "What flirty text from me always makes you grin?"
+    },
+    {
+        "id":  "truth_031",
+        "category":  "flirting",
+        "difficulty":  "hard",
+        "question":  "What is the boldest flirty thought you have had about me recently?"
+    },
+    {
+        "id":  "truth_032",
+        "category":  "flirting",
+        "difficulty":  "easy",
+        "question":  "What outfit of mine do you find most irresistible?"
+    },
+    {
+        "id":  "truth_033",
+        "category":  "flirting",
+        "difficulty":  "medium",
+        "question":  "What is your favorite way we tease each other playfully?"
+    },
+    {
+        "id":  "truth_034",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What do you think is our strongest quality as a couple?"
+    },
+    {
+        "id":  "truth_035",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What is one thing we do really well together?"
+    },
+    {
+        "id":  "truth_036",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What relationship habit of ours do you want to protect?"
+    },
+    {
+        "id":  "truth_037",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What is one area where we have grown a lot as a couple?"
+    },
+    {
+        "id":  "truth_038",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "What lesson about relationships has our love taught you?"
+    },
+    {
+        "id":  "truth_039",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "What do you think keeps a relationship joyful through hard times?"
+    },
+    {
+        "id":  "truth_040",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What makes you feel safe in our relationship?"
+    },
+    {
+        "id":  "truth_041",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What is one small routine that keeps us close?"
+    },
+    {
+        "id":  "truth_042",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What is a tiny silly secret you have never told me?"
+    },
+    {
+        "id":  "truth_043",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What is something you pretend not to care about but actually do?"
+    },
+    {
+        "id":  "truth_044",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What is a secret wish you have for our next date?"
+    },
+    {
+        "id":  "truth_045",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What is a fear you rarely admit to anyone?"
+    },
+    {
+        "id":  "truth_046",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What is one dream you were shy to tell me about before?"
+    },
+    {
+        "id":  "truth_047",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What is a secret comfort food you crave?"
+    },
+    {
+        "id":  "truth_048",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What was your favorite childhood treat?"
+    },
+    {
+        "id":  "truth_049",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What game did you love playing as a child?"
+    },
+    {
+        "id":  "truth_050",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What childhood memory still makes you laugh?"
+    },
+    {
+        "id":  "truth_051",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "Who made you feel very special when you were young?"
+    },
+    {
+        "id":  "truth_052",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What childhood lesson still shapes who you are today?"
+    },
+    {
+        "id":  "truth_053",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What cartoon or show did you love as a kid?"
+    },
+    {
+        "id":  "truth_054",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What was your childhood dream job?"
+    },
+    {
+        "id":  "truth_055",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What part of your childhood would you love to share with our future?"
+    },
+    {
+        "id":  "truth_056",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What is your favorite way to relax after a long day?"
+    },
+    {
+        "id":  "truth_057",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What always puts you in a good mood?"
+    },
+    {
+        "id":  "truth_058",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What habit are you proud of building?"
+    },
+    {
+        "id":  "truth_059",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What is something new you would like to learn this year?"
+    },
+    {
+        "id":  "truth_060",
+        "category":  "personal",
+        "difficulty":  "hard",
+        "question":  "What personal challenge has shaped you the most?"
+    },
+    {
+        "id":  "truth_061",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What is your comfort movie or show?"
+    },
+    {
+        "id":  "truth_062",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What does a perfect peaceful day look like for you?"
+    },
+    {
+        "id":  "truth_063",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What is the funniest thing that has happened to us?"
+    },
+    {
+        "id":  "truth_064",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What silly thing can always make you laugh?"
+    },
+    {
+        "id":  "truth_065",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What is your most embarrassing but harmless moment?"
+    },
+    {
+        "id":  "truth_066",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "If we were a comedy duo, what would our style be?"
+    },
+    {
+        "id":  "truth_067",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "What funny misunderstanding have you had that you can laugh at now?"
+    },
+    {
+        "id":  "truth_068",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What face or voice I make makes you laugh the most?"
+    },
+    {
+        "id":  "truth_069",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "Do you get a little jealous when I look extra good?"
+    },
+    {
+        "id":  "truth_070",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "What harmless thing makes you feel a tiny bit jealous?"
+    },
+    {
+        "id":  "truth_071",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "How do you like me to reassure you when you feel insecure?"
+    },
+    {
+        "id":  "truth_072",
+        "category":  "jealousy",
+        "difficulty":  "hard",
+        "question":  "What helps you trust love even when jealousy shows up?"
+    },
+    {
+        "id":  "truth_073",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "What do I do that makes you feel confidently chosen?"
+    },
+    {
+        "id":  "truth_074",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What is one dream you want us to chase together?"
+    },
+    {
+        "id":  "truth_075",
+        "category":  "dreams",
+        "difficulty":  "medium",
+        "question":  "Where do you see us in five years?"
+    },
+    {
+        "id":  "truth_076",
+        "category":  "dreams",
+        "difficulty":  "medium",
+        "question":  "What adventure is on your bucket list for us?"
+    },
+    {
+        "id":  "truth_077",
+        "category":  "dreams",
+        "difficulty":  "hard",
+        "question":  "What big dream scares you but still excites you?"
+    },
+    {
+        "id":  "truth_078",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What kind of home vibe do you dream of having?"
+    },
+    {
+        "id":  "truth_079",
+        "category":  "dreams",
+        "difficulty":  "medium",
+        "question":  "What is one skill or goal you want to achieve soon?"
+    },
+    {
+        "id":  "truth_080",
+        "category":  "friendship",
+        "difficulty":  "easy",
+        "question":  "What makes me a good friend to you, not just a partner?"
+    },
+    {
+        "id":  "truth_081",
+        "category":  "friendship",
+        "difficulty":  "medium",
+        "question":  "When do you feel most understood by me?"
+    },
+    {
+        "id":  "truth_082",
+        "category":  "friendship",
+        "difficulty":  "medium",
+        "question":  "What friendly habit of ours do you cherish?"
+    },
+    {
+        "id":  "truth_083",
+        "category":  "friendship",
+        "difficulty":  "hard",
+        "question":  "How can I be a better best friend to you?"
+    },
+    {
+        "id":  "truth_084",
+        "category":  "friendship",
+        "difficulty":  "easy",
+        "question":  "What do you love talking to me about the most?"
+    },
+    {
+        "id":  "truth_085",
+        "category":  "deep-emotional",
+        "difficulty":  "medium",
+        "question":  "When do you feel most emotionally close to me?"
+    },
+    {
+        "id":  "truth_086",
+        "category":  "deep-emotional",
+        "difficulty":  "medium",
+        "question":  "What emotion is easiest for you to share with me?"
+    },
+    {
+        "id":  "truth_087",
+        "category":  "deep-emotional",
+        "difficulty":  "hard",
+        "question":  "What emotion is hardest for you to express, and how can I support you?"
+    },
+    {
+        "id":  "truth_088",
+        "category":  "deep-emotional",
+        "difficulty":  "hard",
+        "question":  "What moment in our relationship made you feel deeply understood?"
+    },
+    {
+        "id":  "truth_089",
+        "category":  "deep-emotional",
+        "difficulty":  "medium",
+        "question":  "What does emotional safety look like to you?"
+    },
+    {
+        "id":  "truth_090",
+        "category":  "deep-emotional",
+        "difficulty":  "hard",
+        "question":  "What is one thing you need more of when you are having a hard day?"
+    },
+    {
+        "id":  "truth_091",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What is a tiny romantic gesture from me that means a lot to you?"
+    },
+    {
+        "id":  "truth_092",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "Which of my hugs do you remember most?"
+    },
+    {
+        "id":  "truth_093",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What do you love hearing me say?"
+    },
+    {
+        "id":  "truth_094",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What makes our ordinary days feel romantic?"
+    },
+    {
+        "id":  "truth_095",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What is your favorite photo of us and why?"
+    },
+    {
+        "id":  "truth_096",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What romantic habit should we start together?"
+    },
+    {
+        "id":  "truth_097",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What is one place that would feel magical for us to visit?"
+    },
+    {
+        "id":  "truth_098",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What do you think makes our chemistry special?"
+    },
+    {
+        "id":  "truth_099",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "How do you like to celebrate love on normal days?"
+    },
+    {
+        "id":  "truth_100",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What is one romantic memory you want us to recreate?"
+    },
+    {
+        "id":  "truth_101",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What does forever with me look like in your heart?"
+    },
+    {
+        "id":  "truth_102",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What vulnerable truth about love have you learned with me?"
+    },
+    {
+        "id":  "truth_103",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "How do you want us to protect our romance as life gets busy?"
+    },
+    {
+        "id":  "truth_104",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What is one deep romantic fear you feel safe sharing with me?"
+    },
+    {
+        "id":  "truth_105",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What promise about love do you want us to renew often?"
+    },
+    {
+        "id":  "truth_106",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What is your favorite thing we do as a team?"
+    },
+    {
+        "id":  "truth_107",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What makes you feel appreciated in our relationship?"
+    },
+    {
+        "id":  "truth_108",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What is one thing I do that makes your day easier?"
+    },
+    {
+        "id":  "truth_109",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "When do you feel most proud of us?"
+    },
+    {
+        "id":  "truth_110",
+        "category":  "relationships",
+        "difficulty":  "easy",
+        "question":  "What is your favorite way we spend quality time?"
+    },
+    {
+        "id":  "truth_111",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What communication habit makes us stronger?"
+    },
+    {
+        "id":  "truth_112",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What is one boundary that helps our relationship feel healthy?"
+    },
+    {
+        "id":  "truth_113",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What do you think we handle better than most couples?"
+    },
+    {
+        "id":  "truth_114",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "What is one thing we should check in about more often?"
+    },
+    {
+        "id":  "truth_115",
+        "category":  "relationships",
+        "difficulty":  "medium",
+        "question":  "How can we make busy weeks feel more connected?"
+    },
+    {
+        "id":  "truth_116",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "What is a hard conversation you think couples should learn to have kindly?"
+    },
+    {
+        "id":  "truth_117",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "What does trust mean to you in everyday actions?"
+    },
+    {
+        "id":  "truth_118",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "How do you want us to handle disagreements with love?"
+    },
+    {
+        "id":  "truth_119",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "What relationship value matters most to you long-term?"
+    },
+    {
+        "id":  "truth_120",
+        "category":  "relationships",
+        "difficulty":  "hard",
+        "question":  "What is one way we can keep growing instead of getting comfortable?"
+    },
+    {
+        "id":  "truth_121",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What is a silly little habit you think I haven\u0027t noticed?"
+    },
+    {
+        "id":  "truth_122",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What song do you secretly play on repeat?"
+    },
+    {
+        "id":  "truth_123",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What is a small thing that instantly makes you feel shy?"
+    },
+    {
+        "id":  "truth_124",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What is a harmless secret talent you have?"
+    },
+    {
+        "id":  "truth_125",
+        "category":  "secrets",
+        "difficulty":  "easy",
+        "question":  "What is a cute thought you had about me today?"
+    },
+    {
+        "id":  "truth_126",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What is something you want to try with me but haven\u0027t asked yet?"
+    },
+    {
+        "id":  "truth_127",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What compliment do you hope I give you more often?"
+    },
+    {
+        "id":  "truth_128",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What is a secret goal you are quietly working toward?"
+    },
+    {
+        "id":  "truth_129",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What is a small fear you hide behind a smile?"
+    },
+    {
+        "id":  "truth_130",
+        "category":  "secrets",
+        "difficulty":  "medium",
+        "question":  "What is something you wish people understood about you?"
+    },
+    {
+        "id":  "truth_131",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What is a truth about yourself you are still learning to accept?"
+    },
+    {
+        "id":  "truth_132",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What old insecurity sometimes whispers to you?"
+    },
+    {
+        "id":  "truth_133",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What is something you need reassurance about but rarely ask for?"
+    },
+    {
+        "id":  "truth_134",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What secret hope do you have for our future?"
+    },
+    {
+        "id":  "truth_135",
+        "category":  "secrets",
+        "difficulty":  "hard",
+        "question":  "What is a difficult feeling you want me to understand better?"
+    },
+    {
+        "id":  "truth_136",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What was your favorite snack as a child?"
+    },
+    {
+        "id":  "truth_137",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What childhood place felt magical to you?"
+    },
+    {
+        "id":  "truth_138",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What was your favorite game to play with friends?"
+    },
+    {
+        "id":  "truth_139",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "Which childhood song still makes you happy?"
+    },
+    {
+        "id":  "truth_140",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What was your favorite thing about school when you were little?"
+    },
+    {
+        "id":  "truth_141",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What childhood nickname did you have?"
+    },
+    {
+        "id":  "truth_142",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What is a childhood memory that shaped your kindness?"
+    },
+    {
+        "id":  "truth_143",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What did you want to be when you grew up?"
+    },
+    {
+        "id":  "truth_144",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What family tradition from childhood do you remember fondly?"
+    },
+    {
+        "id":  "truth_145",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What was your proudest childhood moment?"
+    },
+    {
+        "id":  "truth_146",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What childhood experience taught you resilience?"
+    },
+    {
+        "id":  "truth_147",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What is something from your childhood you want to do differently as an adult?"
+    },
+    {
+        "id":  "truth_148",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What childhood dream still lives in your heart?"
+    },
+    {
+        "id":  "truth_149",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What lesson from your younger self do you still carry?"
+    },
+    {
+        "id":  "truth_150",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What part of growing up made you who you are today?"
+    },
+    {
+        "id":  "truth_151",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What is your favorite way to spend a lazy Sunday?"
+    },
+    {
+        "id":  "truth_152",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What small thing makes you feel instantly calm?"
+    },
+    {
+        "id":  "truth_153",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What is your go-to comfort meal?"
+    },
+    {
+        "id":  "truth_154",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What app or website do you use way too much?"
+    },
+    {
+        "id":  "truth_155",
+        "category":  "personal",
+        "difficulty":  "easy",
+        "question":  "What is your favorite time of day and why?"
+    },
+    {
+        "id":  "truth_156",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What habit has improved your life recently?"
+    },
+    {
+        "id":  "truth_157",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What is something you are learning about yourself lately?"
+    },
+    {
+        "id":  "truth_158",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What makes you feel confident?"
+    },
+    {
+        "id":  "truth_159",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What is one thing you want to get better at this year?"
+    },
+    {
+        "id":  "truth_160",
+        "category":  "personal",
+        "difficulty":  "medium",
+        "question":  "What does self-care look like for you?"
+    },
+    {
+        "id":  "truth_161",
+        "category":  "personal",
+        "difficulty":  "hard",
+        "question":  "What personal value do you never want to compromise?"
+    },
+    {
+        "id":  "truth_162",
+        "category":  "personal",
+        "difficulty":  "hard",
+        "question":  "What challenge helped you discover your strength?"
+    },
+    {
+        "id":  "truth_163",
+        "category":  "personal",
+        "difficulty":  "hard",
+        "question":  "What does personal growth mean to you right now?"
+    },
+    {
+        "id":  "truth_164",
+        "category":  "personal",
+        "difficulty":  "hard",
+        "question":  "What is one fear you are actively trying to overcome?"
+    },
+    {
+        "id":  "truth_165",
+        "category":  "personal",
+        "difficulty":  "hard",
+        "question":  "What part of yourself are you most proud of becoming?"
+    },
+    {
+        "id":  "truth_166",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What is your funniest autocorrect or texting fail?"
+    },
+    {
+        "id":  "truth_167",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What silly dance move would you do right now if no one judged?"
+    },
+    {
+        "id":  "truth_168",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What food combination do you like that others find weird?"
+    },
+    {
+        "id":  "truth_169",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What is the funniest nickname you have ever had?"
+    },
+    {
+        "id":  "truth_170",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What always makes you laugh even on a bad day?"
+    },
+    {
+        "id":  "truth_171",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What is the most awkward thing you have said on a date or crush moment?"
+    },
+    {
+        "id":  "truth_172",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "If we had a funny couple sitcom, what would it be called?"
+    },
+    {
+        "id":  "truth_173",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What is your most harmless funny habit?"
+    },
+    {
+        "id":  "truth_174",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What is the weirdest thing you believed as a child?"
+    },
+    {
+        "id":  "truth_175",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "If animals could talk, which one would be the rudest?"
+    },
+    {
+        "id":  "truth_176",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "What funny story about yourself do you only tell people you trust?"
+    },
+    {
+        "id":  "truth_177",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "What is a comedy moment in your life that taught you not to take things too seriously?"
+    },
+    {
+        "id":  "truth_178",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "If you could make one silly rule for our relationship for a day, what would it be?"
+    },
+    {
+        "id":  "truth_179",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "What is the funniest lesson life has taught you?"
+    },
+    {
+        "id":  "truth_180",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "What embarrassing moment eventually became a great story?"
+    },
+    {
+        "id":  "truth_181",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "What cute thing do I do that makes you want all my attention?"
+    },
+    {
+        "id":  "truth_182",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "Do you like when I get a little protective over you?"
+    },
+    {
+        "id":  "truth_183",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "What makes you feel extra secure with me?"
+    },
+    {
+        "id":  "truth_184",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "What is one sweet way I can reassure you?"
+    },
+    {
+        "id":  "truth_185",
+        "category":  "jealousy",
+        "difficulty":  "easy",
+        "question":  "When do you feel most certain that I am yours?"
+    },
+    {
+        "id":  "truth_186",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "How do you prefer to talk about jealousy when it comes up?"
+    },
+    {
+        "id":  "truth_187",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "What helps you feel calm when your mind overthinks?"
+    },
+    {
+        "id":  "truth_188",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "What is one thing I can do to make you feel more chosen?"
+    },
+    {
+        "id":  "truth_189",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "What does healthy reassurance look like to you?"
+    },
+    {
+        "id":  "truth_190",
+        "category":  "jealousy",
+        "difficulty":  "medium",
+        "question":  "Have you ever felt jealous over something silly and later laughed about it?"
+    },
+    {
+        "id":  "truth_191",
+        "category":  "jealousy",
+        "difficulty":  "hard",
+        "question":  "What past experience made you more sensitive to feeling replaced?"
+    },
+    {
+        "id":  "truth_192",
+        "category":  "jealousy",
+        "difficulty":  "hard",
+        "question":  "How can we turn jealousy into an honest conversation instead of tension?"
+    },
+    {
+        "id":  "truth_193",
+        "category":  "jealousy",
+        "difficulty":  "hard",
+        "question":  "What do you need from me when insecurity shows up unexpectedly?"
+    },
+    {
+        "id":  "truth_194",
+        "category":  "jealousy",
+        "difficulty":  "hard",
+        "question":  "What helps you trust love when your confidence dips?"
+    },
+    {
+        "id":  "truth_195",
+        "category":  "jealousy",
+        "difficulty":  "hard",
+        "question":  "What reassurance means the most to you deep down?"
+    },
+    {
+        "id":  "truth_196",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What is a fun trip you want us to take one day?"
+    },
+    {
+        "id":  "truth_197",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What is one thing on your bucket list?"
+    },
+    {
+        "id":  "truth_198",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What dream home feature would you love to have?"
+    },
+    {
+        "id":  "truth_199",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What is a happy future moment you imagine with me?"
+    },
+    {
+        "id":  "truth_200",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What skill would you love us to learn together?"
+    }
+]

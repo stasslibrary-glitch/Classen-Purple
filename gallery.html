@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211033">
+  <title>Our Gallery | Classen Purple</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+  <main class="phone-app gallery-app">
+    <header class="gallery-header">
+      <a href="home.html" class="back-link" aria-label="Back to home">←</a>
+      <div>
+        <p class="eyebrow">BABY ❤️ & HUBBY 💜</p>
+        <h1>Our Gallery</h1>
+        <p class="header-subtitle">Our moments, together.</p>
+      </div>
+      <div class="header-heart">♥</div>
+    </header>
+
+    <section class="gallery-upload-card">
+      <div class="upload-icon">＋</div>
+      <div class="upload-copy">
+        <h2>Add a memory</h2>
+        <p>Share a photo or video with each other.</p>
+      </div>
+
+      <label class="upload-button" for="galleryFile">
+        Choose media
+      </label>
+      <input
+        type="file"
+        id="galleryFile"
+        accept="image/*,video/*"
+        hidden
+      >
+
+      <input
+        type="text"
+        id="galleryCaption"
+        class="caption-input"
+        maxlength="180"
+        placeholder="Write a caption (optional)..."
+      >
+
+      <div class="upload-progress-wrap" id="uploadProgressWrap" hidden>
+        <div class="upload-progress-track">
+          <div id="uploadProgressBar" class="upload-progress-bar"></div>
+        </div>
+        <p id="uploadStatus">Preparing upload...</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR COLLECTION</p>
+          <h2>Beautiful memories</h2>
+        </div>
+        <span id="galleryCount" class="gallery-count">0 memories</span>
+      </div>
+
+      <div id="galleryMessage" class="gallery-message">
+        Loading your memories...
+      </div>
+
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <nav class="gallery-bottom-nav">
+      <a href="home.html"><span>⌂</span>Home</a>
+      <a href="chat.html"><span>♡</span>Chat</a>
+      <a href="calendar.html"><span>▦</span>Calendar</a>
+      <a href="todo.html"><span>✓</span>To-Do</a>
+      <a href="games.html"><span>♧</span>Games</a>
+      <a href="gallery.html" class="active"><span>▣</span>Gallery</a>
+    </nav>
+  </main>
+
+  <!-- Full-screen media viewer -->
+  <div id="galleryViewer" class="gallery-viewer" aria-hidden="true">
+    <button id="viewerClose" class="viewer-close" aria-label="Close viewer">×</button>
+
+    <button id="viewerPrevious" class="viewer-arrow viewer-previous" aria-label="Previous memory">‹</button>
+
+    <div class="viewer-content">
+      <div id="viewerMedia" class="viewer-media"></div>
+      <div class="viewer-details">
+        <p id="viewerCaption"></p>
+        <span id="viewerUploader"></span>
+        <span id="viewerDate"></span>
+      </div>
+    </div>
+
+    <button id="viewerNext" class="viewer-arrow viewer-next" aria-label="Next memory">›</button>
+  </div>
+
+  <script type="module" src="js/auth-guard.js"></script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/gallery.js"></script>
+</body>
+</html>

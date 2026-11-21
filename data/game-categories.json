@@ -1,0 +1,522 @@
+{
+    "version":  1,
+    "app":  "Classen Purple",
+    "players":  [
+                    {
+                        "name":  "Baby",
+                        "emoji":  "❤️",
+                        "email":  "m.classen@gmail.com"
+                    },
+                    {
+                        "name":  "Hubby",
+                        "emoji":  "💜",
+                        "email":  "d.classen@gmail.com"
+                    }
+                ],
+    "difficultyLevels":  [
+                             {
+                                 "id":  "easy",
+                                 "name":  "Easy",
+                                 "description":  "Light, quick, and easy to enjoy together."
+                             },
+                             {
+                                 "id":  "medium",
+                                 "name":  "Medium",
+                                 "description":  "A little more thoughtful while staying fun and playful."
+                             },
+                             {
+                                 "id":  "hard",
+                                 "name":  "Hard",
+                                 "description":  "Deeper, bolder, or more challenging prompts for extra fun."
+                             },
+                             {
+                                 "id":  "random",
+                                 "name":  "Random",
+                                 "description":  "A surprise mix of all difficulty levels."
+                             }
+                         ],
+    "games":  [
+                  {
+                      "id":  "truth-or-dare",
+                      "name":  "Truth or Dare",
+                      "dataFiles":  [
+                                        "truth-questions.json",
+                                        "dare-tasks.json"
+                                    ],
+                      "description":  "Take turns choosing a truth or a dare and share sweet, funny, and heartfelt moments.",
+                      "modes":  [
+                                    "easy",
+                                    "medium",
+                                    "hard",
+                                    "random"
+                                ],
+                      "categories":  [
+                                         {
+                                             "id":  "romance",
+                                             "name":  "Romance and Love",
+                                             "description":  "Sweet prompts about affection, attraction, and romance."
+                                         },
+                                         {
+                                             "id":  "relationships",
+                                             "name":  "Relationships",
+                                             "description":  "Questions about how you connect and grow as a couple."
+                                         },
+                                         {
+                                             "id":  "secrets",
+                                             "name":  "Secrets",
+                                             "description":  "Playful and gentle secrets to share with trust."
+                                         },
+                                         {
+                                             "id":  "childhood",
+                                             "name":  "Childhood Memories",
+                                             "description":  "Nostalgic prompts about growing up and early memories."
+                                         },
+                                         {
+                                             "id":  "personal",
+                                             "name":  "Personal Life",
+                                             "description":  "Prompts about habits, preferences, and daily life."
+                                         },
+                                         {
+                                             "id":  "funny",
+                                             "name":  "Funny Questions",
+                                             "description":  "Lighthearted prompts to make you both laugh."
+                                         },
+                                         {
+                                             "id":  "jealousy",
+                                             "name":  "Jealousy",
+                                             "description":  "Safe, playful prompts about reassurance and security."
+                                         },
+                                         {
+                                             "id":  "dreams",
+                                             "name":  "Dreams and Ambitions",
+                                             "description":  "Questions about goals, hopes, and the future."
+                                         },
+                                         {
+                                             "id":  "friendship",
+                                             "name":  "Friendship",
+                                             "description":  "Prompts about being best friends as well as partners."
+                                         },
+                                         {
+                                             "id":  "deep-emotional",
+                                             "name":  "Deep Emotional Questions",
+                                             "description":  "Meaningful prompts for deeper emotional connection."
+                                         },
+                                         {
+                                             "id":  "flirting",
+                                             "name":  "Flirting",
+                                             "description":  "Playful, charming prompts to keep the spark alive."
+                                         },
+                                         {
+                                             "id":  "romantic-confessions",
+                                             "name":  "Romantic Confessions",
+                                             "description":  "Heartfelt confessions and sweet admissions."
+                                         },
+                                         {
+                                             "id":  "romantic",
+                                             "name":  "Romantic Dares",
+                                             "description":  "Warm and loving dares for couples."
+                                         },
+                                         {
+                                             "id":  "singing-dancing",
+                                             "name":  "Singing and Dancing",
+                                             "description":  "Fun performance dares with music and movement."
+                                         },
+                                         {
+                                             "id":  "compliments",
+                                             "name":  "Compliments",
+                                             "description":  "Dares focused on appreciation and kind words."
+                                         },
+                                         {
+                                             "id":  "acting",
+                                             "name":  "Acting Challenges",
+                                             "description":  "Playful acting and roleplay dares."
+                                         },
+                                         {
+                                             "id":  "communication",
+                                             "name":  "Communication Challenges",
+                                             "description":  "Dares that encourage listening and sharing."
+                                         },
+                                         {
+                                             "id":  "creative",
+                                             "name":  "Creative Challenges",
+                                             "description":  "Imaginative dares using creativity and expression."
+                                         },
+                                         {
+                                             "id":  "sweet-gestures",
+                                             "name":  "Sweet Gestures",
+                                             "description":  "Kind and caring dares that show love."
+                                         },
+                                         {
+                                             "id":  "memory",
+                                             "name":  "Memory Challenges",
+                                             "description":  "Dares based on shared memories and moments."
+                                         },
+                                         {
+                                             "id":  "online-phone",
+                                             "name":  "Online Phone Challenges",
+                                             "description":  "Safe dares designed for two people on phones."
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "couples-quiz",
+                      "name":  "Couples Quiz",
+                      "dataFiles":  [
+                                        "couples-questions.json"
+                                    ],
+                      "description":  "See how well you know each other by predicting your partner\u0027s answers.",
+                      "modes":  [
+                                    "easy",
+                                    "medium",
+                                    "hard",
+                                    "random"
+                                ],
+                      "categories":  [
+                                         {
+                                             "id":  "favourites",
+                                             "name":  "Favourite Things",
+                                             "description":  "Favorites, preferences, and top picks."
+                                         },
+                                         {
+                                             "id":  "food",
+                                             "name":  "Food Preferences",
+                                             "description":  "Meals, snacks, and tasty choices."
+                                         },
+                                         {
+                                             "id":  "music",
+                                             "name":  "Music and Artists",
+                                             "description":  "Songs, artists, and musical moods."
+                                         },
+                                         {
+                                             "id":  "personality",
+                                             "name":  "Personality",
+                                             "description":  "Traits, moods, and personal style."
+                                         },
+                                         {
+                                             "id":  "habits",
+                                             "name":  "Habits",
+                                             "description":  "Daily habits and routines."
+                                         },
+                                         {
+                                             "id":  "childhood",
+                                             "name":  "Childhood",
+                                             "description":  "Early memories and growing-up moments."
+                                         },
+                                         {
+                                             "id":  "family",
+                                             "name":  "Family",
+                                             "description":  "Family values and connections."
+                                         },
+                                         {
+                                             "id":  "dreams",
+                                             "name":  "Dreams and Ambitions",
+                                             "description":  "Goals, hopes, and future plans."
+                                         },
+                                         {
+                                             "id":  "romance",
+                                             "name":  "Romantic Preferences",
+                                             "description":  "Love languages and romantic tastes."
+                                         },
+                                         {
+                                             "id":  "memories",
+                                             "name":  "Relationship Memories",
+                                             "description":  "Special moments you share together."
+                                         },
+                                         {
+                                             "id":  "future",
+                                             "name":  "Future Plans",
+                                             "description":  "Plans and hopes for what comes next."
+                                         },
+                                         {
+                                             "id":  "emotional",
+                                             "name":  "Emotional Intelligence",
+                                             "description":  "Feelings, support, and understanding."
+                                         },
+                                         {
+                                             "id":  "daily-routine",
+                                             "name":  "Daily Routines",
+                                             "description":  "Everyday rhythms and routines."
+                                         },
+                                         {
+                                             "id":  "likes-dislikes",
+                                             "name":  "Likes and Dislikes",
+                                             "description":  "What you enjoy and what you avoid."
+                                         },
+                                         {
+                                             "id":  "funny",
+                                             "name":  "Funny Personal Questions",
+                                             "description":  "Playful questions that spark laughter."
+                                         },
+                                         {
+                                             "id":  "hypothetical",
+                                             "name":  "Hypothetical Situations",
+                                             "description":  "What-if scenarios to reveal personality."
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "would-you-rather",
+                      "name":  "Would You Rather",
+                      "dataFiles":  [
+                                        "would-you-rather.json"
+                                    ],
+                      "description":  "Choose between two interesting options and compare your answers.",
+                      "modes":  [
+                                    "easy",
+                                    "medium",
+                                    "hard",
+                                    "random"
+                                ],
+                      "categories":  [
+                                         {
+                                             "id":  "romantic",
+                                             "name":  "Romantic",
+                                             "description":  "Love-filled choices for couples."
+                                         },
+                                         {
+                                             "id":  "funny",
+                                             "name":  "Funny",
+                                             "description":  "Silly and entertaining choices."
+                                         },
+                                         {
+                                             "id":  "difficult-choices",
+                                             "name":  "Difficult Choices",
+                                             "description":  "Tough decisions that make you think."
+                                         },
+                                         {
+                                             "id":  "relationship",
+                                             "name":  "Relationship Situations",
+                                             "description":  "Choices about couple life and communication."
+                                         },
+                                         {
+                                             "id":  "adventure",
+                                             "name":  "Adventure",
+                                             "description":  "Bold and exciting options."
+                                         },
+                                         {
+                                             "id":  "lifestyle",
+                                             "name":  "Lifestyle",
+                                             "description":  "Everyday life and living preferences."
+                                         },
+                                         {
+                                             "id":  "dreams-future",
+                                             "name":  "Dreams and Future",
+                                             "description":  "Choices about goals and the future."
+                                         },
+                                         {
+                                             "id":  "food",
+                                             "name":  "Food",
+                                             "description":  "Tasty dilemmas and food preferences."
+                                         },
+                                         {
+                                             "id":  "music-entertainment",
+                                             "name":  "Music and Entertainment",
+                                             "description":  "Fun choices about media and entertainment."
+                                         },
+                                         {
+                                             "id":  "emotional",
+                                             "name":  "Emotional Choices",
+                                             "description":  "Choices that reveal feelings and values."
+                                         },
+                                         {
+                                             "id":  "hypothetical",
+                                             "name":  "Hypothetical Situations",
+                                             "description":  "Imaginative what-if scenarios."
+                                         },
+                                         {
+                                             "id":  "unexpected",
+                                             "name":  "Unexpected Scenarios",
+                                             "description":  "Surprising and quirky choices."
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "who-is-more-likely",
+                      "name":  "Who Is More Likely",
+                      "dataFiles":  [
+                                        "more-likely-questions.json"
+                                    ],
+                      "description":  "Vote on who is more likely to do something, then reveal the results.",
+                      "modes":  [
+                                    "easy",
+                                    "medium",
+                                    "hard",
+                                    "random"
+                                ],
+                      "categories":  [
+                                         {
+                                             "id":  "romance",
+                                             "name":  "Romance",
+                                             "description":  "Romantic tendencies and sweet habits."
+                                         },
+                                         {
+                                             "id":  "funny-habits",
+                                             "name":  "Funny Habits",
+                                             "description":  "Silly quirks and funny behaviors."
+                                         },
+                                         {
+                                             "id":  "personality",
+                                             "name":  "Personality",
+                                             "description":  "Traits and character tendencies."
+                                         },
+                                         {
+                                             "id":  "daily-life",
+                                             "name":  "Daily Life",
+                                             "description":  "Everyday routines and behaviors."
+                                         },
+                                         {
+                                             "id":  "relationship-behaviour",
+                                             "name":  "Relationship Behaviour",
+                                             "description":  "How you act in your relationship."
+                                         },
+                                         {
+                                             "id":  "adventure",
+                                             "name":  "Adventure",
+                                             "description":  "Boldness, travel, and trying new things."
+                                         },
+                                         {
+                                             "id":  "money-spending",
+                                             "name":  "Money and Spending",
+                                             "description":  "Saving, spending, and money habits."
+                                         },
+                                         {
+                                             "id":  "future-family",
+                                             "name":  "Future Family",
+                                             "description":  "Future plans and family life."
+                                         },
+                                         {
+                                             "id":  "emotional-situations",
+                                             "name":  "Emotional Situations",
+                                             "description":  "Reactions to feelings and emotional moments."
+                                         },
+                                         {
+                                             "id":  "communication",
+                                             "name":  "Communication",
+                                             "description":  "How you talk, text, and listen."
+                                         },
+                                         {
+                                             "id":  "unexpected-situations",
+                                             "name":  "Unexpected Situations",
+                                             "description":  "How you might react to surprises."
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "guess-the-song",
+                      "name":  "Guess the Song",
+                      "dataFiles":  [
+                                        "song-questions.json"
+                                    ],
+                      "description":  "Guess the song from clues and test your music knowledge together.",
+                      "modes":  [
+                                    "easy",
+                                    "medium",
+                                    "hard",
+                                    "random"
+                                ],
+                      "categories":  [
+                                         {
+                                             "id":  "afrobeats",
+                                             "name":  "Afrobeats",
+                                             "description":  "Afrobeats hits and love songs."
+                                         },
+                                         {
+                                             "id":  "ugandan",
+                                             "name":  "Ugandan Music",
+                                             "description":  "Popular Ugandan songs and classics."
+                                         },
+                                         {
+                                             "id":  "nigerian",
+                                             "name":  "Nigerian Music",
+                                             "description":  "Nigerian hits across genres."
+                                         },
+                                         {
+                                             "id":  "rnb",
+                                             "name":  "R\u0026B",
+                                             "description":  "Smooth R\u0026B and soulful tracks."
+                                         },
+                                         {
+                                             "id":  "pop",
+                                             "name":  "Pop",
+                                             "description":  "Popular pop songs and anthems."
+                                         },
+                                         {
+                                             "id":  "love-songs",
+                                             "name":  "Love Songs",
+                                             "description":  "Romantic songs from many eras."
+                                         },
+                                         {
+                                             "id":  "old-school",
+                                             "name":  "Old School Classics",
+                                             "description":  "Timeless classics and soul favorites."
+                                         },
+                                         {
+                                             "id":  "gospel",
+                                             "name":  "Gospel",
+                                             "description":  "Uplifting gospel and worship songs."
+                                         },
+                                         {
+                                             "id":  "international",
+                                             "name":  "International Hits",
+                                             "description":  "Global hits from around the world."
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "memory-challenge",
+                      "name":  "Memory Challenge",
+                      "dataFiles":  [
+                                        "memory-items.json"
+                                    ],
+                      "description":  "Match pairs and test your memory with cute themed sets.",
+                      "modes":  [
+                                    "easy",
+                                    "medium",
+                                    "hard",
+                                    "random"
+                                ],
+                      "categories":  [
+                                         {
+                                             "id":  "emojis",
+                                             "name":  "Emojis",
+                                             "description":  "Fun emoji matching sets."
+                                         },
+                                         {
+                                             "id":  "animals",
+                                             "name":  "Animals",
+                                             "description":  "Cute animal pair sets."
+                                         },
+                                         {
+                                             "id":  "food",
+                                             "name":  "Food",
+                                             "description":  "Delicious food-themed pairs."
+                                         },
+                                         {
+                                             "id":  "objects",
+                                             "name":  "Objects",
+                                             "description":  "Everyday objects and fun items."
+                                         },
+                                         {
+                                             "id":  "nature",
+                                             "name":  "Nature",
+                                             "description":  "Nature and outdoor-themed pairs."
+                                         },
+                                         {
+                                             "id":  "romantic-symbols",
+                                             "name":  "Romantic Symbols",
+                                             "description":  "Hearts, flowers, and love-themed pairs."
+                                         },
+                                         {
+                                             "id":  "everyday-items",
+                                             "name":  "Everyday Items",
+                                             "description":  "Familiar things from daily life."
+                                         },
+                                         {
+                                             "id":  "colors-shapes",
+                                             "name":  "Colours and Shapes",
+                                             "description":  "Colorful and playful matching sets."
+                                         }
+                                     ]
+                  }
+              ]
+}

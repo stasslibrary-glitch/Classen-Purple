@@ -1,0 +1,1202 @@
+[
+    {
+        "id":  "dare_001",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Give your partner three genuine compliments, one about their heart, one about their smile, and one about something they do well."
+    },
+    {
+        "id":  "dare_002",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Tell your partner the moment today when you thought of them."
+    },
+    {
+        "id":  "dare_003",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Send your partner a sweet voice note saying why you appreciate them."
+    },
+    {
+        "id":  "dare_004",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Describe your perfect date with your partner in 30 seconds."
+    },
+    {
+        "id":  "dare_005",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Look at your partner on camera and say five things you adore about them."
+    },
+    {
+        "id":  "dare_006",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Share a heartfelt mini love letter you make up on the spot for your partner."
+    },
+    {
+        "id":  "dare_007",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Blow a kiss to the camera and dedicate it to your partner."
+    },
+    {
+        "id":  "dare_008",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Make a promise for one sweet thing you will do for your partner this week."
+    },
+    {
+        "id":  "dare_009",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Tell your partner a romantic memory in detail, like you are narrating a movie scene."
+    },
+    {
+        "id":  "dare_010",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Do your silliest happy dance for 10 seconds."
+    },
+    {
+        "id":  "dare_011",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Make a funny face and let your partner screenshot it."
+    },
+    {
+        "id":  "dare_012",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Act like a dramatic movie trailer announcer introducing your partner."
+    },
+    {
+        "id":  "dare_013",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Try to say a sweet compliment while pretending to be a robot."
+    },
+    {
+        "id":  "dare_014",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "task":  "Do a 20-second improv comedy skit about how you two met as superheroes."
+    },
+    {
+        "id":  "dare_015",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Speak in a funny accent for the next round."
+    },
+    {
+        "id":  "dare_016",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Hum a romantic tune for 10 seconds and let your partner guess the vibe."
+    },
+    {
+        "id":  "dare_017",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Do a little shoulder dance while smiling at your partner."
+    },
+    {
+        "id":  "dare_018",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Sing one line from a love song that reminds you of your partner."
+    },
+    {
+        "id":  "dare_019",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Make up a two-line jingle about your partner and perform it."
+    },
+    {
+        "id":  "dare_020",
+        "category":  "singing-dancing",
+        "difficulty":  "hard",
+        "task":  "Create a 15-second dance routine and teach your partner one move."
+    },
+    {
+        "id":  "dare_021",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Give your partner a compliment that would make them blush."
+    },
+    {
+        "id":  "dare_022",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one thing they do better than anyone you know."
+    },
+    {
+        "id":  "dare_023",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Give your partner three compliments without using the word \u0027beautiful\u0027 or \u0027handsome\u0027."
+    },
+    {
+        "id":  "dare_024",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Compliment your partner\u0027s personality in the most creative way you can."
+    },
+    {
+        "id":  "dare_025",
+        "category":  "compliments",
+        "difficulty":  "hard",
+        "task":  "Give a 30-second appreciation speech about your partner as if they won an award."
+    },
+    {
+        "id":  "dare_026",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Act out how excited you get when your partner texts you."
+    },
+    {
+        "id":  "dare_027",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Pretend you are meeting your partner for the first time and give your best charming introduction."
+    },
+    {
+        "id":  "dare_028",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Act like you are in a romantic movie and deliver a dramatic \u0027I missed you\u0027 line."
+    },
+    {
+        "id":  "dare_029",
+        "category":  "acting",
+        "difficulty":  "hard",
+        "task":  "Perform a short scene where you are a poet confessing love to your partner."
+    },
+    {
+        "id":  "dare_030",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Act out your reaction to getting a surprise hug from your partner."
+    },
+    {
+        "id":  "dare_031",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Ask your partner one thoughtful question and listen to the full answer."
+    },
+    {
+        "id":  "dare_032",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Share one thing your partner does that makes you feel understood."
+    },
+    {
+        "id":  "dare_033",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Tell your partner one way they can make you feel extra loved this week."
+    },
+    {
+        "id":  "dare_034",
+        "category":  "communication",
+        "difficulty":  "hard",
+        "task":  "Share a gentle truth about how you feel today and ask your partner how they feel too."
+    },
+    {
+        "id":  "dare_035",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one word that describes your mood right now and why."
+    },
+    {
+        "id":  "dare_036",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Draw a quick heart with your partner\u0027s initials on paper and show it."
+    },
+    {
+        "id":  "dare_037",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Make a short poem of four lines about your partner."
+    },
+    {
+        "id":  "dare_038",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Use nearby objects to create a tiny symbol of your love and explain it."
+    },
+    {
+        "id":  "dare_039",
+        "category":  "creative",
+        "difficulty":  "hard",
+        "task":  "Invent a cute couple nickname and a one-sentence story behind it."
+    },
+    {
+        "id":  "dare_040",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Make a heart shape with your hands and hold it up to the camera."
+    },
+    {
+        "id":  "dare_041",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Give your partner a virtual hug with your warmest smile."
+    },
+    {
+        "id":  "dare_042",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Say \u0027thank you\u0027 for something specific your partner did recently."
+    },
+    {
+        "id":  "dare_043",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Promise your partner a small sweet gesture you will do the next time you meet."
+    },
+    {
+        "id":  "dare_044",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Tell your partner three reasons you feel lucky to have them."
+    },
+    {
+        "id":  "dare_045",
+        "category":  "sweet-gestures",
+        "difficulty":  "hard",
+        "task":  "Plan a mini date idea on the spot and describe it in detail."
+    },
+    {
+        "id":  "dare_046",
+        "category":  "memory",
+        "difficulty":  "easy",
+        "task":  "Share your favorite memory with your partner in one sentence."
+    },
+    {
+        "id":  "dare_047",
+        "category":  "memory",
+        "difficulty":  "medium",
+        "task":  "Describe your first impression of your partner as vividly as you can."
+    },
+    {
+        "id":  "dare_048",
+        "category":  "memory",
+        "difficulty":  "medium",
+        "task":  "Recreate a moment from your favorite memory together using only words and expressions."
+    },
+    {
+        "id":  "dare_049",
+        "category":  "memory",
+        "difficulty":  "hard",
+        "task":  "Tell the story of a moment with your partner that changed how you felt about love."
+    },
+    {
+        "id":  "dare_050",
+        "category":  "memory",
+        "difficulty":  "easy",
+        "task":  "Name one place that reminds you of your partner and why."
+    },
+    {
+        "id":  "dare_051",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Send your partner your favorite emoji combination that represents you two."
+    },
+    {
+        "id":  "dare_052",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Change your expression to match an emoji your partner picks."
+    },
+    {
+        "id":  "dare_053",
+        "category":  "online-phone",
+        "difficulty":  "medium",
+        "task":  "Take a cute selfie right now and send it to your partner."
+    },
+    {
+        "id":  "dare_054",
+        "category":  "online-phone",
+        "difficulty":  "medium",
+        "task":  "Find the sweetest photo of you two on your phone and describe it."
+    },
+    {
+        "id":  "dare_055",
+        "category":  "online-phone",
+        "difficulty":  "hard",
+        "task":  "Make a 15-second voice note telling a mini romantic story starring you both."
+    },
+    {
+        "id":  "dare_056",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Type a sweet message to your partner using only emojis, then explain it."
+    },
+    {
+        "id":  "dare_057",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Whisper a sweet message to your partner about how they make you feel voice."
+    },
+    {
+        "id":  "dare_058",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Make a sweet promise to your partner about bringing more evening into your days."
+    },
+    {
+        "id":  "dare_059",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Tell your partner how they helped you believe in peace again."
+    },
+    {
+        "id":  "dare_060",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Laugh in your most dramatic cat style."
+    },
+    {
+        "id":  "dare_061",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Invent a funny commercial selling a banana to your partner."
+    },
+    {
+        "id":  "dare_062",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "task":  "Make up a funny song chorus about space chefs and perform it."
+    },
+    {
+        "id":  "dare_063",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Clap a rhythm and let your partner guess if it feels 10."
+    },
+    {
+        "id":  "dare_064",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Create a two-move dance called the \u0027playful Shuffle\u0027."
+    },
+    {
+        "id":  "dare_065",
+        "category":  "singing-dancing",
+        "difficulty":  "hard",
+        "task":  "Choreograph three moves that represent our love, adventure, and superstar."
+    },
+    {
+        "id":  "dare_066",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one thing you admire about their kindness."
+    },
+    {
+        "id":  "dare_067",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Tell your partner two ways they make your life more heart."
+    },
+    {
+        "id":  "dare_068",
+        "category":  "compliments",
+        "difficulty":  "hard",
+        "task":  "Give a sincere compliment about your partner\u0027s growth in character."
+    },
+    {
+        "id":  "dare_069",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Pretend you are shyly giving your partner a compliment about love."
+    },
+    {
+        "id":  "dare_070",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Pretend to be a chef describing a dish named after your partner and Love."
+    },
+    {
+        "id":  "dare_071",
+        "category":  "acting",
+        "difficulty":  "hard",
+        "task":  "Perform a 20-second monologue about a magical world where laughter is the most precious treasure."
+    },
+    {
+        "id":  "dare_072",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Share one thing that makes you feel happy in our relationship."
+    },
+    {
+        "id":  "dare_073",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Tell your partner one small change that could make our busy days even better."
+    },
+    {
+        "id":  "dare_074",
+        "category":  "communication",
+        "difficulty":  "hard",
+        "task":  "Tell your partner one meaningful lesson you learned about safe through love."
+    },
+    {
+        "id":  "dare_075",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Invent a cute name for a couple holiday called \u0027love Day\u0027."
+    },
+    {
+        "id":  "dare_076",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Write a four-line poem about your partner and starlight."
+    },
+    {
+        "id":  "dare_077",
+        "category":  "creative",
+        "difficulty":  "hard",
+        "task":  "Invent a mini fairy tale where the moral is about devotion."
+    },
+    {
+        "id":  "dare_078",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Promise to send your partner a sweet message about hug later today."
+    },
+    {
+        "id":  "dare_079",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Make a kind promise about giving your partner more music."
+    },
+    {
+        "id":  "dare_080",
+        "category":  "sweet-gestures",
+        "difficulty":  "hard",
+        "task":  "Give your partner a sincere appreciation message focused on cherished."
+    },
+    {
+        "id":  "dare_081",
+        "category":  "memory",
+        "difficulty":  "easy",
+        "task":  "Share a favorite memory that makes you feel happy."
+    },
+    {
+        "id":  "dare_082",
+        "category":  "memory",
+        "difficulty":  "medium",
+        "task":  "Tell your partner about a moment you realized they were close."
+    },
+    {
+        "id":  "dare_083",
+        "category":  "memory",
+        "difficulty":  "hard",
+        "task":  "Tell a story of a time our love felt especially patience."
+    },
+    {
+        "id":  "dare_084",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Send your partner an emoji-only message about sunshine."
+    },
+    {
+        "id":  "dare_085",
+        "category":  "online-phone",
+        "difficulty":  "medium",
+        "task":  "Send a quick message creating a cute couple hashtag about superstar."
+    },
+    {
+        "id":  "dare_086",
+        "category":  "online-phone",
+        "difficulty":  "hard",
+        "task":  "Make a 20-second voice message telling a tiny story about you two and a magical date."
+    },
+    {
+        "id":  "dare_087",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Whisper a sweet message to your partner about how they make you feel voice. Make it extra sweet."
+    },
+    {
+        "id":  "dare_088",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Make a sweet promise to your partner about bringing more evening into your days. Make it extra sweet."
+    },
+    {
+        "id":  "dare_089",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Tell your partner how they helped you believe in peace again. Make it extra sweet."
+    },
+    {
+        "id":  "dare_090",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Laugh in your most dramatic cat style. Make it extra sweet."
+    },
+    {
+        "id":  "dare_091",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Invent a funny commercial selling a banana to your partner. Make it extra sweet."
+    },
+    {
+        "id":  "dare_092",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "task":  "Make up a funny song chorus about space chefs and perform it. Make it extra sweet."
+    },
+    {
+        "id":  "dare_093",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Clap a rhythm and let your partner guess if it feels 10. Make it extra sweet."
+    },
+    {
+        "id":  "dare_094",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Create a two-move dance called the \u0027playful Shuffle\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_095",
+        "category":  "singing-dancing",
+        "difficulty":  "hard",
+        "task":  "Choreograph three moves that represent our love, adventure, and superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_096",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one thing you admire about their kindness. Make it extra sweet."
+    },
+    {
+        "id":  "dare_097",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Tell your partner two ways they make your life more heart. Make it extra sweet."
+    },
+    {
+        "id":  "dare_098",
+        "category":  "compliments",
+        "difficulty":  "hard",
+        "task":  "Give a sincere compliment about your partner\u0027s growth in character. Make it extra sweet."
+    },
+    {
+        "id":  "dare_099",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Pretend you are shyly giving your partner a compliment about love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_100",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Pretend to be a chef describing a dish named after your partner and Love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_101",
+        "category":  "acting",
+        "difficulty":  "hard",
+        "task":  "Perform a 20-second monologue about a magical world where laughter is the most precious treasure. Make it extra sweet."
+    },
+    {
+        "id":  "dare_102",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Share one thing that makes you feel happy in our relationship. Make it extra sweet."
+    },
+    {
+        "id":  "dare_103",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Tell your partner one small change that could make our busy days even better. Make it extra sweet."
+    },
+    {
+        "id":  "dare_104",
+        "category":  "communication",
+        "difficulty":  "hard",
+        "task":  "Tell your partner one meaningful lesson you learned about safe through love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_105",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Invent a cute name for a couple holiday called \u0027love Day\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_106",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Write a four-line poem about your partner and starlight. Make it extra sweet."
+    },
+    {
+        "id":  "dare_107",
+        "category":  "creative",
+        "difficulty":  "hard",
+        "task":  "Invent a mini fairy tale where the moral is about devotion. Make it extra sweet."
+    },
+    {
+        "id":  "dare_108",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Promise to send your partner a sweet message about hug later today. Make it extra sweet."
+    },
+    {
+        "id":  "dare_109",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Make a kind promise about giving your partner more music. Make it extra sweet."
+    },
+    {
+        "id":  "dare_110",
+        "category":  "sweet-gestures",
+        "difficulty":  "hard",
+        "task":  "Give your partner a sincere appreciation message focused on cherished. Make it extra sweet."
+    },
+    {
+        "id":  "dare_111",
+        "category":  "memory",
+        "difficulty":  "easy",
+        "task":  "Share a favorite memory that makes you feel happy. Make it extra sweet."
+    },
+    {
+        "id":  "dare_112",
+        "category":  "memory",
+        "difficulty":  "medium",
+        "task":  "Tell your partner about a moment you realized they were close. Make it extra sweet."
+    },
+    {
+        "id":  "dare_113",
+        "category":  "memory",
+        "difficulty":  "hard",
+        "task":  "Tell a story of a time our love felt especially patience. Make it extra sweet."
+    },
+    {
+        "id":  "dare_114",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Send your partner an emoji-only message about sunshine. Make it extra sweet."
+    },
+    {
+        "id":  "dare_115",
+        "category":  "online-phone",
+        "difficulty":  "medium",
+        "task":  "Send a quick message creating a cute couple hashtag about superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_116",
+        "category":  "online-phone",
+        "difficulty":  "hard",
+        "task":  "Make a 20-second voice message telling a tiny story about you two and a magical date. Make it extra sweet."
+    },
+    {
+        "id":  "dare_117",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Whisper a sweet message to your partner about how they make you feel voice. Make it extra sweet."
+    },
+    {
+        "id":  "dare_118",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Make a sweet promise to your partner about bringing more evening into your days. Make it extra sweet."
+    },
+    {
+        "id":  "dare_119",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Tell your partner how they helped you believe in peace again. Make it extra sweet."
+    },
+    {
+        "id":  "dare_120",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Laugh in your most dramatic cat style. Make it extra sweet."
+    },
+    {
+        "id":  "dare_121",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Invent a funny commercial selling a banana to your partner. Make it extra sweet."
+    },
+    {
+        "id":  "dare_122",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "task":  "Make up a funny song chorus about space chefs and perform it. Make it extra sweet."
+    },
+    {
+        "id":  "dare_123",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Clap a rhythm and let your partner guess if it feels 10. Make it extra sweet."
+    },
+    {
+        "id":  "dare_124",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Create a two-move dance called the \u0027playful Shuffle\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_125",
+        "category":  "singing-dancing",
+        "difficulty":  "hard",
+        "task":  "Choreograph three moves that represent our love, adventure, and superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_126",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one thing you admire about their kindness. Make it extra sweet."
+    },
+    {
+        "id":  "dare_127",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Tell your partner two ways they make your life more heart. Make it extra sweet."
+    },
+    {
+        "id":  "dare_128",
+        "category":  "compliments",
+        "difficulty":  "hard",
+        "task":  "Give a sincere compliment about your partner\u0027s growth in character. Make it extra sweet."
+    },
+    {
+        "id":  "dare_129",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Pretend you are shyly giving your partner a compliment about love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_130",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Pretend to be a chef describing a dish named after your partner and Love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_131",
+        "category":  "acting",
+        "difficulty":  "hard",
+        "task":  "Perform a 20-second monologue about a magical world where laughter is the most precious treasure. Make it extra sweet."
+    },
+    {
+        "id":  "dare_132",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Share one thing that makes you feel happy in our relationship. Make it extra sweet."
+    },
+    {
+        "id":  "dare_133",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Tell your partner one small change that could make our busy days even better. Make it extra sweet."
+    },
+    {
+        "id":  "dare_134",
+        "category":  "communication",
+        "difficulty":  "hard",
+        "task":  "Tell your partner one meaningful lesson you learned about safe through love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_135",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Invent a cute name for a couple holiday called \u0027love Day\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_136",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Write a four-line poem about your partner and starlight. Make it extra sweet."
+    },
+    {
+        "id":  "dare_137",
+        "category":  "creative",
+        "difficulty":  "hard",
+        "task":  "Invent a mini fairy tale where the moral is about devotion. Make it extra sweet."
+    },
+    {
+        "id":  "dare_138",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Promise to send your partner a sweet message about hug later today. Make it extra sweet."
+    },
+    {
+        "id":  "dare_139",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Make a kind promise about giving your partner more music. Make it extra sweet."
+    },
+    {
+        "id":  "dare_140",
+        "category":  "sweet-gestures",
+        "difficulty":  "hard",
+        "task":  "Give your partner a sincere appreciation message focused on cherished. Make it extra sweet."
+    },
+    {
+        "id":  "dare_141",
+        "category":  "memory",
+        "difficulty":  "easy",
+        "task":  "Share a favorite memory that makes you feel happy. Make it extra sweet."
+    },
+    {
+        "id":  "dare_142",
+        "category":  "memory",
+        "difficulty":  "medium",
+        "task":  "Tell your partner about a moment you realized they were close. Make it extra sweet."
+    },
+    {
+        "id":  "dare_143",
+        "category":  "memory",
+        "difficulty":  "hard",
+        "task":  "Tell a story of a time our love felt especially patience. Make it extra sweet."
+    },
+    {
+        "id":  "dare_144",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Send your partner an emoji-only message about sunshine. Make it extra sweet."
+    },
+    {
+        "id":  "dare_145",
+        "category":  "online-phone",
+        "difficulty":  "medium",
+        "task":  "Send a quick message creating a cute couple hashtag about superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_146",
+        "category":  "online-phone",
+        "difficulty":  "hard",
+        "task":  "Make a 20-second voice message telling a tiny story about you two and a magical date. Make it extra sweet."
+    },
+    {
+        "id":  "dare_147",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Whisper a sweet message to your partner about how they make you feel voice. Make it extra sweet."
+    },
+    {
+        "id":  "dare_148",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Make a sweet promise to your partner about bringing more evening into your days. Make it extra sweet."
+    },
+    {
+        "id":  "dare_149",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Tell your partner how they helped you believe in peace again. Make it extra sweet."
+    },
+    {
+        "id":  "dare_150",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Laugh in your most dramatic cat style. Make it extra sweet."
+    },
+    {
+        "id":  "dare_151",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Invent a funny commercial selling a banana to your partner. Make it extra sweet."
+    },
+    {
+        "id":  "dare_152",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "task":  "Make up a funny song chorus about space chefs and perform it. Make it extra sweet."
+    },
+    {
+        "id":  "dare_153",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Clap a rhythm and let your partner guess if it feels 10. Make it extra sweet."
+    },
+    {
+        "id":  "dare_154",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Create a two-move dance called the \u0027playful Shuffle\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_155",
+        "category":  "singing-dancing",
+        "difficulty":  "hard",
+        "task":  "Choreograph three moves that represent our love, adventure, and superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_156",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one thing you admire about their kindness. Make it extra sweet."
+    },
+    {
+        "id":  "dare_157",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Tell your partner two ways they make your life more heart. Make it extra sweet."
+    },
+    {
+        "id":  "dare_158",
+        "category":  "compliments",
+        "difficulty":  "hard",
+        "task":  "Give a sincere compliment about your partner\u0027s growth in character. Make it extra sweet."
+    },
+    {
+        "id":  "dare_159",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Pretend you are shyly giving your partner a compliment about love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_160",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Pretend to be a chef describing a dish named after your partner and Love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_161",
+        "category":  "acting",
+        "difficulty":  "hard",
+        "task":  "Perform a 20-second monologue about a magical world where laughter is the most precious treasure. Make it extra sweet."
+    },
+    {
+        "id":  "dare_162",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Share one thing that makes you feel happy in our relationship. Make it extra sweet."
+    },
+    {
+        "id":  "dare_163",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Tell your partner one small change that could make our busy days even better. Make it extra sweet."
+    },
+    {
+        "id":  "dare_164",
+        "category":  "communication",
+        "difficulty":  "hard",
+        "task":  "Tell your partner one meaningful lesson you learned about safe through love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_165",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Invent a cute name for a couple holiday called \u0027love Day\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_166",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Write a four-line poem about your partner and starlight. Make it extra sweet."
+    },
+    {
+        "id":  "dare_167",
+        "category":  "creative",
+        "difficulty":  "hard",
+        "task":  "Invent a mini fairy tale where the moral is about devotion. Make it extra sweet."
+    },
+    {
+        "id":  "dare_168",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Promise to send your partner a sweet message about hug later today. Make it extra sweet."
+    },
+    {
+        "id":  "dare_169",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Make a kind promise about giving your partner more music. Make it extra sweet."
+    },
+    {
+        "id":  "dare_170",
+        "category":  "sweet-gestures",
+        "difficulty":  "hard",
+        "task":  "Give your partner a sincere appreciation message focused on cherished. Make it extra sweet."
+    },
+    {
+        "id":  "dare_171",
+        "category":  "memory",
+        "difficulty":  "easy",
+        "task":  "Share a favorite memory that makes you feel happy. Make it extra sweet."
+    },
+    {
+        "id":  "dare_172",
+        "category":  "memory",
+        "difficulty":  "medium",
+        "task":  "Tell your partner about a moment you realized they were close. Make it extra sweet."
+    },
+    {
+        "id":  "dare_173",
+        "category":  "memory",
+        "difficulty":  "hard",
+        "task":  "Tell a story of a time our love felt especially patience. Make it extra sweet."
+    },
+    {
+        "id":  "dare_174",
+        "category":  "online-phone",
+        "difficulty":  "easy",
+        "task":  "Send your partner an emoji-only message about sunshine. Make it extra sweet."
+    },
+    {
+        "id":  "dare_175",
+        "category":  "online-phone",
+        "difficulty":  "medium",
+        "task":  "Send a quick message creating a cute couple hashtag about superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_176",
+        "category":  "online-phone",
+        "difficulty":  "hard",
+        "task":  "Make a 20-second voice message telling a tiny story about you two and a magical date. Make it extra sweet."
+    },
+    {
+        "id":  "dare_177",
+        "category":  "romantic",
+        "difficulty":  "easy",
+        "task":  "Whisper a sweet message to your partner about how they make you feel voice. Make it extra sweet."
+    },
+    {
+        "id":  "dare_178",
+        "category":  "romantic",
+        "difficulty":  "medium",
+        "task":  "Make a sweet promise to your partner about bringing more evening into your days. Make it extra sweet."
+    },
+    {
+        "id":  "dare_179",
+        "category":  "romantic",
+        "difficulty":  "hard",
+        "task":  "Tell your partner how they helped you believe in peace again. Make it extra sweet."
+    },
+    {
+        "id":  "dare_180",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "task":  "Laugh in your most dramatic cat style. Make it extra sweet."
+    },
+    {
+        "id":  "dare_181",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "task":  "Invent a funny commercial selling a banana to your partner. Make it extra sweet."
+    },
+    {
+        "id":  "dare_182",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "task":  "Make up a funny song chorus about space chefs and perform it. Make it extra sweet."
+    },
+    {
+        "id":  "dare_183",
+        "category":  "singing-dancing",
+        "difficulty":  "easy",
+        "task":  "Clap a rhythm and let your partner guess if it feels 10. Make it extra sweet."
+    },
+    {
+        "id":  "dare_184",
+        "category":  "singing-dancing",
+        "difficulty":  "medium",
+        "task":  "Create a two-move dance called the \u0027playful Shuffle\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_185",
+        "category":  "singing-dancing",
+        "difficulty":  "hard",
+        "task":  "Choreograph three moves that represent our love, adventure, and superstar. Make it extra sweet."
+    },
+    {
+        "id":  "dare_186",
+        "category":  "compliments",
+        "difficulty":  "easy",
+        "task":  "Tell your partner one thing you admire about their kindness. Make it extra sweet."
+    },
+    {
+        "id":  "dare_187",
+        "category":  "compliments",
+        "difficulty":  "medium",
+        "task":  "Tell your partner two ways they make your life more heart. Make it extra sweet."
+    },
+    {
+        "id":  "dare_188",
+        "category":  "compliments",
+        "difficulty":  "hard",
+        "task":  "Give a sincere compliment about your partner\u0027s growth in character. Make it extra sweet."
+    },
+    {
+        "id":  "dare_189",
+        "category":  "acting",
+        "difficulty":  "easy",
+        "task":  "Pretend you are shyly giving your partner a compliment about love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_190",
+        "category":  "acting",
+        "difficulty":  "medium",
+        "task":  "Pretend to be a chef describing a dish named after your partner and Love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_191",
+        "category":  "acting",
+        "difficulty":  "hard",
+        "task":  "Perform a 20-second monologue about a magical world where laughter is the most precious treasure. Make it extra sweet."
+    },
+    {
+        "id":  "dare_192",
+        "category":  "communication",
+        "difficulty":  "easy",
+        "task":  "Share one thing that makes you feel happy in our relationship. Make it extra sweet."
+    },
+    {
+        "id":  "dare_193",
+        "category":  "communication",
+        "difficulty":  "medium",
+        "task":  "Tell your partner one small change that could make our busy days even better. Make it extra sweet."
+    },
+    {
+        "id":  "dare_194",
+        "category":  "communication",
+        "difficulty":  "hard",
+        "task":  "Tell your partner one meaningful lesson you learned about safe through love. Make it extra sweet."
+    },
+    {
+        "id":  "dare_195",
+        "category":  "creative",
+        "difficulty":  "easy",
+        "task":  "Invent a cute name for a couple holiday called \u0027love Day\u0027. Make it extra sweet."
+    },
+    {
+        "id":  "dare_196",
+        "category":  "creative",
+        "difficulty":  "medium",
+        "task":  "Write a four-line poem about your partner and starlight. Make it extra sweet."
+    },
+    {
+        "id":  "dare_197",
+        "category":  "creative",
+        "difficulty":  "hard",
+        "task":  "Invent a mini fairy tale where the moral is about devotion. Make it extra sweet."
+    },
+    {
+        "id":  "dare_198",
+        "category":  "sweet-gestures",
+        "difficulty":  "easy",
+        "task":  "Promise to send your partner a sweet message about hug later today. Make it extra sweet."
+    },
+    {
+        "id":  "dare_199",
+        "category":  "sweet-gestures",
+        "difficulty":  "medium",
+        "task":  "Make a kind promise about giving your partner more music. Make it extra sweet."
+    },
+    {
+        "id":  "dare_200",
+        "category":  "sweet-gestures",
+        "difficulty":  "hard",
+        "task":  "Give your partner a sincere appreciation message focused on cherished. Make it extra sweet."
+    }
+]

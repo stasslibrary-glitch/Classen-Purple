@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#512477">
+
+  <title>Classen Purple | Chat</title>
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="stylesheet" href="css/chat.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="phone-shell">
+    <div class="phone-screen">
+
+      <div class="phone-top">
+        <span class="phone-speaker"></span>
+        <span class="phone-camera"></span>
+      </div>
+
+      <main class="phone-content chat-page">
+
+        <!-- CHAT HEADER -->
+        <header class="chat-header">
+
+          <a href="home.html" class="chat-back" aria-label="Back home">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <div class="chat-avatar" id="chatAvatar">
+            💜
+            <span class="online-dot" id="onlineDot"></span>
+          </div>
+
+          <div class="chat-user-info">
+            <h2 id="partnerName">Loading...</h2>
+            <p id="partnerStatus">Connecting...</p>
+          </div>
+
+          <div class="chat-header-actions">
+            <button id="searchChatBtn" title="Search messages">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="chatMenuBtn" title="More options">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+
+        </header>
+
+        <!-- SEARCH BAR -->
+        <div class="chat-search hidden" id="chatSearch">
+          <input type="search" id="messageSearchInput"
+                 placeholder="Search messages...">
+          <button id="closeSearchBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- CHAT WALLPAPER AND MESSAGES -->
+        <section class="chat-background" id="chatBackground">
+
+          <div class="chat-wallpaper-overlay"></div>
+
+          <div class="messages-container" id="messagesContainer">
+
+            <div class="message-loader" id="messageLoader">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+
+          <button class="jump-latest hidden" id="jumpLatestBtn"
+                  title="Go to latest message">
+            <i class="fa-solid fa-arrow-down"></i>
+            <span id="unreadCount">0</span>
+          </button>
+
+        </section>
+
+        <!-- REPLY PREVIEW -->
+        <div class="reply-preview hidden" id="replyPreview">
+          <div class="reply-preview-content">
+            <strong id="replySender">Replying to</strong>
+            <p id="replyText"></p>
+          </div>
+          <button id="cancelReplyBtn" aria-label="Cancel reply">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- ATTACHMENT MENU -->
+        <div class="attachment-menu hidden" id="attachmentMenu">
+
+          <button data-attachment="image">
+            <span class="attachment-icon image-icon">
+              <i class="fa-solid fa-image"></i>
+            </span>
+            Photos
+          </button>
+
+          <button data-attachment="video">
+            <span class="attachment-icon video-icon">
+              <i class="fa-solid fa-video"></i>
+            </span>
+            Videos
+          </button>
+
+          <button data-attachment="document">
+            <span class="attachment-icon document-icon">
+              <i class="fa-solid fa-file-lines"></i>
+            </span>
+            Documents
+          </button>
+
+          <button data-attachment="file">
+            <span class="attachment-icon file-icon">
+              <i class="fa-solid fa-folder-open"></i>
+            </span>
+            Files
+          </button>
+
+        </div>
+
+        <!-- HIDDEN FILE INPUTS -->
+        <input type="file" id="imageInput" accept="image/*" multiple hidden>
+        <input type="file" id="videoInput" accept="video/*" multiple hidden>
+        <input type="file" id="documentInput"
+               accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt" multiple hidden>
+        <input type="file" id="fileInput" multiple hidden>
+
+        <!-- VOICE RECORDING PREVIEW -->
+        <div class="recording-preview hidden" id="recordingPreview">
+          <span class="recording-indicator"></span>
+          <span id="recordingTimer">00:00</span>
+          <span class="recording-label">Recording voice note...</span>
+          <button id="cancelRecordingBtn" aria-label="Cancel recording">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <button id="stopRecordingBtn" aria-label="Stop recording">
+            <i class="fa-solid fa-stop"></i>
+          </button>
+        </div>
+
+        <!-- MESSAGE COMPOSER -->
+        <footer class="chat-composer">
+
+          <button class="composer-action" id="attachmentBtn"
+                  title="Attach files">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <div class="message-input-wrap">
+            <textarea id="messageInput"
+                      placeholder="Write something lovely..."
+                      rows="1"></textarea>
+
+            <button id="emojiBtn" title="Emoji">
+              <i class="fa-regular fa-face-smile"></i>
+            </button>
+          </div>
+
+          <button class="composer-action microphone-btn"
+                  id="microphoneBtn" title="Record voice note">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+
+          <button class="send-btn" id="sendMessageBtn"
+                  title="Send message">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+        </footer>
+
+        <!-- EMOJI PICKER -->
+        <div class="emoji-picker hidden" id="emojiPicker">
+          <button>❤️</button>
+          <button>💜</button>
+          <button>😍</button>
+          <button>🥰</button>
+          <button>😘</button>
+          <button>😂</button>
+          <button>😭</button>
+          <button>🥹</button>
+          <button>🔥</button>
+          <button>💋</button>
+          <button>💕</button>
+          <button>🫂</button>
+          <button>😊</button>
+          <button>😉</button>
+          <button>💍</button>
+          <button>❤️‍🔥</button>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <script type="module" src="js/chat.js"></script>
+
+</body>
+</html>

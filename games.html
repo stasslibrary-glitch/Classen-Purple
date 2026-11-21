@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#54258a">
+
+  <title>Our Games | Classen Purple</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="stylesheet" href="css/games.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="phone-shell">
+
+    <div class="phone-top">
+      <div class="phone-camera"></div>
+      <div class="phone-speaker"></div>
+    </div>
+
+    <main class="phone-screen">
+
+      <div class="games-page">
+
+        <!-- HEADER -->
+        <header class="games-header">
+          <a href="home.html" class="page-back-btn" aria-label="Back home">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <div class="games-header-copy">
+            <p class="games-eyebrow">JUST YOU, ME & A LITTLE FUN 💜</p>
+            <h1>Our Games</h1>
+            <p class="games-subtitle">Play together. Laugh together. Make memories.</p>
+          </div>
+
+          <div class="games-header-actions">
+            <a href="settings.html" class="page-settings-btn" aria-label="Settings" title="Settings">⚙</a>
+            <div class="games-header-icon">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- FEATURED BANNER -->
+        <section class="games-featured">
+          <div class="featured-content">
+            <span class="featured-tag">
+              <i class="fa-solid fa-heart"></i> COUPLE TIME
+            </span>
+
+            <h2>Who's ready<br>to play? 🎮</h2>
+
+            <p>Pick a game and let the fun begin!</p>
+
+            <a href="truth-or-dare.html" class="featured-button">
+              Let's Play <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="featured-art">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-gamepad"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </section>
+
+        <!-- GAME CATEGORY -->
+        <section class="games-section">
+
+          <div class="games-section-heading">
+            <div>
+              <p class="games-eyebrow">CHOOSE YOUR ADVENTURE</p>
+              <h2>All Our Games</h2>
+            </div>
+
+            <span class="games-total">07 GAMES</span>
+          </div>
+
+          <!-- SEARCH -->
+          <div class="game-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              id="gameSearch"
+              placeholder="Find a game..."
+              autocomplete="off"
+            >
+          </div>
+
+          <!-- GAME CARDS -->
+          <div class="games-grid" id="gamesGrid">
+
+            <a href="truth-or-dare.html"
+               class="game-card"
+               data-name="truth or dare"
+               data-category="fun">
+
+              <div class="game-card-top pink">
+                <i class="fa-solid fa-fire"></i>
+                <span>01</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Truth or Dare</h3>
+                <p>Answer honestly or take on a challenge.</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <a href="spin-wheel.html"
+               class="game-card"
+               data-name="spin the wheel"
+               data-category="random">
+
+              <div class="game-card-top gold">
+                <i class="fa-solid fa-dharmachakra"></i>
+                <span>02</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Spin the Wheel</h3>
+                <p>Let fate decide your next move!</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <a href="couples-quiz.html"
+               class="game-card"
+               data-name="couples quiz"
+               data-category="quiz">
+
+              <div class="game-card-top purple">
+                <i class="fa-solid fa-brain"></i>
+                <span>03</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Couples Quiz</h3>
+                <p>Discover who knows the other better.</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <a href="would-you-rather.html"
+               class="game-card"
+               data-name="would you rather"
+               data-category="fun">
+
+              <div class="game-card-top blue">
+                <i class="fa-solid fa-shuffle"></i>
+                <span>04</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Would You Rather?</h3>
+                <p>Two choices. One difficult decision.</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <a href="memory-game.html"
+               class="game-card"
+               data-name="memory challenge"
+               data-category="quiz">
+
+              <div class="game-card-top mint">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <span>05</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Memory Challenge</h3>
+                <p>How well do you remember your moments?</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <a href="who-is-more-likely.html"
+               class="game-card"
+               data-name="who is more likely"
+               data-category="fun">
+
+              <div class="game-card-top orange">
+                <i class="fa-solid fa-people-arrows"></i>
+                <span>06</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Who Is More Likely?</h3>
+                <p>Point fingers and reveal funny truths.</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <a href="guess-the-song.html"
+               class="game-card"
+               data-name="guess the song"
+               data-category="music">
+
+              <div class="game-card-top rose">
+                <i class="fa-solid fa-music"></i>
+                <span>07</span>
+              </div>
+
+              <div class="game-card-info">
+                <h3>Guess the Song</h3>
+                <p>Test your music knowledge together.</p>
+                <span class="game-play">Play now <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="no-games hidden" id="noGames">
+            <i class="fa-solid fa-face-sad-tear"></i>
+            <h3>No game found</h3>
+            <p>Try searching for another game.</p>
+          </div>
+
+        </section>
+
+        <!-- LITTLE MESSAGE -->
+        <section class="games-love-note">
+          <i class="fa-solid fa-heart"></i>
+          <p>It doesn't matter who wins. What matters is that we're having fun together.</p>
+          <span>Baby ❤️ & Hubby 💜</span>
+        </section>
+
+        <!-- BOTTOM NAVIGATION -->
+        <nav class="app-bottom-nav">
+
+          <a href="home.html" class="nav-link">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+
+          <a href="chat.html" class="nav-link">
+            <i class="fa-solid fa-comments"></i>
+            <span>Chat</span>
+          </a>
+
+          <a href="calendar.html" class="nav-link">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Calendar</span>
+          </a>
+
+          <a href="todo.html" class="nav-link">
+            <i class="fa-solid fa-list-check"></i>
+            <span>To-Do</span>
+          </a>
+
+          <a href="games.html" class="nav-link active">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Games</span>
+          </a>
+
+          <button class="nav-link" id="moreNavBtn" type="button">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span>More</span>
+          </button>
+
+        </nav>
+
+        <div class="more-nav-menu hidden" id="moreNavMenu">
+          <a href="song.html"><i class="fa-solid fa-music"></i> Our Song</a>
+          <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+          <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script type="module" src="js/auth-guard.js"></script>
+  <script type="module" src="js/games.js"></script>
+
+</body>
+</html>

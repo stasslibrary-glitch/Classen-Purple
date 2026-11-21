@@ -1,0 +1,3602 @@
+[
+    {
+        "id":  "quiz_001",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite comfort food?",
+        "options":  [
+                        "Pizza",
+                        "Rice and chicken",
+                        "Ice cream",
+                        "Pasta"
+                    ]
+    },
+    {
+        "id":  "quiz_002",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite color?",
+        "options":  [
+                        "Purple",
+                        "Blue",
+                        "Red",
+                        "Black"
+                    ]
+    },
+    {
+        "id":  "quiz_003",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "Which drink do I reach for most often?",
+        "options":  [
+                        "Water",
+                        "Juice",
+                        "Soda",
+                        "Tea"
+                    ]
+    },
+    {
+        "id":  "quiz_004",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "What kind of movie night do I love most?",
+        "options":  [
+                        "Romantic comedy",
+                        "Action",
+                        "Horror",
+                        "Documentary"
+                    ]
+    },
+    {
+        "id":  "quiz_005",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "Which dessert makes me happiest?",
+        "options":  [
+                        "Chocolate cake",
+                        "Ice cream",
+                        "Fruit salad",
+                        "Cookies"
+                    ]
+    },
+    {
+        "id":  "quiz_006",
+        "category":  "favourites",
+        "difficulty":  "hard",
+        "question":  "Which small gift would mean the most to me?",
+        "options":  [
+                        "A handwritten note",
+                        "A fancy gadget",
+                        "A surprise Hug",
+                        "A new outfit"
+                    ]
+    },
+    {
+        "id":  "quiz_007",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "Do I prefer sweet or spicy food most of the time?",
+        "options":  [
+                        "Sweet",
+                        "Spicy",
+                        "Both equally",
+                        "Neither"
+                    ]
+    },
+    {
+        "id":  "quiz_008",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "What breakfast do I enjoy most?",
+        "options":  [
+                        "Eggs",
+                        "Pancakes",
+                        "Tea and bread",
+                        "Fruit"
+                    ]
+    },
+    {
+        "id":  "quiz_009",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "Which meal would I pick for a special date night?",
+        "options":  [
+                        "Grilled chicken",
+                        "Pizza",
+                        "Sushi",
+                        "Burgers"
+                    ]
+    },
+    {
+        "id":  "quiz_010",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "What snack can I never resist?",
+        "options":  [
+                        "Chips",
+                        "Chocolate",
+                        "Popcorn",
+                        "Biscuits"
+                    ]
+    },
+    {
+        "id":  "quiz_011",
+        "category":  "food",
+        "difficulty":  "hard",
+        "question":  "Which food would I be most excited to try on a trip?",
+        "options":  [
+                        "Local street food",
+                        "A fancy dessert",
+                        "A seafood dish",
+                        "A traditional home meal"
+                    ]
+    },
+    {
+        "id":  "quiz_012",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "What kind of music do I usually vibe to?",
+        "options":  [
+                        "Afrobeats",
+                        "R\u0026B",
+                        "Gospel",
+                        "Pop"
+                    ]
+    },
+    {
+        "id":  "quiz_013",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "When do I love listening to music most?",
+        "options":  [
+                        "While relaxing",
+                        "While working",
+                        "While traveling",
+                        "While cooking"
+                    ]
+    },
+    {
+        "id":  "quiz_014",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "Which artist would I be most excited to see live?",
+        "options":  [
+                        "Burna Boy",
+                        "Tems",
+                        "Ed Sheeran",
+                        "A gospel artist"
+                    ]
+    },
+    {
+        "id":  "quiz_015",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "What song mood do I love most?",
+        "options":  [
+                        "Romantic",
+                        "Dance",
+                        "Calm",
+                        "Inspirational"
+                    ]
+    },
+    {
+        "id":  "quiz_016",
+        "category":  "music",
+        "difficulty":  "hard",
+        "question":  "Which song would I choose for our couple playlist first?",
+        "options":  [
+                        "A love ballad",
+                        "An Afrobeats jam",
+                        "A classic slow song",
+                        "A feel-good pop song"
+                    ]
+    },
+    {
+        "id":  "quiz_017",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "Am I more of a morning person or a night person?",
+        "options":  [
+                        "Morning",
+                        "Night",
+                        "Depends on the day",
+                        "Neither"
+                    ]
+    },
+    {
+        "id":  "quiz_018",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "Am I more introverted or outgoing?",
+        "options":  [
+                        "Introverted",
+                        "Outgoing",
+                        "A mix of both",
+                        "Depends on the mood"
+                    ]
+    },
+    {
+        "id":  "quiz_019",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "How do I usually handle stress?",
+        "options":  [
+                        "Talk it out",
+                        "Get quiet",
+                        "Stay busy",
+                        "Need a break"
+                    ]
+    },
+    {
+        "id":  "quiz_020",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "What describes me best?",
+        "options":  [
+                        "Calm",
+                        "Playful",
+                        "Thoughtful",
+                        "Energetic"
+                    ]
+    },
+    {
+        "id":  "quiz_021",
+        "category":  "personality",
+        "difficulty":  "hard",
+        "question":  "What quality do I value most in myself?",
+        "options":  [
+                        "Loyalty",
+                        "Kindness",
+                        "Honesty",
+                        "Ambition"
+                    ]
+    },
+    {
+        "id":  "quiz_022",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "What is one thing I do almost every day?",
+        "options":  [
+                        "Check my phone",
+                        "Listen to music",
+                        "Snack",
+                        "Daydream"
+                    ]
+    },
+    {
+        "id":  "quiz_023",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "How do I usually start my day?",
+        "options":  [
+                        "Checking my phone",
+                        "Praying or reflecting",
+                        "Getting ready quickly",
+                        "Taking it slow"
+                    ]
+    },
+    {
+        "id":  "quiz_024",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "What habit of mine makes you laugh the most?",
+        "options":  [
+                        "Overthinking",
+                        "Dancing randomly",
+                        "Singing off-key",
+                        "Talking to myself"
+                    ]
+    },
+    {
+        "id":  "quiz_025",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "When I am excited, what do I usually do?",
+        "options":  [
+                        "Talk a lot",
+                        "Smile big",
+                        "Move around",
+                        "Get quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_026",
+        "category":  "habits",
+        "difficulty":  "hard",
+        "question":  "Which habit am I trying to improve most?",
+        "options":  [
+                        "Sleeping earlier",
+                        "Saving money",
+                        "Being more patient",
+                        "Staying organized"
+                    ]
+    },
+    {
+        "id":  "quiz_027",
+        "category":  "childhood",
+        "difficulty":  "easy",
+        "question":  "What did I enjoy doing most as a child?",
+        "options":  [
+                        "Playing outside",
+                        "Watching cartoons",
+                        "Reading",
+                        "Playing games"
+                    ]
+    },
+    {
+        "id":  "quiz_028",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What kind of student was I in school?",
+        "options":  [
+                        "Quiet",
+                        "Talkative",
+                        "Hardworking",
+                        "Playful"
+                    ]
+    },
+    {
+        "id":  "quiz_029",
+        "category":  "childhood",
+        "difficulty":  "medium",
+        "question":  "What childhood treat did I love most?",
+        "options":  [
+                        "Candy",
+                        "Ice cream",
+                        "Cake",
+                        "Chips"
+                    ]
+    },
+    {
+        "id":  "quiz_030",
+        "category":  "childhood",
+        "difficulty":  "hard",
+        "question":  "What childhood dream did I have?",
+        "options":  [
+                        "To be famous",
+                        "To help people",
+                        "To travel the world",
+                        "To build something great"
+                    ]
+    },
+    {
+        "id":  "quiz_031",
+        "category":  "family",
+        "difficulty":  "easy",
+        "question":  "Who am I most likely to call first with good news?",
+        "options":  [
+                        "My partner",
+                        "A parent",
+                        "A sibling",
+                        "A close friend"
+                    ]
+    },
+    {
+        "id":  "quiz_032",
+        "category":  "family",
+        "difficulty":  "medium",
+        "question":  "What family moment matters most to me?",
+        "options":  [
+                        "Celebrations",
+                        "Meal times",
+                        "Heart-to-heart talks",
+                        "Prayers together"
+                    ]
+    },
+    {
+        "id":  "quiz_033",
+        "category":  "family",
+        "difficulty":  "hard",
+        "question":  "What value from my family do I carry strongly?",
+        "options":  [
+                        "Respect",
+                        "Faith",
+                        "Hard work",
+                        "Togetherness"
+                    ]
+    },
+    {
+        "id":  "quiz_034",
+        "category":  "dreams",
+        "difficulty":  "easy",
+        "question":  "What is one dream I talk about often?",
+        "options":  [
+                        "Traveling",
+                        "Success",
+                        "A happy family",
+                        "A peaceful life"
+                    ]
+    },
+    {
+        "id":  "quiz_035",
+        "category":  "dreams",
+        "difficulty":  "medium",
+        "question":  "Where would I love to travel someday?",
+        "options":  [
+                        "Paris",
+                        "Dubai",
+                        "Zanzibar",
+                        "The Maldives"
+                    ]
+    },
+    {
+        "id":  "quiz_036",
+        "category":  "dreams",
+        "difficulty":  "hard",
+        "question":  "What kind of future makes me feel most fulfilled?",
+        "options":  [
+                        "A peaceful home",
+                        "A big adventure",
+                        "A successful career",
+                        "Helping others"
+                    ]
+    },
+    {
+        "id":  "quiz_037",
+        "category":  "romance",
+        "difficulty":  "easy",
+        "question":  "What makes me feel most loved?",
+        "options":  [
+                        "Words of affirmation",
+                        "Quality time",
+                        "Gifts",
+                        "Acts of kindness"
+                    ]
+    },
+    {
+        "id":  "quiz_038",
+        "category":  "romance",
+        "difficulty":  "medium",
+        "question":  "What kind of date do I enjoy most?",
+        "options":  [
+                        "A cozy night in",
+                        "A fancy dinner",
+                        "An outdoor adventure",
+                        "A movie date"
+                    ]
+    },
+    {
+        "id":  "quiz_039",
+        "category":  "romance",
+        "difficulty":  "hard",
+        "question":  "What romantic gesture means the most to me?",
+        "options":  [
+                        "A thoughtful surprise",
+                        "A heartfelt letter",
+                        "Quality time",
+                        "Public affection"
+                    ]
+    },
+    {
+        "id":  "quiz_040",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of moments do I treasure most with you?",
+        "options":  [
+                        "Funny moments",
+                        "Deep talks",
+                        "Adventures",
+                        "Quiet time"
+                    ]
+    },
+    {
+        "id":  "quiz_041",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which memory of us makes me smile the fastest?",
+        "options":  [
+                        "Our first laughs",
+                        "A sweet message",
+                        "A special date",
+                        "A random moment"
+                    ]
+    },
+    {
+        "id":  "quiz_042",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I look forward to doing with you?",
+        "options":  [
+                        "Traveling",
+                        "Building a home",
+                        "Making memories",
+                        "All of the above"
+                    ]
+    },
+    {
+        "id":  "quiz_043",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "What is most important to me in our future?",
+        "options":  [
+                        "Peace",
+                        "Love",
+                        "Growth",
+                        "Fun"
+                    ]
+    },
+    {
+        "id":  "quiz_044",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What part of the day do I enjoy most?",
+        "options":  [
+                        "Morning",
+                        "Afternoon",
+                        "Evening",
+                        "Late night"
+                    ]
+    },
+    {
+        "id":  "quiz_045",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "How do I like to unwind after a busy day?",
+        "options":  [
+                        "Music",
+                        "Sleep",
+                        "Talking to you",
+                        "Watching something"
+                    ]
+    },
+    {
+        "id":  "quiz_046",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer?",
+        "options":  [
+                        "Beach",
+                        "Mountains",
+                        "City",
+                        "Countryside"
+                    ]
+    },
+    {
+        "id":  "quiz_047",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "Which annoys me more?",
+        "options":  [
+                        "Being late",
+                        "Loud noise",
+                        "Messiness",
+                        "Bad internet"
+                    ]
+    },
+    {
+        "id":  "quiz_048",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to laugh at?",
+        "options":  [
+                        "Silly jokes",
+                        "Funny videos",
+                        "My own mistakes",
+                        "Your jokes"
+                    ]
+    },
+    {
+        "id":  "quiz_049",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "If I forgot something at home, what would it most likely be?",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My wallet",
+                        "My charger"
+                    ]
+    },
+    {
+        "id":  "quiz_050",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we had a free weekend, what would I choose?",
+        "options":  [
+                        "Rest at home",
+                        "Go out",
+                        "Visit friends",
+                        "Take a trip"
+                    ]
+    },
+    {
+        "id":  "quiz_051",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If I could master one skill instantly, what would I pick?",
+        "options":  [
+                        "Cooking",
+                        "Singing",
+                        "Dancing",
+                        "A new language"
+                    ]
+    },
+    {
+        "id":  "quiz_052",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "When I am upset, what do I need most?",
+        "options":  [
+                        "A hug",
+                        "Space",
+                        "Reassurance",
+                        "A solution"
+                    ]
+    },
+    {
+        "id":  "quiz_053",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What makes me feel truly understood?",
+        "options":  [
+                        "Being listened to",
+                        "Being remembered",
+                        "Being supported",
+                        "Being encouraged"
+                    ]
+    },
+    {
+        "id":  "quiz_054",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite ice cream flavor?",
+        "options":  [
+                        "Vanilla",
+                        "Chocolate",
+                        "Strawberry",
+                        "Mint"
+                    ]
+    },
+    {
+        "id":  "quiz_055",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite season?",
+        "options":  [
+                        "Rainy season",
+                        "Dry season",
+                        "Cool season",
+                        "I love them all"
+                    ]
+    },
+    {
+        "id":  "quiz_056",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite way to spend a free evening?",
+        "options":  [
+                        "Watching a movie",
+                        "Talking with you",
+                        "Listening to music",
+                        "Sleeping early"
+                    ]
+    },
+    {
+        "id":  "quiz_057",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite animal?",
+        "options":  [
+                        "Dog",
+                        "Cat",
+                        "Bird",
+                        "Lion"
+                    ]
+    },
+    {
+        "id":  "quiz_058",
+        "category":  "favourites",
+        "difficulty":  "easy",
+        "question":  "What is my favourite type of photo?",
+        "options":  [
+                        "Selfies",
+                        "Candid shots",
+                        "Nature photos",
+                        "Couple photos"
+                    ]
+    },
+    {
+        "id":  "quiz_059",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "What kind of gift makes me happiest?",
+        "options":  [
+                        "Thoughtful",
+                        "Expensive",
+                        "Handmade",
+                        "Surprise"
+                    ]
+    },
+    {
+        "id":  "quiz_060",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "What is my favourite weekend vibe?",
+        "options":  [
+                        "Relaxed",
+                        "Adventurous",
+                        "Social",
+                        "Productive"
+                    ]
+    },
+    {
+        "id":  "quiz_061",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "Which color would I pick for a couple outfit?",
+        "options":  [
+                        "Purple",
+                        "Black",
+                        "White",
+                        "Red"
+                    ]
+    },
+    {
+        "id":  "quiz_062",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "What is my favourite kind of holiday?",
+        "options":  [
+                        "Beach holiday",
+                        "City break",
+                        "Nature retreat",
+                        "Staycation"
+                    ]
+    },
+    {
+        "id":  "quiz_063",
+        "category":  "favourites",
+        "difficulty":  "medium",
+        "question":  "What kind of compliment do I love most?",
+        "options":  [
+                        "About my heart",
+                        "About my looks",
+                        "About my mind",
+                        "About my effort"
+                    ]
+    },
+    {
+        "id":  "quiz_064",
+        "category":  "favourites",
+        "difficulty":  "hard",
+        "question":  "What is my favourite thing about quiet moments together?",
+        "options":  [
+                        "The peace",
+                        "The closeness",
+                        "The conversations",
+                        "The comfort"
+                    ]
+    },
+    {
+        "id":  "quiz_065",
+        "category":  "favourites",
+        "difficulty":  "hard",
+        "question":  "Which dream date would I choose first?",
+        "options":  [
+                        "Sunset picnic",
+                        "Rooftop dinner",
+                        "Road trip",
+                        "Home-cooked meal"
+                    ]
+    },
+    {
+        "id":  "quiz_066",
+        "category":  "favourites",
+        "difficulty":  "hard",
+        "question":  "What kind of surprise would touch me most?",
+        "options":  [
+                        "A planned date",
+                        "A sweet letter",
+                        "A thoughtful gift",
+                        "A meaningful call"
+                    ]
+    },
+    {
+        "id":  "quiz_067",
+        "category":  "favourites",
+        "difficulty":  "hard",
+        "question":  "What kind of memory do I treasure most?",
+        "options":  [
+                        "Funny ones",
+                        "Romantic ones",
+                        "Supportive ones",
+                        "Spontaneous ones"
+                    ]
+    },
+    {
+        "id":  "quiz_068",
+        "category":  "favourites",
+        "difficulty":  "hard",
+        "question":  "What makes a perfect day for me?",
+        "options":  [
+                        "Peace",
+                        "Laughter",
+                        "Love",
+                        "Achievement"
+                    ]
+    },
+    {
+        "id":  "quiz_069",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "Do I prefer tea or coffee?",
+        "options":  [
+                        "Tea",
+                        "Coffee",
+                        "Both",
+                        "Neither"
+                    ]
+    },
+    {
+        "id":  "quiz_070",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "What is my favourite fast food?",
+        "options":  [
+                        "Burger",
+                        "Fries",
+                        "Fried chicken",
+                        "Pizza"
+                    ]
+    },
+    {
+        "id":  "quiz_071",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "Which fruit do I like most?",
+        "options":  [
+                        "Mango",
+                        "Banana",
+                        "Apple",
+                        "Pineapple"
+                    ]
+    },
+    {
+        "id":  "quiz_072",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "Do I like my food mild or spicy?",
+        "options":  [
+                        "Mild",
+                        "Spicy",
+                        "Medium",
+                        "Depends"
+                    ]
+    },
+    {
+        "id":  "quiz_073",
+        "category":  "food",
+        "difficulty":  "easy",
+        "question":  "What dessert would I choose?",
+        "options":  [
+                        "Cake",
+                        "Ice cream",
+                        "Donut",
+                        "Chocolate"
+                    ]
+    },
+    {
+        "id":  "quiz_074",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "What meal could I eat repeatedly without getting bored?",
+        "options":  [
+                        "Rice dish",
+                        "Pasta",
+                        "Chicken",
+                        "Street food"
+                    ]
+    },
+    {
+        "id":  "quiz_075",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "What food do I crave when I am stressed?",
+        "options":  [
+                        "Chocolate",
+                        "Chips",
+                        "Ice cream",
+                        "A full meal"
+                    ]
+    },
+    {
+        "id":  "quiz_076",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "What kind of restaurant would I pick for us?",
+        "options":  [
+                        "Cozy cafe",
+                        "Fancy restaurant",
+                        "Local spot",
+                        "Outdoor place"
+                    ]
+    },
+    {
+        "id":  "quiz_077",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "Which breakfast feels most like me?",
+        "options":  [
+                        "Simple and quick",
+                        "Sweet",
+                        "Hearty",
+                        "I skip breakfast"
+                    ]
+    },
+    {
+        "id":  "quiz_078",
+        "category":  "food",
+        "difficulty":  "medium",
+        "question":  "What drink would I order on a hot day?",
+        "options":  [
+                        "Cold juice",
+                        "Water",
+                        "Soda",
+                        "Smoothie"
+                    ]
+    },
+    {
+        "id":  "quiz_079",
+        "category":  "food",
+        "difficulty":  "hard",
+        "question":  "Which cooking style impresses me most?",
+        "options":  [
+                        "Home-style comfort",
+                        "Gourmet fancy",
+                        "Street food mastery",
+                        "Baking"
+                    ]
+    },
+    {
+        "id":  "quiz_080",
+        "category":  "food",
+        "difficulty":  "hard",
+        "question":  "What food experience would I love most?",
+        "options":  [
+                        "Cooking together",
+                        "Trying a new cuisine",
+                        "A surprise picnic",
+                        "A dessert tour"
+                    ]
+    },
+    {
+        "id":  "quiz_081",
+        "category":  "food",
+        "difficulty":  "hard",
+        "question":  "What matters most to me in a meal?",
+        "options":  [
+                        "Taste",
+                        "Presentation",
+                        "Company",
+                        "Comfort"
+                    ]
+    },
+    {
+        "id":  "quiz_082",
+        "category":  "food",
+        "difficulty":  "hard",
+        "question":  "What is my attitude toward trying weird foods?",
+        "options":  [
+                        "I am adventurous",
+                        "I am cautious",
+                        "I need convincing",
+                        "I avoid them"
+                    ]
+    },
+    {
+        "id":  "quiz_083",
+        "category":  "food",
+        "difficulty":  "hard",
+        "question":  "Which meal feels most romantic to me?",
+        "options":  [
+                        "Breakfast in bed",
+                        "Candlelit dinner",
+                        "Picnic",
+                        "Homemade meal together"
+                    ]
+    },
+    {
+        "id":  "quiz_084",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "Do I prefer slow songs or upbeat songs?",
+        "options":  [
+                        "Slow",
+                        "Upbeat",
+                        "Both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_085",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "Do I sing along to music?",
+        "options":  [
+                        "Always",
+                        "Sometimes",
+                        "Rarely",
+                        "Only when alone"
+                    ]
+    },
+    {
+        "id":  "quiz_086",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "What do I do when my favorite song comes on?",
+        "options":  [
+                        "Sing loudly",
+                        "Smile",
+                        "Dance",
+                        "Turn it up"
+                    ]
+    },
+    {
+        "id":  "quiz_087",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "Which music mood do I pick when happy?",
+        "options":  [
+                        "Dance",
+                        "Romantic",
+                        "Chill",
+                        "Pop"
+                    ]
+    },
+    {
+        "id":  "quiz_088",
+        "category":  "music",
+        "difficulty":  "easy",
+        "question":  "Do I like making playlists?",
+        "options":  [
+                        "Yes",
+                        "No",
+                        "Sometimes",
+                        "I should start"
+                    ]
+    },
+    {
+        "id":  "quiz_089",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "What kind of song would I dedicate to you?",
+        "options":  [
+                        "Romantic ballad",
+                        "Afrobeats love song",
+                        "Classic love song",
+                        "Sweet pop song"
+                    ]
+    },
+    {
+        "id":  "quiz_090",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "When I need motivation, what music do I pick?",
+        "options":  [
+                        "Upbeat",
+                        "Gospel",
+                        "Afrobeats",
+                        "Hip-hop"
+                    ]
+    },
+    {
+        "id":  "quiz_091",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "What music setting do I love most?",
+        "options":  [
+                        "Headphones alone",
+                        "In the car",
+                        "At home",
+                        "With you"
+                    ]
+    },
+    {
+        "id":  "quiz_092",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "Which decade of music do I vibe with most?",
+        "options":  [
+                        "90s/2000s",
+                        "2010s",
+                        "Recent hits",
+                        "A mix"
+                    ]
+    },
+    {
+        "id":  "quiz_093",
+        "category":  "music",
+        "difficulty":  "medium",
+        "question":  "What matters more to me in a song?",
+        "options":  [
+                        "Lyrics",
+                        "Beat",
+                        "Voice",
+                        "Mood"
+                    ]
+    },
+    {
+        "id":  "quiz_094",
+        "category":  "music",
+        "difficulty":  "hard",
+        "question":  "Which musical moment would I love us to share?",
+        "options":  [
+                        "A live concert",
+                        "Dancing in the kitchen",
+                        "Singing in the car",
+                        "A slow dance"
+                    ]
+    },
+    {
+        "id":  "quiz_095",
+        "category":  "music",
+        "difficulty":  "hard",
+        "question":  "What kind of lyrics touch me most?",
+        "options":  [
+                        "Romantic",
+                        "Hopeful",
+                        "Deep",
+                        "Playful"
+                    ]
+    },
+    {
+        "id":  "quiz_096",
+        "category":  "music",
+        "difficulty":  "hard",
+        "question":  "How do I discover new music most often?",
+        "options":  [
+                        "Friends",
+                        "Social media",
+                        "Playlists",
+                        "Radio/random"
+                    ]
+    },
+    {
+        "id":  "quiz_097",
+        "category":  "music",
+        "difficulty":  "hard",
+        "question":  "What song would fit our love story best?",
+        "options":  [
+                        "A sweet slow song",
+                        "An upbeat love song",
+                        "A soulful track",
+                        "A timeless classic"
+                    ]
+    },
+    {
+        "id":  "quiz_098",
+        "category":  "music",
+        "difficulty":  "hard",
+        "question":  "If I could have one musical talent, what would it be?",
+        "options":  [
+                        "Singing",
+                        "Playing piano",
+                        "Playing guitar",
+                        "Dancing"
+                    ]
+    },
+    {
+        "id":  "quiz_099",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "Am I more likely to plan or go with the flow?",
+        "options":  [
+                        "Plan",
+                        "Go with the flow",
+                        "A bit of both",
+                        "Depends"
+                    ]
+    },
+    {
+        "id":  "quiz_100",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "Am I more quiet or talkative?",
+        "options":  [
+                        "Quiet",
+                        "Talkative",
+                        "Depends on people",
+                        "Balanced"
+                    ]
+    },
+    {
+        "id":  "quiz_101",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "What is my usual mood?",
+        "options":  [
+                        "Calm",
+                        "Cheerful",
+                        "Thoughtful",
+                        "Energetic"
+                    ]
+    },
+    {
+        "id":  "quiz_102",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "Do I like surprises?",
+        "options":  [
+                        "Yes",
+                        "No",
+                        "Small ones",
+                        "Only good ones"
+                    ]
+    },
+    {
+        "id":  "quiz_103",
+        "category":  "personality",
+        "difficulty":  "easy",
+        "question":  "Am I more logical or emotional?",
+        "options":  [
+                        "Logical",
+                        "Emotional",
+                        "Balanced",
+                        "Depends"
+                    ]
+    },
+    {
+        "id":  "quiz_104",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "How do I react when I am really happy?",
+        "options":  [
+                        "Smile a lot",
+                        "Talk excitedly",
+                        "Get playful",
+                        "Go quiet and glow"
+                    ]
+    },
+    {
+        "id":  "quiz_105",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "What is my social battery like?",
+        "options":  [
+                        "I recharge alone",
+                        "I recharge with people",
+                        "A mix",
+                        "Depends"
+                    ]
+    },
+    {
+        "id":  "quiz_106",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "How do I handle a tough decision?",
+        "options":  [
+                        "Think carefully",
+                        "Ask for advice",
+                        "Follow my heart",
+                        "Take time"
+                    ]
+    },
+    {
+        "id":  "quiz_107",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "What kind of person am I in a group?",
+        "options":  [
+                        "The listener",
+                        "The joker",
+                        "The planner",
+                        "The hype person"
+                    ]
+    },
+    {
+        "id":  "quiz_108",
+        "category":  "personality",
+        "difficulty":  "medium",
+        "question":  "What do people often appreciate about me?",
+        "options":  [
+                        "My kindness",
+                        "My humor",
+                        "My loyalty",
+                        "My calm"
+                    ]
+    },
+    {
+        "id":  "quiz_109",
+        "category":  "personality",
+        "difficulty":  "hard",
+        "question":  "What is my strongest inner quality?",
+        "options":  [
+                        "Resilience",
+                        "Empathy",
+                        "Patience",
+                        "Courage"
+                    ]
+    },
+    {
+        "id":  "quiz_110",
+        "category":  "personality",
+        "difficulty":  "hard",
+        "question":  "When I am misunderstood, what do I usually do?",
+        "options":  [
+                        "Explain myself",
+                        "Go quiet",
+                        "Feel hurt",
+                        "Try again later"
+                    ]
+    },
+    {
+        "id":  "quiz_111",
+        "category":  "personality",
+        "difficulty":  "hard",
+        "question":  "What motivates me most?",
+        "options":  [
+                        "Love",
+                        "Growth",
+                        "Peace",
+                        "Purpose"
+                    ]
+    },
+    {
+        "id":  "quiz_112",
+        "category":  "personality",
+        "difficulty":  "hard",
+        "question":  "What am I most protective of?",
+        "options":  [
+                        "My heart",
+                        "My people",
+                        "My peace",
+                        "My dreams"
+                    ]
+    },
+    {
+        "id":  "quiz_113",
+        "category":  "personality",
+        "difficulty":  "hard",
+        "question":  "How do I show strength?",
+        "options":  [
+                        "By staying calm",
+                        "By being honest",
+                        "By persevering",
+                        "By caring deeply"
+                    ]
+    },
+    {
+        "id":  "quiz_114",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "What do I usually do before sleeping?",
+        "options":  [
+                        "Scroll my phone",
+                        "Pray/reflect",
+                        "Listen to music",
+                        "Chat with you"
+                    ]
+    },
+    {
+        "id":  "quiz_115",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "How often do I check my phone?",
+        "options":  [
+                        "Very often",
+                        "Sometimes",
+                        "Rarely",
+                        "Too often"
+                    ]
+    },
+    {
+        "id":  "quiz_116",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "What do I do when I am bored?",
+        "options":  [
+                        "Watch videos",
+                        "Listen to music",
+                        "Text you",
+                        "Snack"
+                    ]
+    },
+    {
+        "id":  "quiz_117",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "Do I keep things tidy or a bit messy?",
+        "options":  [
+                        "Tidy",
+                        "A bit messy",
+                        "Depends",
+                        "Organized chaos"
+                    ]
+    },
+    {
+        "id":  "quiz_118",
+        "category":  "habits",
+        "difficulty":  "easy",
+        "question":  "What is my usual morning mood?",
+        "options":  [
+                        "Sleepy",
+                        "Fresh",
+                        "Grumpy",
+                        "Quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_119",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "What habit of yours have I probably picked up?",
+        "options":  [
+                        "A phrase",
+                        "A song",
+                        "A routine",
+                        "A joke"
+                    ]
+    },
+    {
+        "id":  "quiz_120",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "How do I react when I am running late?",
+        "options":  [
+                        "Panic",
+                        "Move fast",
+                        "Stay calm",
+                        "Get annoyed"
+                    ]
+    },
+    {
+        "id":  "quiz_121",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "What do I do when I miss you?",
+        "options":  [
+                        "Text you",
+                        "Look at photos",
+                        "Listen to music",
+                        "Daydream"
+                    ]
+    },
+    {
+        "id":  "quiz_122",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "What is my weekend routine most like?",
+        "options":  [
+                        "Rest",
+                        "Chores",
+                        "Fun plans",
+                        "A mix"
+                    ]
+    },
+    {
+        "id":  "quiz_123",
+        "category":  "habits",
+        "difficulty":  "medium",
+        "question":  "How do I usually celebrate small wins?",
+        "options":  [
+                        "Tell someone",
+                        "Treat myself",
+                        "Smile quietly",
+                        "Dance"
+                    ]
+    },
+    {
+        "id":  "quiz_124",
+        "category":  "habits",
+        "difficulty":  "hard",
+        "question":  "What habit helps me stay grounded?",
+        "options":  [
+                        "Reflection",
+                        "Music",
+                        "Talking to loved ones",
+                        "Rest"
+                    ]
+    },
+    {
+        "id":  "quiz_125",
+        "category":  "habits",
+        "difficulty":  "hard",
+        "question":  "Which habit am I most proud of?",
+        "options":  [
+                        "Being consistent",
+                        "Being caring",
+                        "Being organized",
+                        "Being hopeful"
+                    ]
+    },
+    {
+        "id":  "quiz_126",
+        "category":  "habits",
+        "difficulty":  "hard",
+        "question":  "What do I do when I need to focus?",
+        "options":  [
+                        "Get quiet",
+                        "Make a list",
+                        "Play music",
+                        "Take a break first"
+                    ]
+    },
+    {
+        "id":  "quiz_127",
+        "category":  "habits",
+        "difficulty":  "hard",
+        "question":  "How do I recharge best?",
+        "options":  [
+                        "Alone time",
+                        "Quality time",
+                        "Sleep",
+                        "Something fun"
+                    ]
+    },
+    {
+        "id":  "quiz_128",
+        "category":  "habits",
+        "difficulty":  "hard",
+        "question":  "What small routine means a lot to me?",
+        "options":  [
+                        "Morning check-ins",
+                        "Goodnight messages",
+                        "Shared meals",
+                        "Weekend chats"
+                    ]
+    },
+    {
+        "id":  "quiz_129",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most?",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_130",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest?",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_131",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me?",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_132",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future?",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_133",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most?",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_134",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become?",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_135",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning?",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_136",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily?",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_137",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced?",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_138",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend?",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_139",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like?",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_140",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most?",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_141",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it?",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_142",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited?",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_143",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try?",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_144",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do?",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_145",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you?",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_146",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose?",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_147",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly?",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_148",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable?",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_149",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you?",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_150",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 2)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_151",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 2)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_152",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 2)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_153",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 2)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_154",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 2)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_155",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 2)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_156",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 2)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_157",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 2)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_158",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 2)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_159",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 2)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_160",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 2)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_161",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 3)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_162",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 3)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_163",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 3)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_164",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 3)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_165",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 3)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_166",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 3)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_167",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 3)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_168",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 3)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_169",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 3)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_170",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 3)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_171",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 3)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_172",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 3)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_173",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 3)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_174",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 3)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_175",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 3)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_176",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 3)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_177",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 3)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_178",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 3)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_179",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 3)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_180",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 3)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_181",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 3)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_182",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 4)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_183",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 4)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_184",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 4)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_185",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 4)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_186",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 4)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_187",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 4)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_188",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 4)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_189",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 4)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_190",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 4)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_191",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 4)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_192",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 4)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_193",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 4)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_194",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 4)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_195",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 4)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_196",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 4)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_197",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 4)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_198",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 4)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_199",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 4)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_200",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 4)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_201",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 4)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_202",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 4)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_203",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 5)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_204",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 5)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_205",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 5)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_206",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 5)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_207",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 5)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_208",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 5)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_209",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 5)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_210",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 5)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_211",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 5)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_212",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 5)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_213",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 5)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_214",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 5)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_215",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 5)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_216",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 5)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_217",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 5)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_218",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 5)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_219",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 5)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_220",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 5)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_221",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 5)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_222",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 5)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_223",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 5)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_224",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 6)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_225",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 6)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_226",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 6)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_227",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 6)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_228",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 6)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_229",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 6)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_230",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 6)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_231",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 6)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_232",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 6)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_233",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 6)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_234",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 6)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_235",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 6)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_236",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 6)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_237",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 6)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_238",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 6)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_239",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 6)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_240",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 6)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_241",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 6)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_242",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 6)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_243",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 6)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_244",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 6)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_245",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 7)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_246",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 7)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_247",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 7)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_248",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 7)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_249",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 7)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_250",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 7)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_251",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 7)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_252",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 7)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_253",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 7)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_254",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 7)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_255",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 7)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_256",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 7)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_257",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 7)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_258",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 7)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_259",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 7)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_260",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 7)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_261",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 7)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_262",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 7)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_263",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 7)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_264",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 7)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_265",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 7)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_266",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 8)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_267",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 8)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_268",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 8)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_269",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 8)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_270",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 8)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_271",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 8)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_272",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 8)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_273",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 8)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_274",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 8)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_275",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 8)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_276",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 8)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_277",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 8)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_278",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 8)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_279",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 8)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    },
+    {
+        "id":  "quiz_280",
+        "category":  "future",
+        "difficulty":  "medium",
+        "question":  "Which future milestone excites me most? (version 8)",
+        "options":  [
+                        "Traveling together",
+                        "Building a home",
+                        "Celebrating big wins",
+                        "Growing old together"
+                    ]
+    },
+    {
+        "id":  "quiz_281",
+        "category":  "future",
+        "difficulty":  "hard",
+        "question":  "What kind of couple do I hope we become? (version 8)",
+        "options":  [
+                        "Best friends",
+                        "Adventure partners",
+                        "Peaceful soulmates",
+                        "A strong team"
+                    ]
+    },
+    {
+        "id":  "quiz_282",
+        "category":  "daily-routine",
+        "difficulty":  "easy",
+        "question":  "What do I usually need in the morning? (version 8)",
+        "options":  [
+                        "Quiet time",
+                        "Music",
+                        "Food",
+                        "A message from you"
+                    ]
+    },
+    {
+        "id":  "quiz_283",
+        "category":  "daily-routine",
+        "difficulty":  "medium",
+        "question":  "What throws my day off most easily? (version 8)",
+        "options":  [
+                        "Bad sleep",
+                        "Hunger",
+                        "Stress",
+                        "Unexpected plans"
+                    ]
+    },
+    {
+        "id":  "quiz_284",
+        "category":  "daily-routine",
+        "difficulty":  "hard",
+        "question":  "What routine makes me feel most balanced? (version 8)",
+        "options":  [
+                        "A calm morning",
+                        "A planned day",
+                        "Evening rest",
+                        "Talking to you"
+                    ]
+    },
+    {
+        "id":  "quiz_285",
+        "category":  "likes-dislikes",
+        "difficulty":  "easy",
+        "question":  "Which do I prefer on a weekend? (version 8)",
+        "options":  [
+                        "Going out",
+                        "Staying in",
+                        "A bit of both",
+                        "Depends on mood"
+                    ]
+    },
+    {
+        "id":  "quiz_286",
+        "category":  "likes-dislikes",
+        "difficulty":  "medium",
+        "question":  "What kind of surprise do I like? (version 8)",
+        "options":  [
+                        "Planned surprises",
+                        "Small surprises",
+                        "Big surprises",
+                        "No surprises"
+                    ]
+    },
+    {
+        "id":  "quiz_287",
+        "category":  "likes-dislikes",
+        "difficulty":  "hard",
+        "question":  "What kind of environment drains me most? (version 9)",
+        "options":  [
+                        "Too loud",
+                        "Too chaotic",
+                        "Too negative",
+                        "Too lonely"
+                    ]
+    },
+    {
+        "id":  "quiz_288",
+        "category":  "funny",
+        "difficulty":  "easy",
+        "question":  "What am I most likely to forget where I put it? (version 9)",
+        "options":  [
+                        "My phone",
+                        "My keys",
+                        "My charger",
+                        "My headphones"
+                    ]
+    },
+    {
+        "id":  "quiz_289",
+        "category":  "funny",
+        "difficulty":  "medium",
+        "question":  "What funny thing would I probably do when excited? (version 9)",
+        "options":  [
+                        "Dance randomly",
+                        "Talk too fast",
+                        "Forget what I was saying",
+                        "Laugh too much"
+                    ]
+    },
+    {
+        "id":  "quiz_290",
+        "category":  "funny",
+        "difficulty":  "hard",
+        "question":  "Which silly challenge would I actually try? (version 9)",
+        "options":  [
+                        "A funny dance",
+                        "A weird food combo",
+                        "A dramatic accent",
+                        "A silly dare"
+                    ]
+    },
+    {
+        "id":  "quiz_291",
+        "category":  "hypothetical",
+        "difficulty":  "easy",
+        "question":  "If we won a small prize, what would I want to do? (version 9)",
+        "options":  [
+                        "Celebrate together",
+                        "Save it",
+                        "Buy a treat",
+                        "Plan a date"
+                    ]
+    },
+    {
+        "id":  "quiz_292",
+        "category":  "hypothetical",
+        "difficulty":  "medium",
+        "question":  "If we could teleport now, where would I go with you? (version 9)",
+        "options":  [
+                        "The beach",
+                        "A cozy cabin",
+                        "A big city",
+                        "Somewhere quiet"
+                    ]
+    },
+    {
+        "id":  "quiz_293",
+        "category":  "hypothetical",
+        "difficulty":  "hard",
+        "question":  "If we had to pick a couple superpower, what would I choose? (version 9)",
+        "options":  [
+                        "Teleportation",
+                        "Reading minds",
+                        "Time travel",
+                        "Healing hugs"
+                    ]
+    },
+    {
+        "id":  "quiz_294",
+        "category":  "emotional",
+        "difficulty":  "easy",
+        "question":  "What makes me feel cared for quickly? (version 9)",
+        "options":  [
+                        "A kind message",
+                        "A call",
+                        "A hug",
+                        "Being listened to"
+                    ]
+    },
+    {
+        "id":  "quiz_295",
+        "category":  "emotional",
+        "difficulty":  "medium",
+        "question":  "What do I value most when I am vulnerable? (version 9)",
+        "options":  [
+                        "Patience",
+                        "Honesty",
+                        "Warmth",
+                        "Understanding"
+                    ]
+    },
+    {
+        "id":  "quiz_296",
+        "category":  "emotional",
+        "difficulty":  "hard",
+        "question":  "What helps me feel emotionally close to you? (version 9)",
+        "options":  [
+                        "Deep talks",
+                        "Shared silence",
+                        "Gentle reassurance",
+                        "Being remembered"
+                    ]
+    },
+    {
+        "id":  "quiz_297",
+        "category":  "memories",
+        "difficulty":  "easy",
+        "question":  "What kind of date memory do I treasure most? (version 9)",
+        "options":  [
+                        "A simple walk",
+                        "A fancy dinner",
+                        "A surprise outing",
+                        "A cozy night in"
+                    ]
+    },
+    {
+        "id":  "quiz_298",
+        "category":  "memories",
+        "difficulty":  "medium",
+        "question":  "Which gift from you would I remember longest? (version 9)",
+        "options":  [
+                        "Something handmade",
+                        "A sweet letter",
+                        "A meaningful experience",
+                        "A surprise I didn\u0027t expect"
+                    ]
+    },
+    {
+        "id":  "quiz_299",
+        "category":  "memories",
+        "difficulty":  "hard",
+        "question":  "What makes a memory with you unforgettable to me? (version 9)",
+        "options":  [
+                        "The feeling",
+                        "The laughter",
+                        "The surprise",
+                        "The meaning"
+                    ]
+    },
+    {
+        "id":  "quiz_300",
+        "category":  "future",
+        "difficulty":  "easy",
+        "question":  "What do I want more of in our future? (version 9)",
+        "options":  [
+                        "Adventures",
+                        "Peace",
+                        "Laughter",
+                        "All of these"
+                    ]
+    }
+]

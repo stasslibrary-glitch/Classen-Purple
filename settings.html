@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#54257f">
+  <title>Settings | Classen Purple</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+  <div class="phone-shell">
+    <div class="phone-top">
+      <div class="phone-speaker"></div>
+      <div class="phone-camera"></div>
+    </div>
+
+    <main class="phone-screen">
+      <header class="settings-header">
+        <a href="home.html" class="back-button" aria-label="Back home">‹</a>
+        <div class="settings-header-copy">
+          <h1>Settings</h1>
+          <p>Make our world yours.</p>
+        </div>
+        <a href="settings.html" class="page-settings-btn" aria-label="Settings" title="Settings">⚙</a>
+      </header>
+
+      <div class="phone-content settings-content">
+        <section class="settings-intro">
+          <div class="settings-intro-icon">🎨</div>
+          <div>
+            <h2>Choose our theme</h2>
+            <p>One theme for both of us, with its own visual effect.</p>
+          </div>
+        </section>
+
+        <div class="theme-heading">
+          <h3>Choose your style</h3>
+          <span>8 THEMES</span>
+        </div>
+
+        <section class="theme-grid" id="themeGrid">
+          <!-- Theme cards are created automatically by settings.js -->
+        </section>
+
+        <div class="theme-status" id="themeStatus">
+          Choose a theme for our world 💜
+        </div>
+
+        <div class="theme-sync-note">
+          <span>🔄</span>
+          <div>
+            <strong>Shared theme</strong>
+            <small>One choice updates both phones.</small>
+          </div>
+        </div>
+
+        <section class="settings-account">
+          <span>💜</span>
+          <div>
+            <strong>Classen Purple</strong>
+            <small>Made for Baby &amp; Hubby</small>
+          </div>
+        </section>
+      </div>
+
+      <nav class="settings-navigation">
+        <a href="home.html" class="bottom-link">
+          <span>⌂</span><small>Home</small>
+        </a>
+        <a href="chat.html" class="bottom-link">
+          <span>♡</span><small>Chat</small>
+        </a>
+        <a href="calendar.html" class="bottom-link">
+          <span>▦</span><small>Dates</small>
+        </a>
+        <a href="games.html" class="bottom-link">
+          <span>♧</span><small>Games</small>
+        </a>
+        <a href="settings.html" class="bottom-link active">
+          <span>⚙</span><small>Settings</small>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <script type="module" src="js/settings.js"></script>
+</body>
+</html>

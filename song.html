@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#241039">
+  <title>Our Song | Classen Purple</title>
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="stylesheet" href="css/song.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="phone-shell">
+    <div class="phone-top">
+      <span></span>
+      <div class="phone-camera"></div>
+    </div>
+
+    <main class="phone-screen">
+      <div class="song-page">
+
+        <header class="song-header">
+          <a href="home.html" class="back-button" aria-label="Back home">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <div>
+            <span class="eyebrow">BABY ❤️ + HUBBY 💜</span>
+            <h1>Our Song</h1>
+          </div>
+          <div class="header-heart"><i class="fa-solid fa-heart"></i></div>
+        </header>
+
+        <!-- PHOTO SLIDESHOW -->
+        <section class="slideshow-section">
+          <div class="slideshow" id="songSlideshow">
+            <img id="slideImage" src="slideshow/photo2.jpg" alt="Our memories">
+            <div class="slide-overlay"></div>
+
+            <button class="slide-arrow previous" id="previousSlide" aria-label="Previous photo">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slide-arrow next" id="nextSlide" aria-label="Next photo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="slide-caption">
+              <span>OUR LITTLE WORLD</span>
+              <h2>Every song tells<br>our story. ❤️</h2>
+            </div>
+
+            <div class="slide-dots" id="slideDots"></div>
+          </div>
+        </section>
+
+        <!-- DAILY SONG -->
+        <section class="daily-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">A LITTLE MUSIC FOR US</span>
+              <h2>Song of the Day</h2>
+            </div>
+            <div class="daily-date" id="dailyDate">TODAY</div>
+          </div>
+
+          <div class="daily-card" id="dailySongCard">
+            <div class="daily-art" id="dailyArtwork">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="daily-info">
+              <span class="daily-label"><i class="fa-solid fa-heart"></i> TODAY'S SPECIAL</span>
+              <h3 id="dailyTitle">Our next song is waiting</h3>
+              <p id="dailyArtist">Add songs to our library</p>
+              <p class="daily-dedication" id="dailyDedication">
+                Every day deserves its own soundtrack. 💜
+              </p>
+            </div>
+            <button class="daily-play" id="dailyPlayButton" aria-label="Play daily song" disabled>
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- PLAYER -->
+        <section class="player-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">LISTEN TOGETHER</span>
+              <h2>Now Playing</h2>
+            </div>
+            <span class="live-label"><span></span> SHARED</span>
+          </div>
+
+          <div class="player-card">
+            <div class="player-song">
+              <div class="player-art" id="playerArtwork">
+                <i class="fa-solid fa-headphones"></i>
+              </div>
+              <div class="player-details">
+                <h3 id="playerTitle">Nothing playing</h3>
+                <p id="playerArtist">Choose a song from our library</p>
+              </div>
+              <i class="fa-solid fa-heart player-heart"></i>
+            </div>
+
+            <audio id="audioPlayer" preload="metadata"></audio>
+
+            <div class="progress-area">
+              <input type="range" id="songProgress" min="0" max="100" value="0">
+              <div class="time-row">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+
+            <div class="player-controls">
+              <button id="previousSong" aria-label="Previous song">
+                <i class="fa-solid fa-backward-step"></i>
+              </button>
+              <button class="main-play" id="mainPlayButton" aria-label="Play">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button id="nextSong" aria-label="Next song">
+                <i class="fa-solid fa-forward-step"></i>
+              </button>
+            </div>
+            <p class="player-note">A little music, a lot of love. ❤️</p>
+          </div>
+        </section>
+
+        <!-- ADD SONG -->
+        <section class="library-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">OUR COLLECTION</span>
+              <h2>Our Playlist</h2>
+            </div>
+            <button class="add-song-button" id="showAddSong">
+              <i class="fa-solid fa-plus"></i> Add song
+            </button>
+          </div>
+
+          <div class="add-song-panel hidden" id="addSongPanel">
+            <h3>Add a song to our world</h3>
+            <form id="addSongForm">
+              <label for="songName">Song title</label>
+              <input id="songName" type="text" placeholder="e.g. Perfect" required>
+
+              <label for="songArtist">Artist</label>
+              <input id="songArtist" type="text" placeholder="Artist name" required>
+
+              <label for="songAudio">Audio URL</label>
+              <input id="songAudio" type="url" placeholder="https://...mp3" required>
+
+              <label for="songCover">Cover image URL (optional)</label>
+              <input id="songCover" type="url" placeholder="https://...">
+
+              <label for="songMessage">Dedication (optional)</label>
+              <textarea id="songMessage" rows="2" placeholder="A little message for your person..."></textarea>
+
+              <div class="form-actions">
+                <button type="button" class="cancel-button" id="cancelAddSong">Cancel</button>
+                <button type="submit" class="save-button" id="saveSongButton">
+                  <i class="fa-solid fa-heart"></i> Save song
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="playlist-list" id="playlistList">
+            <div class="empty-library">
+              <i class="fa-solid fa-music"></i>
+              <h3>Our playlist starts here</h3>
+              <p>Add your first song and let it become part of our story.</p>
+              <button id="emptyAddSong">Add our first song</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- RECENTLY PLAYED -->
+        <section class="recent-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">MEMORIES IN MUSIC</span>
+              <h2>Recently Played</h2>
+            </div>
+          </div>
+          <div id="recentList" class="recent-list">
+            <p class="empty-recent">Our listening memories will appear here. 💜</p>
+          </div>
+        </section>
+
+        <footer class="song-footer">
+          Made with love, for Baby and Hubby. ❤️💜
+        </footer>
+      </div>
+
+      <!-- SHARED BOTTOM NAVIGATION -->
+      <nav class="app-bottom-nav">
+        <a href="home.html" class="nav-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="chat.html" class="nav-link"><i class="fa-solid fa-comments"></i><span>Chat</span></a>
+        <a href="calendar.html" class="nav-link"><i class="fa-solid fa-calendar"></i><span>Calendar</span></a>
+        <a href="todo.html" class="nav-link"><i class="fa-solid fa-list-check"></i><span>To-Do</span></a>
+        <a href="games.html" class="nav-link"><i class="fa-solid fa-gamepad"></i><span>Games</span></a>
+        <a href="gallery.html" class="nav-link"><i class="fa-solid fa-images"></i><span>Gallery</span></a>
+      </nav>
+    </main>
+  </div>
+
+  <script type="module" src="js/auth-guard.js"></script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/song.js"></script>
+</body>
+</html>
