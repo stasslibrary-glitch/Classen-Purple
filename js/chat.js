@@ -87,8 +87,8 @@ function playMessageSound() {
 
 const VOICE_UPLOAD = {
   provider: "cloudinary",
-  cloudName: "YOUR_CLOUDINARY_CLOUD_NAME",
-  uploadPreset: "YOUR_UNSIGNED_UPLOAD_PRESET",
+  cloudName: "acr8nu5e",
+  uploadPreset: "classenP",
   folder: "classen-purple/voice-notes",
   customUploadUrl: ""
 };
