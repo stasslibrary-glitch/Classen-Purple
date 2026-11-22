@@ -1,6 +1,6 @@
-﻿
+
 /* =========================================
-   CLASSEN PURPLE â€” ALL GAMES ENGINE
+   CLASSEN PURPLE — ALL GAMES ENGINE
    Games: Truth or Dare, Wheel, Quiz,
    Would You Rather, Memory, More Likely,
    Guess the Song
@@ -577,7 +577,7 @@ function renderWheel() {
 
   commonLayout(`
     <section class="game-panel game-center">
-      <span class="game-player-pill" id="wheelPlayer">Baby â¤ï¸'s turn</span>
+      <span class="game-player-pill" id="wheelPlayer">Baby ❤️'s turn</span>
 
       <div class="wheel-wrap">
         <i class="fa-solid fa-caret-down wheel-pointer"></i>
@@ -663,16 +663,16 @@ function renderQuiz() {
       <div class="game-score-row">
         <div class="game-score">
           <strong id="quizBabyScore">0</strong>
-          <span>Baby â¤ï¸</span>
+          <span>Baby ❤️</span>
         </div>
         <div class="game-score">
           <strong id="quizHubbyScore">0</strong>
-          <span>Hubby ðŸ’œ</span>
+          <span>Hubby 💜</span>
         </div>
       </div>
 
       <div class="game-center">
-        <span class="game-player-pill" id="quizPlayer">Baby â¤ï¸ answers first</span>
+        <span class="game-player-pill" id="quizPlayer">Baby ❤️ answers first</span>
         <p class="game-panel-label" style="margin-top:15px" id="quizProgress">QUESTION 1</p>
         <h2 class="game-question" id="quizQuestion"></h2>
       </div>
@@ -731,7 +731,7 @@ function quizAction(event) {
       state.player = 1;
 
       document.getElementById("quizPlayer").textContent =
-        "Hubby's turn ðŸ’œ";
+        "Hubby's turn 💜";
 
       document.getElementById("quizOptions").innerHTML = `
         <div class="game-status">Baby has answered. Pass the phone to Hubby!</div>
@@ -766,7 +766,7 @@ function quizAction(event) {
       state.scores[0]++;
       state.scores[1]++;
       document.getElementById("quizStatus").textContent =
-        "ðŸ’œ MATCH! You both predicted the same answer.";
+        "💜 MATCH! You both predicted the same answer.";
     } else {
       document.getElementById("quizStatus").textContent =
         "Different answers! That's what makes you interesting.";
@@ -792,7 +792,7 @@ function quizAction(event) {
       const message = `Quiz finished. ${state.scores[0]} matching answers.`;
       saveHistory(message);
 
-      document.getElementById("quizQuestion").textContent = "Quiz complete! ðŸ’œ";
+      document.getElementById("quizQuestion").textContent = "Quiz complete! 💜";
       document.getElementById("quizProgress").textContent = "FINAL SCORE";
       document.getElementById("quizOptions").innerHTML = `
         <div class="game-status">
@@ -842,7 +842,7 @@ function renderWouldYouRather() {
       </div>
 
       <div class="game-center">
-        <span class="game-player-pill" id="wyrPlayer">Baby â¤ï¸ chooses first</span>
+        <span class="game-player-pill" id="wyrPlayer">Baby ❤️ chooses first</span>
         <p class="game-panel-label" style="margin-top:15px">WOULD YOU RATHER...</p>
       </div>
 
@@ -874,10 +874,10 @@ function showWyrQuestion() {
 
   document.getElementById("wyrOptions").innerHTML = `
     <button class="game-choice" data-action="wyr-answer" data-value="0">
-      A Â· ${q.optionA}
+      A · ${q.optionA}
     </button>
     <button class="game-choice" data-action="wyr-answer" data-value="1">
-      B Â· ${q.optionB}
+      B · ${q.optionB}
     </button>
   `;
 }
@@ -896,7 +896,7 @@ function wyrAction(event) {
       state.answers[0] = answer;
       state.player = 1;
 
-      document.getElementById("wyrPlayer").textContent = "Hubby's turn ðŸ’œ";
+      document.getElementById("wyrPlayer").textContent = "Hubby's turn 💜";
       document.getElementById("wyrStatus").textContent =
         "Baby has chosen. Pass the phone to Hubby.";
 
@@ -914,10 +914,10 @@ function wyrAction(event) {
   if (button.dataset.action === "wyr-ready") {
     document.getElementById("wyrOptions").innerHTML = `
       <button class="game-choice" data-action="wyr-second" data-value="0">
-        A Â· ${q.optionA}
+        A · ${q.optionA}
       </button>
       <button class="game-choice" data-action="wyr-second" data-value="1">
-        B Â· ${q.optionB}
+        B · ${q.optionB}
       </button>
     `;
 
@@ -932,7 +932,7 @@ function wyrAction(event) {
     if (state.answers[0] === state.answers[1]) {
       state.matches++;
       document.getElementById("wyrStatus").textContent =
-        "ðŸ’œ MATCH! You both picked the same option.";
+        "💜 MATCH! You both picked the same option.";
     } else {
       document.getElementById("wyrStatus").textContent =
         "Different choices! Tell each other why.";
@@ -957,7 +957,7 @@ function wyrAction(event) {
       saveHistory(`Would You Rather finished with ${state.matches} matching choices.`);
 
       document.getElementById("wyrStatus").textContent =
-        `Game complete! You matched ${state.matches} times. ðŸ’œ`;
+        `Game complete! You matched ${state.matches} times. 💜`;
 
       document.getElementById("wyrOptions").innerHTML = `
         <button class="game-btn full" data-action="wyr-restart">Play again</button>
@@ -982,7 +982,7 @@ function wyrAction(event) {
 
 function pickMemorySet() {
   const pool = pickByDifficulty(memorySets, selectedDifficulty);
-  return pool[Math.floor(Math.random() * pool.length)] || { pairs: ["â¤ï¸","ðŸŒ¹","ðŸ’œ","ðŸŽµ","â­","ðŸ»"] };
+  return pool[Math.floor(Math.random() * pool.length)] || { pairs: ["❤️","🌹","💜","🎵","⭐","🐻"] };
 }
 
 function renderMemory() {
@@ -1008,16 +1008,16 @@ function renderMemory() {
       <div class="game-score-row">
         <div class="game-score">
           <strong id="memoryBaby">0</strong>
-          <span>Baby â¤ï¸ pairs</span>
+          <span>Baby ❤️ pairs</span>
         </div>
         <div class="game-score">
           <strong id="memoryHubby">0</strong>
-          <span>Hubby ðŸ’œ pairs</span>
+          <span>Hubby 💜 pairs</span>
         </div>
       </div>
 
       <div class="game-center">
-        <span class="game-player-pill" id="memoryPlayer">Baby â¤ï¸'s turn</span>
+        <span class="game-player-pill" id="memoryPlayer">Baby ❤️'s turn</span>
         <p class="game-muted" id="memoryMoves">Moves: 0</p>
       </div>
 
@@ -1158,15 +1158,15 @@ function renderMoreLikely() {
 
       <div class="game-choice-list">
         <button class="game-choice" data-action="likely-vote" data-value="0">
-          â¤ï¸ Baby
+          ❤️ Baby
         </button>
 
         <button class="game-choice" data-action="likely-vote" data-value="1">
-          ðŸ’œ Hubby
+          💜 Hubby
         </button>
 
         <button class="game-choice" data-action="likely-vote" data-value="2">
-          ðŸ˜‚ Both of us
+          😂 Both of us
         </button>
       </div>
 
@@ -1187,7 +1187,7 @@ function renderMoreLikely() {
 function showLikelyQuestion() {
   if (state.index >= state.questions.length) {
     document.getElementById("likelyQuestion").textContent =
-      "You've reached the end! ðŸ’œ";
+      "You've reached the end! 💜";
 
     document.getElementById("likelyProgress").textContent = "GAME COMPLETE";
     document.getElementById("likelyStatus").textContent =
@@ -1216,9 +1216,9 @@ function likelyAction(event) {
     const choice = Number(button.dataset.value);
 
     const result = [
-      "Baby â¤ï¸",
-      "Hubby ðŸ’œ",
-      "Both of you ðŸ˜‚"
+      "Baby ❤️",
+      "Hubby 💜",
+      "Both of you 😂"
     ][choice];
 
     document.getElementById("likelyStatus").textContent =
@@ -1251,16 +1251,16 @@ function renderGuessSong() {
       <div class="game-score-row">
         <div class="game-score">
           <strong id="songBabyScore">0</strong>
-          <span>Baby â¤ï¸</span>
+          <span>Baby ❤️</span>
         </div>
         <div class="game-score">
           <strong id="songHubbyScore">0</strong>
-          <span>Hubby ðŸ’œ</span>
+          <span>Hubby 💜</span>
         </div>
       </div>
 
       <div class="game-center">
-        <span class="game-player-pill" id="songPlayer">Baby â¤ï¸'s turn</span>
+        <span class="game-player-pill" id="songPlayer">Baby ❤️'s turn</span>
         <div class="game-big-icon">
           <i class="fa-solid fa-music"></i>
         </div>
@@ -1286,7 +1286,7 @@ function renderGuessSong() {
 
 function showSongQuestion() {
   if (state.index >= state.questions.length) {
-    document.getElementById("songClue").textContent = "Game complete! ðŸŽµ";
+    document.getElementById("songClue").textContent = "Game complete! 🎵";
     document.getElementById("songProgress").textContent = "FINAL SCORE";
     document.getElementById("songOptions").innerHTML = `
       <div class="game-status">
@@ -1298,7 +1298,7 @@ function showSongQuestion() {
 
     document.getElementById("songStatus").textContent =
       state.scores[0] === state.scores[1]
-        ? "It's a tie! ðŸ’œ"
+        ? "It's a tie! 💜"
         : `${PLAYERS[state.scores[0] > state.scores[1] ? 0 : 1]} wins!`;
 
     saveHistory(`Guess the Song: Baby ${state.scores[0]} - Hubby ${state.scores[1]}.`);
@@ -1353,7 +1353,7 @@ function songAction(event) {
     if (correct) {
       state.scores[state.player]++;
       document.getElementById("songStatus").textContent =
-        `Correct! ðŸŽ‰ The song is "${state.correctTitle}".`;
+        `Correct! 🎉 The song is "${state.correctTitle}".`;
     } else {
       document.getElementById("songStatus").textContent =
         `Not quite! The answer is "${state.correctTitle}".`;
@@ -1364,7 +1364,7 @@ function songAction(event) {
 
     document.getElementById("songOptions").innerHTML = `
       <div class="game-status">
-        ${song.songTitle} â€” ${song.artist}
+        ${song.songTitle} — ${song.artist}
       </div>
     `;
 
@@ -1496,7 +1496,7 @@ async function init() {
 }
 
 init();
-console.log("Classen Purple Games Engine ready ðŸŽ®ðŸ’œ");
+console.log("Classen Purple Games Engine ready 🎮💜");
 
 
 

@@ -142,17 +142,33 @@
                accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt" multiple hidden>
         <input type="file" id="fileInput" multiple hidden>
 
-        <!-- VOICE RECORDING PREVIEW -->
-        <div class="recording-preview hidden" id="recordingPreview">
-          <span class="recording-indicator"></span>
-          <span id="recordingTimer">00:00</span>
-          <span class="recording-label">Recording voice note...</span>
-          <button id="cancelRecordingBtn" aria-label="Cancel recording">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-          <button id="stopRecordingBtn" aria-label="Stop recording">
-            <i class="fa-solid fa-stop"></i>
-          </button>
+        <!-- VOICE RECORDING / PREVIEW / SENDING -->
+        <div class="voice-panel hidden" id="voicePanel" aria-live="polite">
+          <div class="voice-panel-main" id="voicePanelMain">
+            <span class="recording-indicator hidden" id="voiceRecordingDot"></span>
+            <button class="voice-panel-icon hidden" id="voicePreviewPlayBtn" type="button" aria-label="Play preview">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <span class="voice-panel-timer" id="recordingTimer">00:00</span>
+            <div class="voice-panel-body">
+              <span class="voice-panel-label" id="voicePanelLabel">Recording voice note...</span>
+              <div class="voice-preview-track hidden" id="voicePreviewTrack">
+                <div class="voice-preview-progress" id="voicePreviewProgress"></div>
+              </div>
+              <audio id="voicePreviewAudio" preload="metadata"></audio>
+            </div>
+          </div>
+          <div class="voice-panel-actions">
+            <button id="cancelRecordingBtn" type="button" aria-label="Cancel voice note" title="Cancel">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <button id="stopRecordingBtn" type="button" aria-label="Stop recording" title="Stop">
+              <i class="fa-solid fa-stop"></i>
+            </button>
+            <button id="sendVoiceBtn" class="voice-send-btn hidden" type="button" aria-label="Send voice note" title="Send">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
         </div>
 
         <!-- MESSAGE COMPOSER -->
