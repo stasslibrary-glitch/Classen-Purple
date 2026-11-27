@@ -1,0 +1,435 @@
+﻿/* =========================================
+   CLASSEN PURPLE — ANIMATIONS
+   Smooth, cute, performance-conscious motion.
+   Respects prefers-reduced-motion.
+========================================= */
+
+/* ---- Page / content entrance ---- */
+@keyframes cpFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes cpSlideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes cpSlideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes cpScaleIn {
+  from { opacity: 0; transform: scale(.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes cpPopIn {
+  0% { opacity: 0; transform: scale(.85); }
+  70% { transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Apply entrance to main content areas */
+.phone-screen > .home-content,
+.phone-screen > .games-page,
+.phone-screen > .calendar-page,
+.phone-screen > .todo-page,
+.phone-screen > .settings-content,
+.phone-screen > .game-page,
+.phone-screen > .song-page,
+.phone-screen > .login-page,
+.phone-screen > .gallery-app,
+.phone-screen > .chat-page,
+.phone-screen > #gameApp {
+  animation: cpSlideUp .45s cubic-bezier(.22,.9,.3,1) both;
+}
+
+/* Stagger children where useful */
+.home-grid > *:nth-child(1) { animation: cpSlideUp .4s .05s cubic-bezier(.22,.9,.3,1) both; }
+.home-grid > *:nth-child(2) { animation: cpSlideUp .4s .09s cubic-bezier(.22,.9,.3,1) both; }
+.home-grid > *:nth-child(3) { animation: cpSlideUp .4s .13s cubic-bezier(.22,.9,.3,1) both; }
+.home-grid > *:nth-child(4) { animation: cpSlideUp .4s .17s cubic-bezier(.22,.9,.3,1) both; }
+.home-grid > *:nth-child(5) { animation: cpSlideUp .4s .21s cubic-bezier(.22,.9,.3,1) both; }
+.home-grid > *:nth-child(6) { animation: cpSlideUp .4s .25s cubic-bezier(.22,.9,.3,1) both; }
+
+/* ---- Buttons ---- */
+.btn, .game-btn, .send-btn, .save-event-btn, .add-task-btn,
+.featured-button, .login-button, .upload-button, .add-song-button,
+.save-button, .cancel-button, .daily-play, .main-play,
+.cp-confirm-btn, .cp-prompt-btn {
+  transition: transform .18s ease, box-shadow .25s ease, filter .2s ease, background .25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover, .game-btn:hover:not(:disabled), .send-btn:hover,
+.save-event-btn:hover, .add-task-btn:hover, .featured-button:hover,
+.login-button:hover, .upload-button:hover, .add-song-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover, 0 10px 28px rgba(0,0,0,.12));
+  filter: brightness(1.03);
+}
+.btn:active, .game-btn:active:not(:disabled), .send-btn:active,
+.save-event-btn:active, .add-task-btn:active, .featured-button:active,
+.login-button:active, .daily-play:active, .main-play:active,
+.cp-confirm-btn:active, .cp-prompt-btn:active {
+  transform: scale(.97);
+}
+
+/* Ripple */
+.cp-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  transform: scale(0);
+  animation: cpRipple .55s ease-out;
+  pointer-events: none;
+}
+@keyframes cpRipple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+/* ---- Cards ---- */
+.home-card, .game-panel, .calendar-card, .todo-progress-card,
+.settings-intro, .game-card, .daily-card, .player-card,
+.gallery-upload-card, .theme-option, .add-song-panel,
+.love-counter, .upcoming-section, .selected-date-section,
+.event-card, .todo-item, .playlist-item, .recent-item,
+.featured-game, .message-bubble {
+  transition: transform .25s ease, box-shadow .3s ease, border-color .25s ease, background .3s ease;
+}
+.home-card:hover, .game-card:hover, .event-card:hover,
+.playlist-item:hover, .recent-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover, 0 12px 32px rgba(0,0,0,.12));
+}
+
+/* ---- Inputs ---- */
+input, textarea, select, .input, .caption-input {
+  transition: border-color .2s ease, box-shadow .25s ease, background .25s ease;
+}
+
+/* ---- Modals ---- */
+.cp-confirm-overlay, .cp-prompt-overlay, .gallery-viewer {
+  transition: opacity .25s ease;
+}
+.cp-confirm-overlay.show .cp-confirm-dialog,
+.cp-prompt-overlay.show .cp-prompt-dialog {
+  animation: cpPopIn .28s cubic-bezier(.22,.9,.3,1) both;
+}
+
+/* ---- Heartbeat ---- */
+@keyframes cpHeartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.12); }
+  56% { transform: scale(1); }
+}
+.counter-heart, .header-heart, .player-heart, .brand-icon,
+.home-header .header-decoration {
+  display: inline-block;
+  animation: cpHeartbeat 2.4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* ---- Pulse / online ---- */
+@keyframes cpPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--primary-rgb,139,111,176),.45); }
+  70% { box-shadow: 0 0 0 8px rgba(var(--primary-rgb,139,111,176),0); }
+}
+.live-label span, .online-dot, .status-online {
+  animation: cpPulse 2s ease-in-out infinite;
+}
+
+/* ---- Badge bounce ---- */
+@keyframes cpBadgePop {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.home-chat-badge:not(.hidden), .notification-badge {
+  animation: cpBadgePop .35s cubic-bezier(.22,.9,.3,1);
+}
+
+/* ---- Typing dots ---- */
+@keyframes cpTypingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: .45; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+.typing-indicator span, .typing-dots span {
+  display: inline-block;
+  animation: cpTypingBounce 1.2s ease-in-out infinite;
+}
+.typing-indicator span:nth-child(2), .typing-dots span:nth-child(2) { animation-delay: .15s; }
+.typing-indicator span:nth-child(3), .typing-dots span:nth-child(3) { animation-delay: .3s; }
+
+/* ---- Spin / music disc ---- */
+@keyframes cpSpin {
+  to { transform: rotate(360deg); }
+}
+.spinning, .music-playing .player-art, .music-playing .daily-art {
+  animation: cpSpin 8s linear infinite;
+}
+
+/* ---- Floating gentle ---- */
+@keyframes cpFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.login-illustration .couple-icon, .empty-library > i,
+.gallery-header .header-heart {
+  animation: cpFloat 3.5s ease-in-out infinite;
+}
+
+/* ---- Confetti ---- */
+.cp-confetti-piece {
+  position: fixed;
+  top: -12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  z-index: 10001;
+  pointer-events: none;
+  animation: cpConfettiFall linear forwards;
+}
+@keyframes cpConfettiFall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+/* ---- Success check ---- */
+@keyframes cpCheckPop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.2) rotate(5deg); }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.cp-success-check { animation: cpCheckPop .45s cubic-bezier(.22,.9,.3,1) both; }
+
+/* ---- Nav active ---- */
+.bottom-link.active span, .nav-link.active i, .nav-link.active span {
+  transition: transform .25s ease;
+}
+.bottom-link.active span { transform: translateY(-2px); }
+
+/* ---- Scrollbar theming ---- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track, transparent); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb, rgba(139,111,176,.35)); border-radius: 6px; }
+
+/* ---- Theme transition overlay ---- */
+.cp-theme-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0;
+  background: var(--primary, #8B6FB0);
+  transition: opacity .28s ease;
+}
+.cp-theme-transition.active { opacity: .12; }
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .cp-ripple, .cp-confetti-piece, .cp-decor-layer { display: none !important; }
+}
+/* ---- Decoration layer ---- */
+.cp-decor-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  contain: layout style paint;
+}
+.cp-decor {
+  position: absolute;
+  bottom: -24px;
+  color: var(--fx-color-1, rgba(232,180,216,.6));
+  will-change: transform, opacity;
+  animation: cpDecorFloat linear forwards;
+  text-shadow: 0 0 8px rgba(255,255,255,.25);
+}
+.cp-decor-sparkle, .cp-decor-star { color: var(--fx-color-2, rgba(255,215,150,.7)); }
+.cp-decor-butterfly { filter: drop-shadow(0 2px 4px rgba(0,0,0,.08)); }
+.cp-decor-bubble { color: var(--fx-color-3, rgba(200,230,255,.6)); text-shadow: 0 0 10px rgba(255,255,255,.4); }
+.cp-decor-cloud { color: rgba(255,255,255,.5); font-size: 1.4em !important; }
+.cp-decor-petal { color: var(--fx-color-1, rgba(255,183,197,.7)); }
+.cp-decor-leaf { color: var(--fx-color-1, rgba(140,180,140,.65)); }
+
+@keyframes cpDecorFloat {
+  0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+  10% { opacity: var(--decor-opacity, .45); }
+  90% { opacity: var(--decor-opacity, .45); }
+  100% { transform: translateY(-110vh) translateX(var(--drift, 20px)) rotate(360deg); opacity: 0; }
+}
+
+/* ---- Glassmorphism utility ---- */
+.cp-glass {
+  background: var(--glass-bg, rgba(255,255,255,.55)) !important;
+  border: 1px solid var(--glass-border, rgba(255,255,255,.65)) !important;
+  backdrop-filter: blur(var(--glass-blur, 18px)) saturate(140%);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 18px)) saturate(140%);
+}
+
+/* ---- Theme-aware component overrides ---- */
+:root[data-theme] body {
+  background: var(--background);
+  color: var(--text);
+}
+:root[data-theme] .phone-screen {
+  background: var(--bg-gradient, var(--background)) !important;
+  color: var(--text);
+}
+:root[data-theme] .home-header,
+:root[data-theme] .settings-header,
+:root[data-theme] .chat-header,
+:root[data-theme] .calendar-header,
+:root[data-theme] .games-header,
+:root[data-theme] .todo-header,
+:root[data-theme] .song-header,
+:root[data-theme] .game-header,
+:root[data-theme] .gallery-header,
+:root[data-theme] .app-header,
+:root[data-theme] .login-header {
+  background: var(--header-bg) !important;
+  color: var(--header-text) !important;
+}
+:root[data-theme] .home-header h1,
+:root[data-theme] .settings-header h1,
+:root[data-theme] .games-header h1,
+:root[data-theme] .calendar-header h1,
+:root[data-theme] .todo-header h1,
+:root[data-theme] .song-header h1,
+:root[data-theme] .gallery-header h1,
+:root[data-theme] .chat-user-info h2 {
+  color: var(--header-text) !important;
+}
+
+:root[data-theme] .home-navigation,
+:root[data-theme] .settings-navigation,
+:root[data-theme] .app-bottom-nav,
+:root[data-theme] .gallery-bottom-nav {
+  background: var(--nav-bg) !important;
+  border-top-color: var(--border) !important;
+  backdrop-filter: blur(var(--glass-blur, 16px));
+  -webkit-backdrop-filter: blur(var(--glass-blur, 16px));
+}
+:root[data-theme] .bottom-link.active,
+:root[data-theme] .nav-link.active {
+  color: var(--nav-active) !important;
+}
+
+:root[data-theme] .home-card,
+:root[data-theme] .game-panel,
+:root[data-theme] .calendar-card,
+:root[data-theme] .todo-progress-card,
+:root[data-theme] .settings-intro,
+:root[data-theme] .game-card,
+:root[data-theme] .daily-card,
+:root[data-theme] .player-card,
+:root[data-theme] .gallery-upload-card,
+:root[data-theme] .theme-option,
+:root[data-theme] .add-song-panel,
+:root[data-theme] .love-counter,
+:root[data-theme] .event-card,
+:root[data-theme] .todo-item,
+:root[data-theme] .playlist-item,
+:root[data-theme] .recent-item,
+:root[data-theme] .featured-game,
+:root[data-theme] .card,
+:root[data-theme] .modal-card,
+:root[data-theme] .login-card {
+  background: var(--card-bg, var(--surface)) !important;
+  border-color: var(--border) !important;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(var(--glass-blur, 14px));
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px));
+}
+
+:root[data-theme] .btn,
+:root[data-theme] .game-btn,
+:root[data-theme] .send-btn,
+:root[data-theme] .save-event-btn,
+:root[data-theme] .add-task-btn,
+:root[data-theme] .featured-button,
+:root[data-theme] .login-button,
+:root[data-theme] .upload-button,
+:root[data-theme] .add-song-button,
+:root[data-theme] .save-button {
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border-color: transparent;
+}
+:root[data-theme] .btn:hover,
+:root[data-theme] .game-btn:hover:not(:disabled),
+:root[data-theme] .send-btn:hover,
+:root[data-theme] .save-event-btn:hover {
+  box-shadow: var(--shadow-hover), var(--glow);
+}
+
+:root[data-theme] input,
+:root[data-theme] textarea,
+:root[data-theme] select,
+:root[data-theme] .input,
+:root[data-theme] .caption-input,
+:root[data-theme] .message-input,
+:root[data-theme] .chat-input {
+  background: var(--input-bg) !important;
+  color: var(--text) !important;
+  border-color: var(--input-border) !important;
+}
+:root[data-theme] input:focus,
+:root[data-theme] textarea:focus,
+:root[data-theme] select:focus,
+:root[data-theme] .input:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), .15) !important;
+}
+
+:root[data-theme] .message-bubble.mine,
+:root[data-theme] .msg-mine .message-bubble {
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+}
+:root[data-theme] .message-bubble.theirs,
+:root[data-theme] .msg-theirs .message-bubble {
+  background: var(--surface-soft) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border);
+}
+
+:root[data-theme] .cp-confirm-dialog,
+:root[data-theme] .cp-prompt-dialog {
+  background: var(--surface-solid, var(--surface)) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+:root[data-theme] .cp-confirm-btn.confirm,
+:root[data-theme] .cp-prompt-btn.confirm {
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+}
+
+:root[data-theme] ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); }
+:root[data-theme] ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+
+/* Header text children */
+:root[data-theme] .home-header p,
+:root[data-theme] .home-header span,
+:root[data-theme] .home-header a,
+:root[data-theme] .settings-header p,
+:root[data-theme] .settings-header a,
+:root[data-theme] .chat-header span,
+:root[data-theme] .chat-header a,
+:root[data-theme] .chat-header button,
+:root[data-theme] .chat-header i { color: var(--header-text); }
+
+/* Badge / accent */
+:root[data-theme] .home-chat-badge,
+:root[data-theme] .notification-badge,
+:root[data-theme] .badge { background: var(--accent) !important; color: var(--primary-dark) !important; }

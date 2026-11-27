@@ -1,4 +1,4 @@
-﻿import { auth, db } from "./firebase.js";
+import { auth, db } from "./firebase.js";
 
 import {
     signInWithEmailAndPassword,
@@ -49,7 +49,7 @@ export async function ensureUserProfile(user) {
     const existing = await getDoc(userRef);
     if (!existing.exists()) {
         payload.createdAt = serverTimestamp();
-        payload.theme = "royal-purple";
+        payload.theme = "lavender-dream";
     }
 
     await setDoc(userRef, payload, { merge: true });

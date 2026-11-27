@@ -1,295 +1,207 @@
-import { db } from "./firebase.js";
-
+﻿import { db } from "./firebase.js";
 import {
-  doc,
-  onSnapshot,
-  setDoc,
-  serverTimestamp
+  doc, onSnapshot, setDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 const THEME_KEY = "classenPurpleTheme";
+const DEFAULT_THEME = "lavender-dream";
 const themeRef = doc(db, "appSettings", "globalTheme");
 
 export const THEMES = {
-  "pure-gold": {
-    name: "Real Gold",
-    description: "Liquid gold foil · luminous shimmer",
-    effect: "gold-shimmer",
-    start: "#6B4A0E",
-    end: "#E3B341",
-    colors: {
-      primary: "#B8860B",
-      primaryDark: "#5C3A00",
-      primaryLight: "#F2C14E",
-      accent: "#FFE8A3",
-      background: "#FBF5E6",
-      surface: "#FFFDF5",
-      surfaceSoft: "#F5E8C8",
-      text: "#3A2A0A",
-      muted: "#8A7652",
-      border: "#E6D3A3",
-      nav: "#FFFDF5"
-    }
-  },
-
-  "glassy": {
-    name: "Glassy",
-    description: "Adaptive glassmorphism · frosted depth",
-    effect: "adaptive-glass",
-    start: "#392951",
-    end: "#A78BD1",
-    colors: {
-      primary: "#7E63B3",
-      primaryDark: "#342348",
-      primaryLight: "#C7B0F0",
-      accent: "#E8DCFF",
-      background: "#E8E0F3",
-      surface: "rgba(255,255,255,.52)",
-      surfaceSoft: "rgba(255,255,255,.30)",
-      text: "#2E2040",
-      muted: "#756887",
-      border: "rgba(255,255,255,.62)",
-      nav: "rgba(255,255,255,.62)"
-    }
-  },
-
-  "royal-purple": {
-    name: "Royal Purple",
-    description: "Kinetic typography · royal bloom",
-    effect: "kinetic-typography",
-    start: "#32154F",
-    end: "#8652B6",
-    colors: {
-      primary: "#7041A0",
-      primaryDark: "#3D1D60",
-      primaryLight: "#A77BD2",
-      accent: "#E0C4FA",
-      background: "#F5F0FA",
-      surface: "#FFFFFF",
-      surfaceSoft: "#EEE5F7",
-      text: "#30213E",
-      muted: "#8D7D9B",
-      border: "#E9DFF1",
-      nav: "#FFFFFF"
-    }
-  },
-
-  "royal-red": {
-    name: "Royal Red",
-    description: "Ember pulse · crimson warmth",
-    effect: "ember-pulse",
-    start: "#3A0B16",
-    end: "#D6455D",
-    colors: {
-      primary: "#C12F48",
-      primaryDark: "#5A1222",
-      primaryLight: "#F07A8A",
-      accent: "#FFD3DA",
-      background: "#FFF1F3",
-      surface: "#FFFFFF",
-      surfaceSoft: "#FCE4E8",
-      text: "#4A2028",
-      muted: "#A17980",
-      border: "#F2D7DC",
-      nav: "#FFFFFF"
-    }
-  },
-
-  "sky-blue": {
-    name: "Sky Blue",
-    description: "Aurora drift · airy light flow",
-    effect: "aurora-drift",
-    start: "#123B62",
-    end: "#3799D5",
-    colors: {
-      primary: "#2787BD",
-      primaryDark: "#183A5B",
-      primaryLight: "#75BDE8",
-      accent: "#C3EAFF",
-      background: "#EDF7FD",
-      surface: "#FFFFFF",
-      surfaceSoft: "#DCEFFA",
-      text: "#20394E",
-      muted: "#7893A7",
-      border: "#D8E9F4",
-      nav: "#FFFFFF"
-    }
-  },
-
-  "midnight": {
-    name: "Midnight",
-    description: "Neon constellation · starlit glow",
-    effect: "neon-constellation",
-    start: "#090711",
-    end: "#6747A1",
-    colors: {
-      primary: "#9668E8",
-      primaryDark: "#100D1D",
-      primaryLight: "#C2A3FF",
-      accent: "#D9C6FF",
-      background: "#171323",
-      surface: "#241D32",
-      surfaceSoft: "#302641",
-      text: "#F5EFFF",
-      muted: "#B0A3C2",
-      border: "#40344F",
-      nav: "#211A2E"
-    }
-  },
-
-  "emerald": {
-    name: "Emerald",
-    description: "Aurora jade · living green shimmer",
-    effect: "aurora-jade",
-    start: "#123426",
-    end: "#36896B",
-    colors: {
-      primary: "#2F8A68",
-      primaryDark: "#174B3A",
-      primaryLight: "#76C5A2",
-      accent: "#B9EFD7",
-      background: "#EFF8F3",
-      surface: "#FFFFFF",
-      surfaceSoft: "#E0F1E8",
-      text: "#234335",
-      muted: "#78998A",
-      border: "#D8E9DF",
-      nav: "#FFFFFF"
-    }
-  },
-
-  "rose-blush": {
-    name: "Rose Blush",
-    description: "Bokeh bloom · soft romantic light",
-    effect: "bokeh-bloom",
-    start: "#492338",
-    end: "#D67DA3",
-    colors: {
-      primary: "#BD668B",
-      primaryDark: "#71344F",
-      primaryLight: "#E69ABB",
-      accent: "#FFD0E4",
-      background: "#FFF1F6",
-      surface: "#FFFFFF",
-      surfaceSoft: "#FBE2EC",
-      text: "#492B3B",
-      muted: "#A17D8E",
-      border: "#F1D9E4",
-      nav: "#FFFFFF"
-    }
-  }
+  "lavender-dream":    { name: "Lavender Dream",    description: "Soft lavender, pink glow and dreamy hearts",       decoration: "hearts",     start: "#5A3D82", end: "#E8B4D8", preview: ["#5A3D82","#8B6FB0","#B89FD4","#E8B4D8"] },
+  "midnight-love":     { name: "Midnight Love",     description: "Dark plum, glowing purple and starlit elegance",   decoration: "sparkles",   start: "#1A0F2E", end: "#9B7FC4", preview: ["#1A0F2E","#4A2C6E","#6B4F96","#C4A8E0"] },
+  "blush-romance":     { name: "Blush Romance",     description: "Blush pink, rose warmth and romantic softness",    decoration: "hearts",     start: "#A85570", end: "#F5C6D6", preview: ["#A85570","#D4849A","#F0A8BE","#F5C6D6"] },
+  "royal-gold":        { name: "Royal Gold",        description: "Black luxury with champagne gold shimmer",         decoration: "sparkles",   start: "#0D0D0D", end: "#E8C96A", preview: ["#0D0D0D","#8B6914","#C9A84C","#E8C96A"] },
+  "butterfly-bliss":   { name: "Butterfly Bliss",   description: "Pastel purple and pink with fluttering calm",      decoration: "butterflies",start: "#6E5F9A", end: "#F0B8D0", preview: ["#6E5F9A","#9B8EC4","#C8BEE0","#F0B8D0"] },
+  "neon-galaxy":       { name: "Neon Galaxy",       description: "Dark cosmos, neon pink and electric purple",       decoration: "stars",      start: "#080312", end: "#FF4DB8", preview: ["#080312","#8A20A8","#C44FE0","#FF4DB8"] },
+  "teddy-bear":        { name: "Teddy Bear",        description: "Warm beige, caramel comfort and cozy charm",       decoration: "hearts",     start: "#7A5A3A", end: "#D4B896", preview: ["#7A5A3A","#A07A5A","#C9A07A","#D4B896"] },
+  "cloud-nine":        { name: "Cloud Nine",        description: "Sky blue, white clouds and peaceful air",          decoration: "clouds",     start: "#3A86C8", end: "#B8E0FF", preview: ["#3A86C8","#6AAFE6","#A8D4F5","#B8E0FF"] },
+  "kawaii-paradise":   { name: "Kawaii Paradise",   description: "Pastel pink, lilac and playful cuteness",          decoration: "sparkles",   start: "#C85A90", end: "#C4A0E8", preview: ["#C85A90","#E88AB8","#F5B0D0","#C4A0E8"] },
+  "cosmic-love":       { name: "Cosmic Love",       description: "Deep space purple, galaxy glow and stars",         decoration: "stars",      start: "#140C28", end: "#C4A0F5", preview: ["#140C28","#3A1A6A","#6840B8","#C4A0F5"] },
+  "coquette-dream":    { name: "Coquette Dream",    description: "Soft pink, ribbons, bows and romantic elegance",   decoration: "ribbons",    start: "#B05078", end: "#F5C0D0", preview: ["#B05078","#D4789A","#F0A0BE","#F5C0D0"] },
+  "ocean-breeze":      { name: "Ocean Breeze",      description: "Turquoise, aqua flow and calming sea tones",       decoration: "bubbles",    start: "#1E7A74", end: "#7DD4CE", preview: ["#1E7A74","#3AA8A0","#70CCC5","#7DD4CE"] },
+  "cherry-blossom":    { name: "Cherry Blossom",    description: "Cherry red, burgundy and falling petals",          decoration: "petals",     start: "#8A2840", end: "#F4B0BC", preview: ["#8A2840","#C45068","#E88898","#F4B0BC"] },
+  "peach-paradise":    { name: "Peach Paradise",    description: "Warm peach, coral and sunset softness",            decoration: "flowers",    start: "#C86848", end: "#FFD0B8", preview: ["#C86848","#E89070","#F5B898","#FFD0B8"] },
+  "sage-garden":       { name: "Sage Garden",       description: "Sage green, natural cream and botanical calm",     decoration: "leaves",     start: "#567856", end: "#B8D4B0", preview: ["#567856","#7A9A7A","#A5C0A5","#B8D4B0"] },
+  "vanilla-cream":     { name: "Vanilla Cream",     description: "Warm ivory, beige and minimalist luxury",          decoration: "sparkles",   start: "#8A7050", end: "#E0D0B8", preview: ["#8A7050","#B09878","#D4C0A0","#E0D0B8"] }
 };
 
-export function applyTheme(themeId) {
-  const theme = THEMES[themeId] || THEMES["royal-purple"];
+// Backward compatibility for old theme IDs
+const LEGACY_MAP = {
+  "pure-gold": "royal-gold",
+  "glassy": "lavender-dream",
+  "royal-purple": "lavender-dream",
+  "royal-red": "cherry-blossom",
+  "sky-blue": "cloud-nine",
+  "midnight": "midnight-love",
+  "emerald": "sage-garden",
+  "rose-blush": "blush-romance"
+};
+
+function normalizeThemeId(id) {
+  if (THEMES[id]) return id;
+  if (LEGACY_MAP[id]) return LEGACY_MAP[id];
+  return DEFAULT_THEME;
+}
+
+export function getCurrentThemeId() {
+  return normalizeThemeId(localStorage.getItem(THEME_KEY));
+}
+
+export function applyTheme(themeId, opts = {}) {
+  const id = normalizeThemeId(themeId);
+  const theme = THEMES[id];
   const root = document.documentElement;
-  const c = theme.colors;
+  root.dataset.theme = id;
+  root.dataset.decor = theme.decoration || "hearts";
+  if (document.body) {
+    document.body.dataset.theme = id;
+    document.body.dataset.decor = theme.decoration || "hearts";
+  }
 
-  root.dataset.theme = themeId;
-  root.dataset.themeEffect = theme.effect || "";
-  if (document.body) document.body.dataset.theme = themeId;
+  // Also set legacy-ish vars some pages may read
+  root.style.setProperty("--theme-start", theme.start);
+  root.style.setProperty("--theme-end", theme.end);
 
-  const variables = {
-    "--primary": c.primary,
-    "--primary-dark": c.primaryDark,
-    "--primary-light": c.primaryLight,
-    "--accent": c.accent,
-    "--background": c.background,
-    "--surface": c.surface,
-    "--surface-soft": c.surfaceSoft,
-    "--text": c.text,
-    "--muted": c.muted,
-    "--border": c.border,
-    "--home-bg": c.background,
-    "--home-header": c.primaryDark,
-    "--home-header-end": c.primary,
-    "--home-card": c.surface,
-    "--home-tile": c.surfaceSoft,
-    "--home-text": c.text,
-    "--home-muted": c.muted,
-    "--home-border": c.border,
-    "--home-accent": c.primaryLight,
-    "--home-nav": c.nav,
-    "--theme-start": theme.start,
-    "--theme-end": theme.end
-  };
+  localStorage.setItem(THEME_KEY, id);
 
-  Object.entries(variables).forEach(([key, value]) => {
-    root.style.setProperty(key, value);
-  });
-
-  localStorage.setItem(THEME_KEY, themeId);
-  ensureThemeFxLayer(themeId, theme.effect);
+  if (opts.transition !== false && typeof window.cpThemeTransition === "function") {
+    window.cpThemeTransition();
+  }
 
   window.dispatchEvent(new CustomEvent("classen-theme-changed", {
-    detail: { themeId, theme }
+    detail: { themeId: id, theme }
   }));
 
   return theme;
 }
 
-function ensureThemeFxLayer(themeId, effect) {
-  const apply = () => {
-    const host = document.querySelector(".phone-screen") || document.body;
-    if (!host) return;
-    let layer = host.querySelector(".theme-fx-layer");
-    if (!layer) {
-      layer = document.createElement("div");
-      layer.className = "theme-fx-layer";
-      layer.setAttribute("aria-hidden", "true");
-      layer.innerHTML = '<span class="fx-a"></span><span class="fx-b"></span><span class="fx-c"></span><span class="fx-d"></span>';
-      host.prepend(layer);
-    }
-    layer.dataset.theme = themeId;
-    layer.dataset.effect = effect || "";
-  };
+// Apply cached theme immediately (no transition on boot)
+const cached = normalizeThemeId(localStorage.getItem(THEME_KEY));
+applyTheme(cached, { transition: false });
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", apply, { once: true });
-  } else {
-    apply();
-  }
-}
-
-// Apply cached theme immediately.
-const cached = localStorage.getItem(THEME_KEY);
-
-if (cached && THEMES[cached]) {
-  applyTheme(cached);
-}
-
-// Synchronise the shared theme from Firebase.
 let stopThemeSync = null;
+let lastSyncedId = null;
 
 export function startThemeSync() {
   if (stopThemeSync) return;
-
-  stopThemeSync = onSnapshot(
-    themeRef,
-    (snapshot) => {
-      const themeId = snapshot.exists()
-        ? snapshot.data().themeId
-        : "royal-purple";
-
-      applyTheme(THEMES[themeId] ? themeId : "royal-purple");
-    },
-    (error) => {
-      console.error("Shared theme sync failed:", error);
-    }
-  );
+  stopThemeSync = onSnapshot(themeRef, (snapshot) => {
+    const remote = snapshot.exists() ? normalizeThemeId(snapshot.data().themeId) : DEFAULT_THEME;
+    if (remote === lastSyncedId) return;
+    lastSyncedId = remote;
+    const local = getCurrentThemeId();
+    if (remote !== local) applyTheme(remote);
+  }, (error) => {
+    console.warn("Theme sync unavailable:", error?.message || error);
+  });
 }
 
 export async function saveTheme(themeId) {
-  if (!THEMES[themeId]) {
-    throw new Error("Invalid theme.");
+  const id = normalizeThemeId(themeId);
+  applyTheme(id);
+  lastSyncedId = id;
+  try {
+    await setDoc(themeRef, { themeId: id, updatedAt: serverTimestamp() }, { merge: true });
+  } catch (err) {
+    console.warn("Theme saved locally; Firebase sync failed:", err?.message || err);
   }
-
-  applyTheme(themeId);
-
-  await setDoc(themeRef, {
-    themeId,
-    updatedAt: serverTimestamp()
-  }, { merge: true });
 }
 
 startThemeSync();
+
+/* =========================================
+   CONFIRMATION DIALOG
+========================================= */
+(function initConfirmDialog() {
+  if (window.cpConfirm) return;
+  function ensureDialog() {
+    let overlay = document.getElementById("cpConfirmOverlay");
+    if (overlay) return overlay;
+    overlay = document.createElement("div");
+    overlay.id = "cpConfirmOverlay";
+    overlay.className = "cp-confirm-overlay";
+    overlay.innerHTML = `
+      <div class="cp-confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="cpConfirmTitle">
+        <div class="cp-confirm-icon" id="cpConfirmIcon">!</div>
+        <h3 id="cpConfirmTitle">Please confirm</h3>
+        <p id="cpConfirmMessage"></p>
+        <div class="cp-confirm-actions">
+          <button type="button" class="cp-confirm-btn cancel" id="cpConfirmCancel">Cancel</button>
+          <button type="button" class="cp-confirm-btn confirm" id="cpConfirmOk">Confirm</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+  window.cpConfirm = function cpConfirm(options = {}) {
+    const opts = typeof options === "string" ? { message: options } : options;
+    const { title="Please confirm", message="Are you sure?", confirmText="Confirm", cancelText="Cancel", danger=true, icon=danger?"🗑":"?" } = opts;
+    const overlay = ensureDialog();
+    overlay.querySelector("#cpConfirmTitle").textContent = title;
+    overlay.querySelector("#cpConfirmMessage").textContent = message;
+    const okBtn = overlay.querySelector("#cpConfirmOk");
+    const cancelBtn = overlay.querySelector("#cpConfirmCancel");
+    okBtn.textContent = confirmText; cancelBtn.textContent = cancelText;
+    overlay.querySelector("#cpConfirmIcon").textContent = icon;
+    okBtn.classList.toggle("primary", !danger);
+    overlay.classList.add("show");
+    return new Promise((resolve) => {
+      const cleanup = (result) => { overlay.classList.remove("show"); okBtn.removeEventListener("click", onOk); cancelBtn.removeEventListener("click", onCancel); overlay.removeEventListener("click", onOverlay); document.removeEventListener("keydown", onKey); resolve(result); };
+      const onOk = () => cleanup(true);
+      const onCancel = () => cleanup(false);
+      const onOverlay = (e) => { if (e.target === overlay) cleanup(false); };
+      const onKey = (e) => { if (e.key === "Escape") cleanup(false); if (e.key === "Enter") cleanup(true); };
+      okBtn.addEventListener("click", onOk); cancelBtn.addEventListener("click", onCancel); overlay.addEventListener("click", onOverlay); document.addEventListener("keydown", onKey);
+      okBtn.focus();
+    });
+  };
+})();
+
+/* =========================================
+   PROMPT / EDIT DIALOG
+========================================= */
+(function initPromptDialog() {
+  if (window.cpPrompt) return;
+  function ensureDialog() {
+    let overlay = document.getElementById("cpPromptOverlay");
+    if (overlay) return overlay;
+    overlay = document.createElement("div");
+    overlay.id = "cpPromptOverlay";
+    overlay.className = "cp-prompt-overlay";
+    overlay.innerHTML = `
+      <div class="cp-prompt-dialog" role="dialog" aria-modal="true" aria-labelledby="cpPromptTitle">
+        <h3 id="cpPromptTitle">Edit</h3>
+        <p id="cpPromptMessage" class="hidden"></p>
+        <textarea id="cpPromptInput" class="cp-prompt-input" rows="3"></textarea>
+        <div class="cp-prompt-actions">
+          <button type="button" class="cp-prompt-btn cancel" id="cpPromptCancel">Cancel</button>
+          <button type="button" class="cp-prompt-btn confirm" id="cpPromptOk">Save</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+  window.cpPrompt = function cpPrompt(options = {}) {
+    const opts = typeof options === "string" ? { message: options } : options;
+    const { title="Edit", message="", value="", placeholder="", confirmText="Save", cancelText="Cancel", multiline=true } = opts;
+    const overlay = ensureDialog();
+    overlay.querySelector("#cpPromptTitle").textContent = title;
+    const msgEl = overlay.querySelector("#cpPromptMessage");
+    msgEl.textContent = message; msgEl.classList.toggle("hidden", !message);
+    const input = overlay.querySelector("#cpPromptInput");
+    input.value = value ?? ""; input.placeholder = placeholder || ""; input.rows = multiline ? 3 : 1;
+    const okBtn = overlay.querySelector("#cpPromptOk");
+    const cancelBtn = overlay.querySelector("#cpPromptCancel");
+    okBtn.textContent = confirmText; cancelBtn.textContent = cancelText;
+    overlay.classList.add("show");
+    return new Promise((resolve) => {
+      const cleanup = (result) => { overlay.classList.remove("show"); okBtn.removeEventListener("click", onOk); cancelBtn.removeEventListener("click", onCancel); overlay.removeEventListener("click", onOverlay); document.removeEventListener("keydown", onKey); resolve(result); };
+      const onOk = () => cleanup(input.value);
+      const onCancel = () => cleanup(null);
+      const onOverlay = (e) => { if (e.target === overlay) cleanup(null); };
+      const onKey = (e) => { if (e.key === "Escape") cleanup(null); if (e.key === "Enter" && (e.ctrlKey || e.metaKey || !multiline)) { e.preventDefault(); cleanup(input.value); } };
+      okBtn.addEventListener("click", onOk); cancelBtn.addEventListener("click", onCancel); overlay.addEventListener("click", onOverlay); document.addEventListener("keydown", onKey);
+      setTimeout(() => { input.focus(); const len = input.value.length; input.setSelectionRange(len, len); }, 30);
+    });
+  };
+})();

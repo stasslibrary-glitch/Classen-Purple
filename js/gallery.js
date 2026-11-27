@@ -18,14 +18,24 @@ import {
    CLOUDINARY CONFIGURATION
 ===================================== */
 
-const CLOUDINARY_CLOUD_NAME = "YOUR_CLOUDINARY_CLOUD_NAME";
-const CLOUDINARY_UPLOAD_PRESET = "YOUR_UNSIGNED_UPLOAD_PRESET";
+const CLOUDINARY_CLOUD_NAME = "acr8nu5e";
+const CLOUDINARY_UPLOAD_PRESET = "classen_purple";
+const CLOUDINARY_FOLDER = "classen-purple/gallery";
 
 /* =====================================
-   FIRESTORE GALLERY
+   FIRESTORE
 ===================================== */
 
-const galleryCollection = collection(db, "sharedGallery", "main", "items");
+const galleryCollection = collection(
+  db,
+  "sharedGallery",
+  "main",
+  "items"
+);
+
+/* =====================================
+   HTML ELEMENTS
+===================================== */
 
 const $ = (id) => document.getElementById(id);
 
@@ -90,14 +100,20 @@ function formatDate(timestamp) {
 ===================================== */
 
 function showProgress(percent, message) {
-  progressWrap.hidden = false;
-  progressBar.style.width = `${percent}%`;
-  uploadStatus.textContent = message;
+  if (progressWrap) progressWrap.hidden = false;
+
+  if (progressBar) {
+    progressBar.style.width = `${percent}%`;
+  }
+
+  if (uploadStatus) {
+    uploadStatus.textContent = message;
+  }
 }
 
 function hideProgress() {
-  progressWrap.hidden = true;
-  progressBar.style.width = "0%";
+  if (progressWrap) progressWrap.hidden = true;
+  if (progressBar) progressBar.style.width = "0%";
 }
 
 /* =====================================
@@ -107,10 +123,16 @@ function hideProgress() {
 function uploadToCloudinary(file) {
   return new Promise((resolve, reject) => {
     if (
+      !CLOUDINARY_CLOUD_NAME ||
       CLOUDINARY_CLOUD_NAME === "YOUR_CLOUDINARY_CLOUD_NAME" ||
-      CLOUDINARY_UPLOAD_PRESET === "YOUR_UNSIGNED_UPLOAD_PRESET"
+      !CLOUDINARY_UPLOAD_PRESET ||
+      CLOUDINARY_UPLOAD_PRESET === "YOUR_PRESET_NAME"
     ) {
-      reject(new Error("Add your Cloudinary cloud name and upload preset in gallery.js first."));
+      reject(
+        new Error(
+          "Please add your Cloudinary unsigned upload preset in gallery.js."
+        )
+      );
       return;
     }
 
@@ -122,21 +144,23 @@ function uploadToCloudinary(file) {
       `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/${resourceType}/upload`;
 
     const formData = new FormData();
+
     formData.append("file", file);
     formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+    formData.append("folder", CLOUDINARY_FOLDER);
 
     const xhr = new XMLHttpRequest();
 
     xhr.open("POST", endpoint);
 
     xhr.upload.addEventListener("progress", (event) => {
-      if (event.lengthComputable) {
-        const percent = Math.round(
-          (event.loaded / event.total) * 100
-        );
+      if (!event.lengthComputable) return;
 
-        showProgress(percent, `Uploading... ${percent}%`);
-      }
+      const percent = Math.round(
+        (event.loaded / event.total) * 100
+      );
+
+      showProgress(percent, `Uploading... ${percent}%`);
     });
 
     xhr.onload = () => {
@@ -145,26 +169,41 @@ function uploadToCloudinary(file) {
       try {
         result = JSON.parse(xhr.responseText);
       } catch {
-        reject(new Error("Cloudinary returned an unreadable response."));
+        reject(new Error("Cloudinary returned an invalid response."));
         return;
       }
 
-      if (xhr.status >= 200 && xhr.status < 300 && result.secure_url) {
+      if (
+        xhr.status >= 200 &&
+        xhr.status < 300 &&
+        result.secure_url
+      ) {
         resolve({
           url: result.secure_url,
           resourceType,
           format: result.format || "",
-          publicId: result.public_id || ""
+          publicId: result.public_id || "",
+          width: result.width || null,
+          height: result.height || null,
+          duration: result.duration || null
         });
       } else {
         reject(
-          new Error(result.error?.message || "Media upload failed.")
+          new Error(
+            result.error?.message || "Cloudinary upload failed."
+          )
         );
       }
     };
 
     xhr.onerror = () => {
-      reject(new Error("Network error while uploading. Check your connection."));
+      reject(
+        new Error("Network error. Check your internet connection.")
+      );
+    };
+
+    xhr.onabort = () => {
+      reject(new Error("Upload was cancelled."));
     };
 
     xhr.send(formData);
@@ -175,58 +214,79 @@ function uploadToCloudinary(file) {
    SELECT AND UPLOAD MEDIA
 ===================================== */
 
-galleryFile.addEventListener("change", async () => {
-  const file = galleryFile.files?.[0];
+if (galleryFile) {
+  galleryFile.addEventListener("change", async () => {
+    const file = galleryFile.files?.[0];
 
-  if (!file) return;
+    if (!file) return;
 
-  if (!currentUser) {
-    alert("Please sign in before adding a memory.");
-    galleryFile.value = "";
-    return;
-  }
+    if (!currentUser) {
+      alert("Please sign in before adding a memory.");
+      galleryFile.value = "";
+      return;
+    }
 
-  if (!file.type.startsWith("image/") && !file.type.startsWith("video/")) {
-    alert("Please select an image or video.");
-    galleryFile.value = "";
-    return;
-  }
+    if (
+      !file.type.startsWith("image/") &&
+      !file.type.startsWith("video/")
+    ) {
+      alert("Please select an image or video.");
+      galleryFile.value = "";
+      return;
+    }
 
-  const caption = galleryCaption.value.trim();
+    const caption = galleryCaption?.value.trim() || "";
 
-  try {
-    showProgress(0, "Preparing your memory...");
+    try {
+      galleryFile.disabled = true;
 
-    const uploaded = await uploadToCloudinary(file);
+      showProgress(0, "Preparing your memory...");
 
-    showProgress(100, "Saving to our shared gallery...");
+      const uploaded = await uploadToCloudinary(file);
 
-    await addDoc(galleryCollection, {
-      url: uploaded.url,
-      resourceType: uploaded.resourceType,
-      format: uploaded.format,
-      publicId: uploaded.publicId,
-      caption,
-      uploadedBy: currentUser.uid,
-      uploaderName: getDisplayName(currentUser),
-      uploaderEmail: currentUser.email || "",
-      createdAt: serverTimestamp()
-    });
+      showProgress(100, "Saving to our shared gallery...");
 
-    galleryCaption.value = "";
-    galleryFile.value = "";
+      await addDoc(galleryCollection, {
+        url: uploaded.url,
+        resourceType: uploaded.resourceType,
+        format: uploaded.format,
+        publicId: uploaded.publicId,
+        width: uploaded.width,
+        height: uploaded.height,
+        duration: uploaded.duration,
 
-    showProgress(100, "Memory shared successfully ❤️");
+        caption,
 
-    setTimeout(hideProgress, 1800);
+        uploadedBy: currentUser.uid,
+        uploaderName: getDisplayName(currentUser),
+        uploaderEmail: currentUser.email || "",
 
-  } catch (error) {
-    console.error("Gallery upload error:", error);
+        createdAt: serverTimestamp()
+      });
 
-    showProgress(0, error.message || "Could not upload this memory.");
-    alert(error.message || "Something went wrong while uploading.");
-  }
-});
+      if (galleryCaption) galleryCaption.value = "";
+
+      galleryFile.value = "";
+
+      showProgress(100, "Memory shared successfully ❤️");
+
+      setTimeout(hideProgress, 1800);
+
+    } catch (error) {
+      console.error("Gallery upload error:", error);
+
+      showProgress(
+        0,
+        error.message || "Could not upload this memory."
+      );
+
+      alert(error.message || "Something went wrong.");
+
+    } finally {
+      galleryFile.disabled = false;
+    }
+  });
+}
 
 /* =====================================
    CREATE GALLERY ITEM
@@ -241,6 +301,7 @@ function createGalleryItem(memory, index) {
 
   if (memory.resourceType === "video") {
     const placeholder = document.createElement("div");
+
     placeholder.className = "gallery-video-placeholder";
 
     const playIcon = document.createElement("span");
@@ -248,11 +309,14 @@ function createGalleryItem(memory, index) {
 
     placeholder.appendChild(playIcon);
     item.appendChild(placeholder);
+
   } else {
     const image = document.createElement("img");
+
     image.src = memory.url;
     image.alt = memory.caption || "Shared memory";
     image.loading = "lazy";
+
     item.appendChild(image);
   }
 
@@ -260,16 +324,21 @@ function createGalleryItem(memory, index) {
   info.className = "gallery-item-info";
 
   const title = document.createElement("strong");
-  title.textContent = memory.caption || "A special memory";
+
+  title.textContent =
+    memory.caption || "A special memory";
 
   const details = document.createElement("small");
+
   details.textContent =
     `${memory.uploaderName || "One of us"} · ${formatDate(memory.createdAt)}`;
 
   info.append(title, details);
   item.appendChild(info);
 
-  item.addEventListener("click", () => openViewer(index));
+  item.addEventListener("click", () => {
+    openViewer(index);
+  });
 
   return item;
 }
@@ -279,22 +348,31 @@ function createGalleryItem(memory, index) {
 ===================================== */
 
 function renderGallery() {
+  if (!galleryGrid) return;
+
   galleryGrid.replaceChildren();
 
-  galleryCount.textContent =
-    `${memories.length} ${memories.length === 1 ? "memory" : "memories"}`;
+  if (galleryCount) {
+    galleryCount.textContent =
+      `${memories.length} ${memories.length === 1 ? "memory" : "memories"}`;
+  }
 
   if (memories.length === 0) {
-    galleryMessage.hidden = false;
-    galleryMessage.textContent =
-      "No memories yet. Add your first photo or video together ❤️";
+    if (galleryMessage) {
+      galleryMessage.hidden = false;
+      galleryMessage.textContent =
+        "No memories yet. Add your first photo or video together ❤️";
+    }
+
     return;
   }
 
-  galleryMessage.hidden = true;
+  if (galleryMessage) galleryMessage.hidden = true;
 
   memories.forEach((memory, index) => {
-    galleryGrid.appendChild(createGalleryItem(memory, index));
+    galleryGrid.appendChild(
+      createGalleryItem(memory, index)
+    );
   });
 }
 
@@ -303,7 +381,7 @@ function renderGallery() {
 ===================================== */
 
 function openViewer(index) {
-  if (!memories.length) return;
+  if (!memories.length || !viewer || !viewerMedia) return;
 
   activeViewerIndex =
     (index + memories.length) % memories.length;
@@ -320,13 +398,14 @@ function openViewer(index) {
     video.autoplay = true;
     video.playsInline = true;
     video.preload = "auto";
+
+    // Muted autoplay is more widely supported by browsers.
     video.muted = true;
 
     viewerMedia.appendChild(video);
 
     video.play().catch(() => {
-      // Some browsers may require the viewer to be tapped
-      // before video playback can begin.
+      // User can press play if autoplay is blocked.
     });
 
   } else {
@@ -338,20 +417,29 @@ function openViewer(index) {
     viewerMedia.appendChild(image);
   }
 
-  viewerCaption.textContent =
-    memory.caption || "A special memory ❤️";
+  if (viewerCaption) {
+    viewerCaption.textContent =
+      memory.caption || "A special memory ❤️";
+  }
 
-  viewerUploader.textContent =
-    `Shared by ${memory.uploaderName || "one of us"}`;
+  if (viewerUploader) {
+    viewerUploader.textContent =
+      `Shared by ${memory.uploaderName || "one of us"}`;
+  }
 
-  viewerDate.textContent = formatDate(memory.createdAt);
+  if (viewerDate) {
+    viewerDate.textContent = formatDate(memory.createdAt);
+  }
 
   viewer.classList.add("open");
   viewer.setAttribute("aria-hidden", "false");
+
   document.body.style.overflow = "hidden";
 }
 
 function closeViewer() {
+  if (!viewer || !viewerMedia) return;
+
   viewer.classList.remove("open");
   viewer.setAttribute("aria-hidden", "true");
 
@@ -364,6 +452,7 @@ function closeViewer() {
   }
 
   viewerMedia.replaceChildren();
+
   document.body.style.overflow = "";
 }
 
@@ -375,19 +464,29 @@ function showNext() {
   openViewer(activeViewerIndex + 1);
 }
 
-$("viewerClose").addEventListener("click", closeViewer);
-$("viewerPrevious").addEventListener("click", showPrevious);
-$("viewerNext").addEventListener("click", showNext);
+/* =====================================
+   VIEWER BUTTONS
+===================================== */
 
-viewer.addEventListener("click", (event) => {
-  if (event.target === viewer) closeViewer();
-});
+$("viewerClose")?.addEventListener("click", closeViewer);
+
+$("viewerPrevious")?.addEventListener("click", showPrevious);
+
+$("viewerNext")?.addEventListener("click", showNext);
+
+if (viewer) {
+  viewer.addEventListener("click", (event) => {
+    if (event.target === viewer) closeViewer();
+  });
+}
 
 document.addEventListener("keydown", (event) => {
-  if (!viewer.classList.contains("open")) return;
+  if (!viewer?.classList.contains("open")) return;
 
   if (event.key === "Escape") closeViewer();
+
   if (event.key === "ArrowLeft") showPrevious();
+
   if (event.key === "ArrowRight") showNext();
 });
 
@@ -398,10 +497,13 @@ document.addEventListener("keydown", (event) => {
 function startGalleryListener() {
   if (unsubscribeGallery) {
     unsubscribeGallery();
+    unsubscribeGallery = null;
   }
 
-  galleryMessage.hidden = false;
-  galleryMessage.textContent = "Loading your memories...";
+  if (galleryMessage) {
+    galleryMessage.hidden = false;
+    galleryMessage.textContent = "Loading your memories...";
+  }
 
   const galleryQuery = query(
     galleryCollection,
@@ -410,6 +512,7 @@ function startGalleryListener() {
 
   unsubscribeGallery = onSnapshot(
     galleryQuery,
+
     (snapshot) => {
       memories = snapshot.docs.map((doc) => ({
         id: doc.id,
@@ -417,13 +520,29 @@ function startGalleryListener() {
       }));
 
       renderGallery();
+
+      // Keep the viewer on the same memory if possible.
+      if (viewer?.classList.contains("open")) {
+        const currentMemoryId = memories[activeViewerIndex]?.id;
+
+        const updatedIndex = memories.findIndex(
+          (memory) => memory.id === currentMemoryId
+        );
+
+        if (updatedIndex !== -1) {
+          activeViewerIndex = updatedIndex;
+        }
+      }
     },
+
     (error) => {
       console.error("Gallery listener error:", error);
 
-      galleryMessage.hidden = false;
-      galleryMessage.textContent =
-        "We couldn't load the gallery. Check your Firestore rules and internet connection.";
+      if (galleryMessage) {
+        galleryMessage.hidden = false;
+        galleryMessage.textContent =
+          "We couldn't load the gallery. Check your Firestore rules and internet connection.";
+      }
     }
   );
 }
@@ -437,6 +556,7 @@ onAuthStateChanged(auth, (user) => {
 
   if (user) {
     startGalleryListener();
+
   } else {
     if (unsubscribeGallery) {
       unsubscribeGallery();
@@ -444,7 +564,25 @@ onAuthStateChanged(auth, (user) => {
     }
 
     memories = [];
+
+    closeViewer();
     renderGallery();
-    galleryMessage.textContent = "Please sign in to view your shared gallery.";
+
+    if (galleryMessage) {
+      galleryMessage.hidden = false;
+      galleryMessage.textContent =
+        "Please sign in to view your shared gallery.";
+    }
+  }
+});
+
+/* =====================================
+   CLEANUP
+===================================== */
+
+window.addEventListener("pagehide", () => {
+  if (unsubscribeGallery) {
+    unsubscribeGallery();
+    unsubscribeGallery = null;
   }
 });

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,10 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/phone.css">
   <link rel="stylesheet" href="css/settings.css">
 </head>
-<body>
+<body class="has-phone-shell">
   <div class="phone-shell">
     <div class="phone-top">
       <div class="phone-speaker"></div>
@@ -36,13 +38,16 @@
           <div class="settings-intro-icon">🎨</div>
           <div>
             <h2>Choose our theme</h2>
-            <p>One theme for both of us, with its own visual effect.</p>
+            <p>16 beautiful themes, one shared world for both of us.</p>
           </div>
         </section>
 
-        <div class="theme-heading">
-          <h3>Choose your style</h3>
-          <span>8 THEMES</span>
+        <div class="theme-toolbar">
+          <div class="theme-heading">
+            <h3>Choose your style</h3>
+            <span id="themeCount">16 THEMES</span>
+          </div>
+          <input id="themeSearch" class="theme-search input" type="search" placeholder="Search themes..." aria-label="Search themes">
         </div>
 
         <section class="theme-grid" id="themeGrid">
@@ -90,6 +95,8 @@
     </main>
   </div>
 
+  <script type="module" src="js/theme.js"></script>
   <script type="module" src="js/settings.js"></script>
+  <script src="js/animations.js" defer></script>
 </body>
 </html>

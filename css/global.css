@@ -710,3 +710,248 @@ button:disabled { opacity: .6; cursor: not-allowed; }
     transition-duration: .01ms !important;
   }
 }
+/* =========================================
+   GLOBAL SCROLLING SUPPORT
+========================================= */
+.phone-screen > * {
+  flex-shrink: 0;
+}
+
+.phone-screen > .home-header,
+.phone-screen > .games-page > .games-header,
+.phone-screen > .settings-header,
+.phone-screen > .calendar-page > .calendar-header,
+.phone-screen > .todo-page > .todo-header,
+.phone-screen > .game-page > .game-header,
+.phone-screen > .song-page > .song-header,
+.phone-screen > .chat-page > .chat-header {
+  flex-shrink: 0;
+}
+
+.phone-screen > .home-content,
+.phone-screen > .games-page,
+.phone-screen > .calendar-page,
+.phone-screen > .todo-page,
+.phone-screen > .settings-page,
+.phone-screen > .game-page,
+.phone-screen > .song-page,
+.phone-screen > .login-page,
+.phone-screen > .gallery-app,
+.phone-screen > #gameApp {
+  flex: 1 0 auto;
+  min-height: 0;
+}
+
+.phone-screen > .home-navigation,
+.phone-screen > .settings-navigation,
+.phone-screen > .app-bottom-nav,
+.phone-screen > .gallery-app .gallery-bottom-nav {
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+}
+
+.phone-screen > .chat-page > .chat-composer {
+  flex-shrink: 0;
+}
+
+.phone-screen:has(.chat-page) {
+  overflow: hidden;
+}
+
+.phone-screen > .chat-page {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.phone-screen > .chat-page .messages-container {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+body.has-phone-shell .phone-shell {
+  height: min(900px, calc(100dvh - 24px));
+}
+
+@media (max-width: 599px) {
+  body.has-phone-shell .phone-shell {
+    height: 100dvh;
+  }
+}
+
+/* =========================================
+   CONFIRMATION DIALOG
+========================================= */
+.cp-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(28, 14, 44, .45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.cp-confirm-overlay.show { display: flex; }
+.cp-confirm-dialog {
+  width: min(100%, 360px);
+  background: var(--surface, #fff);
+  color: var(--text, #30213e);
+  border: 1px solid var(--border, #e9dff1);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(42, 20, 66, .22);
+  padding: 20px 18px 16px;
+  animation: cpConfirmIn .18s ease-out;
+}
+@keyframes cpConfirmIn {
+  from { opacity: 0; transform: translateY(8px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.cp-confirm-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background: rgba(198, 75, 112, .12);
+  color: var(--danger, #c64b70);
+}
+.cp-confirm-dialog h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.25;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.cp-confirm-dialog p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: center;
+  color: var(--muted, #8d7d9b);
+  white-space: pre-wrap;
+}
+.cp-confirm-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+.cp-confirm-btn {
+  min-height: 42px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, opacity .15s ease, background .15s ease;
+}
+.cp-confirm-btn:active { transform: scale(.98); }
+.cp-confirm-btn.cancel {
+  background: var(--surface-soft, #eee5f7);
+  color: var(--text, #30213e);
+  border-color: var(--border, #e9dff1);
+}
+.cp-confirm-btn.confirm {
+  background: var(--danger, #c64b70);
+  color: #fff;
+}
+.cp-confirm-btn.confirm.primary {
+  background: var(--primary, #67389a);
+}
+
+/* =========================================
+   PROMPT / EDIT DIALOG
+========================================= */
+.cp-prompt-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(28, 14, 44, .45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.cp-prompt-overlay.show { display: flex; }
+.cp-prompt-dialog {
+  width: min(100%, 380px);
+  background: var(--surface, #fff);
+  color: var(--text, #30213e);
+  border: 1px solid var(--border, #e9dff1);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(42, 20, 66, .22);
+  padding: 20px 18px 16px;
+  animation: cpConfirmIn .18s ease-out;
+}
+.cp-prompt-dialog h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.25;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.cp-prompt-dialog p {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--muted, #8d7d9b);
+}
+.cp-prompt-input {
+  width: 100%;
+  min-height: 46px;
+  max-height: 160px;
+  resize: vertical;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border, #e9dff1);
+  background: var(--surface-soft, #f7f2fc);
+  color: var(--text, #30213e);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.45;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.cp-prompt-input:focus {
+  border-color: rgba(103, 56, 154, .45);
+  box-shadow: 0 0 0 4px rgba(103, 56, 154, .12);
+}
+.cp-prompt-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+.cp-prompt-btn {
+  min-height: 42px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, opacity .15s ease, background .15s ease;
+}
+.cp-prompt-btn:active { transform: scale(.98); }
+.cp-prompt-btn.cancel {
+  background: var(--surface-soft, #eee5f7);
+  color: var(--text, #30213e);
+  border-color: var(--border, #e9dff1);
+}
+.cp-prompt-btn.confirm {
+  background: var(--primary, #67389a);
+  color: #fff;
+}

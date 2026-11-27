@@ -48,7 +48,7 @@ const USERS = {
 };
 
 const PROFILE_PHOTOS = {
-  "d.classen@gmail.com": "cruz1.jpg",
+  "d.classen@gmail.com": "slideshow/cruz1.jpg",
   "m.classen@gmail.com": "slideshow/photo2.jpg"
 };
 
@@ -605,6 +605,48 @@ function stopActiveVoicePlayback(exceptAudio = null) {
   }
 }
 
+function buildVoiceAudioCandidates(message) {
+  const primary = String(message?.audioUrl || "").trim();
+  if (!primary) return [];
+
+  const candidates = [];
+  const push = (url) => {
+    if (!url) return;
+    if (!candidates.includes(url)) candidates.push(url);
+  };
+
+  push(primary);
+
+  try {
+    const parsed = new URL(primary);
+    const isCloudinary =
+      /(^|\.)res\.cloudinary\.com$/i.test(parsed.hostname) &&
+      parsed.pathname.includes("/upload/");
+
+    if (isCloudinary) {
+      const [prefix, suffix] = parsed.pathname.split("/upload/");
+      if (suffix) {
+        const buildTransformUrl = (transform, ext) => {
+          const cleanSuffix = suffix.replace(/^\/+/, "");
+          const nextSuffix = ext
+            ? cleanSuffix.replace(/\.[a-z0-9]+$/i, "." + ext)
+            : cleanSuffix;
+          const next = new URL(primary);
+          next.pathname = prefix + "/upload/" + transform + "/" + nextSuffix;
+          return next.toString();
+        };
+
+        // Cross-browser fallbacks for webm/opus recordings.
+        push(buildTransformUrl("f_mp4,vc_auto", "mp4"));
+        push(buildTransformUrl("f_mp3", "mp3"));
+        push(buildTransformUrl("f_ogg", "ogg"));
+      }
+    }
+  } catch (_) {}
+
+  return candidates;
+}
+
 function createVoiceNoteElement(message, mine) {
   const wrapper = document.createElement("div");
   wrapper.className = "voice-note";
@@ -667,36 +709,76 @@ function createVoiceNoteElement(message, mine) {
 
   const audio = document.createElement("audio");
   audio.preload = "metadata";
-  audio.src = message.audioUrl;
   audio.className = "voice-note-audio";
+  audio.crossOrigin = "anonymous";
+
+  const candidates = buildVoiceAudioCandidates(message);
+  let candidateIndex = 0;
+  let loadAttempted = false;
 
   const err = document.createElement("div");
   err.className = "voice-note-error hidden";
   err.textContent = "Voice note unavailable.";
 
+  function setAudioSource(index, autoplay) {
+    if (index >= candidates.length) {
+      err.classList.remove("hidden");
+      playBtn.disabled = true;
+      playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+      if (activeVoiceAudio === audio) {
+        activeVoiceAudio = null;
+        activeVoiceButton = null;
+      }
+      return;
+    }
+
+    candidateIndex = index;
+    loadAttempted = false;
+    err.classList.add("hidden");
+    audio.src = candidates[candidateIndex];
+    audio.load();
+
+    if (autoplay) {
+      loadAttempted = true;
+      audio.play().then(() => {
+        playBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        activeVoiceAudio = audio;
+        activeVoiceButton = playBtn;
+      }).catch(() => {
+        setAudioSource(candidateIndex + 1, true);
+      });
+    }
+  }
+
   playBtn.addEventListener("click", () => {
-    if (!message.audioUrl) return;
+    if (!candidates.length) {
+      err.classList.remove("hidden");
+      return;
+    }
 
     if (audio.paused) {
       stopActiveVoicePlayback(audio);
+      err.classList.add("hidden");
 
-      audio.play().then(() => {
-        playBtn.innerHTML =
-          '<i class="fa-solid fa-pause"></i>';
+      const startPlay = () => {
+        loadAttempted = true;
+        audio.play().then(() => {
+          playBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+          activeVoiceAudio = audio;
+          activeVoiceButton = playBtn;
+        }).catch(() => {
+          setAudioSource(candidateIndex + 1, true);
+        });
+      };
 
-        activeVoiceAudio = audio;
-        activeVoiceButton = playBtn;
-
-      }).catch(() => {
-        err.classList.remove("hidden");
-      });
-
+      if (!audio.src) {
+        setAudioSource(candidateIndex, true);
+      } else {
+        startPlay();
+      }
     } else {
       audio.pause();
-
-      playBtn.innerHTML =
-        '<i class="fa-solid fa-play"></i>';
-
+      playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
       if (activeVoiceAudio === audio) {
         activeVoiceAudio = null;
         activeVoiceButton = null;
@@ -708,7 +790,6 @@ function createVoiceNoteElement(message, mine) {
     if (!audio.duration) return;
 
     const rect = track.getBoundingClientRect();
-
     const pct = Math.min(
       1,
       Math.max(0, (event.clientX - rect.left) / rect.width)
@@ -736,9 +817,7 @@ function createVoiceNoteElement(message, mine) {
   });
 
   audio.addEventListener("ended", () => {
-    playBtn.innerHTML =
-      '<i class="fa-solid fa-play"></i>';
-
+    playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
     progress.style.width = "0%";
     timeEl.textContent = "00:00";
 
@@ -749,16 +828,39 @@ function createVoiceNoteElement(message, mine) {
   });
 
   audio.addEventListener("error", () => {
+    console.warn("Voice note audio failed", {
+      messageId: message?.id,
+      src: audio.currentSrc || audio.src,
+      candidateIndex
+    });
+
+    if (candidateIndex < candidates.length - 1) {
+      const shouldAutoplay = loadAttempted || activeVoiceAudio === audio;
+      setAudioSource(candidateIndex + 1, shouldAutoplay);
+      return;
+    }
+
     err.classList.remove("hidden");
     playBtn.disabled = true;
+    playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+    if (activeVoiceAudio === audio) {
+      activeVoiceAudio = null;
+      activeVoiceButton = null;
+    }
   });
+
+  if (candidates.length) {
+    setAudioSource(0, false);
+  } else {
+    err.classList.remove("hidden");
+    playBtn.disabled = true;
+  }
 
   body.append(track, meta, err, audio);
   wrapper.append(avatar, playBtn, body);
 
   return wrapper;
 }
-
 function createMessageElement(message, date) {
   const mine = message.senderUID === currentUser.uid;
 
@@ -1018,11 +1120,14 @@ async function editMessage(message) {
     !message.text
   ) return;
 
-  const updatedText = prompt(
-    "Edit your message:",
-    message.text
-  );
-
+  const updatedText = await (window.cpPrompt ? window.cpPrompt({
+    title: "Edit message",
+    message: "Update your message below.",
+    value: message.text,
+    confirmText: "Save",
+    cancelText: "Cancel",
+    multiline: true
+  }) : Promise.resolve(prompt("Edit your message:", message.text)));
   if (updatedText === null || !updatedText.trim()) return;
 
   try {
@@ -1048,7 +1153,15 @@ async function editMessage(message) {
 async function removeMessage(message) {
   if (message.senderUID !== currentUser.uid) return;
 
-  if (!confirm("Delete this message for both of you?")) {
+  const confirmedDelete = await (window.cpConfirm ? window.cpConfirm({
+    title: "Delete message",
+    message: "Delete this message for both of us?",
+    confirmText: "Delete",
+    cancelText: "Cancel",
+    danger: true,
+    icon: "🗑"
+  }) : Promise.resolve(confirm("Delete this message for both of us?")));
+  if (!confirmedDelete) {
     return;
   }
 
@@ -2105,36 +2218,19 @@ messagesContainer?.addEventListener("scroll", () => {
    CHAT MENU
 ===================================== */
 
-$("chatMenuBtn")?.addEventListener("click", () => {
-  const choice = prompt(
-    "Chat options:\n1. Change wallpaper\n2. Clear search\n3. Scroll to latest"
-  );
+$("chatMenuBtn")?.addEventListener("click", async () => {
+  const choice = await (window.cpPrompt ? window.cpPrompt({
+    title: "Chat options",
+    message: "1. Change wallpaper\n2. Clear search\n3. Scroll to latest",
+    placeholder: "Enter 1, 2, or 3",
+    confirmText: "OK",
+    cancelText: "Cancel",
+    multiline: false
+  }) : Promise.resolve(prompt("Chat options:\\n1. Change wallpaper\\n2. Clear search\\n3. Scroll to latest")));
 
-  if (choice === "1") {
-    const wallpaper = prompt(
-      "Enter a wallpaper image URL:"
-    );
-
-    if (wallpaper && $("chatBackground")) {
-      $("chatBackground").style.backgroundImage =
-        `linear-gradient(rgba(20,10,30,.12), rgba(20,10,30,.12)), url("${wallpaper}")`;
-
-      $("chatBackground").style.backgroundSize = "cover";
-      $("chatBackground").style.backgroundPosition = "center";
-    }
-  }
-
-  if (choice === "2") {
-    if ($("messageSearchInput")) {
-      $("messageSearchInput").value = "";
-    }
-
-    renderMessages();
-  }
-
-  if (choice === "3") {
-    scrollToLatest();
-  }
+  if (choice === "1") showMessage("Chat background is set to our selected photo.");
+  if (choice === "2") { if ($("messageSearchInput")) $("messageSearchInput").value = ""; renderMessages(); }
+  if (choice === "3") scrollToLatest();
 });
 
 /* =====================================

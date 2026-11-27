@@ -364,9 +364,14 @@ async function toggleTask(task) {
 ========================================= */
 
 async function deleteTask(task) {
-  const confirmed = confirm(
-    `Are you sure you want to delete "${task.title}"?`
-  );
+  const confirmed = await (window.cpConfirm ? window.cpConfirm({
+    title: "Remove task",
+    message: `Remove "${task.title}" from our list?`,
+    confirmText: "Remove",
+    cancelText: "Cancel",
+    danger: true,
+    icon: "🗑"
+  }) : Promise.resolve(confirm(`Remove "${task.title}" from our list?`)));
 
   if (!confirmed) return;
 

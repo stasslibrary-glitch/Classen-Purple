@@ -16,10 +16,11 @@
   padding: 25px 21px 35px;
   color: #ffffff;
   background:
-    radial-gradient(circle at 85% 20%, #ffffff24, transparent 35%),
-    linear-gradient(145deg, var(--primary-dark), var(--primary));
+    linear-gradient(145deg, rgba(54, 20, 86, .72), rgba(112, 58, 150, .55)),
+    url("../slideshow/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
 .home-header::after {
   content: "♡";
   position: absolute;

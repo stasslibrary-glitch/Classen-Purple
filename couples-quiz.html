@@ -10,11 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/phone.css">
   <link rel="stylesheet" href="css/game-pages.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body data-game="couples-quiz">
+<body class="has-phone-shell" data-game="couples-quiz">
   <div class="phone-shell">
     <div class="phone-top">
       <div class="phone-camera"></div>
@@ -26,5 +28,7 @@
   </div>
   <script type="module" src="js/auth-guard.js"></script>
   <script type="module" src="js/game-pages.js"></script>
+  <script src="js/animations.js" defer></script>
+  <script type="module" src="js/theme.js"></script>
 </body>
 </html>

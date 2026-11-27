@@ -6,7 +6,7 @@
   --gallery-gold: #e8c879;
 
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 24px 17px 105px;
   overflow-x: hidden;
   color: #fff;

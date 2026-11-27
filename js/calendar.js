@@ -245,9 +245,14 @@ function createEventCard(event, showDate = false) {
   deleteButton.setAttribute("aria-label", "Delete event");
 
   deleteButton.addEventListener("click", async () => {
-    const confirmed = confirm(
-      `Delete "${event.title}" from our calendar?`
-    );
+    const confirmed = await (window.cpConfirm ? window.cpConfirm({
+      title: "Delete event",
+      message: `Delete "${event.title}" from our calendar?`,
+      confirmText: "Delete",
+      cancelText: "Cancel",
+      danger: true,
+      icon: "🗑"
+    }) : Promise.resolve(confirm(`Delete "${event.title}" from our calendar?`)));
 
     if (!confirmed) return;
 

@@ -442,3 +442,6 @@
   cursor: not-allowed;
   transform: none;
 }
+/* Dare confirmation emphasis */
+.game-status strong { color: inherit; }
+.game-choice.selected { border-color: var(--primary, #54258a); background: var(--surface-soft, #f2ebfa); color: var(--primary, #54258a); }

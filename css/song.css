@@ -56,7 +56,7 @@
   box-shadow: 0 12px 30px rgba(0,0,0,.22);
 }
 
-.slideshow img {
+.slideshow img, .slideshow .slide-media {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -64,7 +64,7 @@
   transition: opacity .45s ease;
 }
 
-.slideshow img.changing {
+.slideshow img.changing, .slideshow .slide-media.changing {
   opacity: .25;
 }
 
@@ -528,4 +528,15 @@
   .daily-card { grid-template-columns: 68px minmax(0,1fr) 36px; gap: 9px; }
   .daily-art { width: 68px; height: 68px; }
   .daily-play { width: 35px; height: 35px; }
+}
+
+.local-song-badge {
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--accent, #d9b45d);
+  padding: 4px 8px;
+  border: 1px solid rgba(217,180,93,.35);
+  border-radius: 999px;
+  background: rgba(217,180,93,.08);
+  flex-shrink: 0;
 }

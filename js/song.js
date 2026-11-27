@@ -37,27 +37,62 @@ let unsubscribeSongs = null;
 let unsubscribePlayer = null;
 let unsubscribeRecent = null;
 let changingFromRemote = false;
+const LOCAL_SONGS = [
+  {
+    id: "local-perfect",
+    title: "Perfect",
+    artist: "Ed Sheeran",
+    audioURL: "music/Ed Sheeran - Perfect.mp3",
+    cover: "slideshow/song-info.jpg",
+    dedication: "Our little world, in one song. ❤️",
+    local: true
+  },
+  {
+    id: "local-yoyo",
+    title: "Yoyo",
+    artist: "Joshua Baraka",
+    audioURL: "music/Joshua Baraka - Yoyo.mp3",
+    cover: "slideshow/111.jpg",
+    dedication: "For the vibes we share. 💜",
+    local: true
+  },
+  {
+    id: "local-chap-chap",
+    title: "Chap Chap",
+    artist: "Lutty Neika",
+    audioURL: "music/Lutty Neika - Chap Chap.mp3",
+    cover: "slideshow/123.jpg",
+    dedication: "A sweet beat for us. ❤️",
+    local: true
+  }
+];
 
 const audio = $("audioPlayer");
 
 // =====================================
 // SLIDESHOW
-// Replace these paths with your photos.
 // =====================================
 
 const slides = [
-  "slideshow/photo1.jpg",
-  "slideshow/photo2.jpg",
-  "slideshow/photo3.jpg",
-  "slideshow/photo4.jpg"
+  { type: "image", src: "slideshow/photo2.jpg" },
+  { type: "image", src: "slideshow/couple.png" },
+  { type: "image", src: "slideshow/cruz1.jpg" },
+  { type: "video", src: "slideshow/video1.mp4" },
+  { type: "image", src: "slideshow/photo1.jpg" },
+  { type: "image", src: "slideshow/111.jpg" },
+  { type: "video", src: "slideshow/video2.mp4" },
+  { type: "image", src: "slideshow/123.jpg" },
+  { type: "image", src: "slideshow/cruz3.jpg" },
+  { type: "video", src: "slideshow/video3.mp4" },
+  { type: "image", src: "slideshow/slide4.jpg" },
+  { type: "image", src: "slideshow/header-bg.jpg" }
 ];
 
 function startSlideshow() {
   const dots = $("slideDots");
-
   dots.innerHTML = slides.map((_, index) => `
     <button class="slide-dot ${index === 0 ? "active" : ""}"
-      data-slide="${index}" aria-label="Show photo ${index + 1}">
+      data-slide="${index}" aria-label="Show slide ${index + 1}">
     </button>
   `).join("");
 
@@ -84,23 +119,51 @@ function startSlideshow() {
 
 function showSlide(index) {
   slideIndex = index;
-  const image = $("slideImage");
+  const currentImg = $("slideImage");
+  const currentVideo = $("slideVideo");
+  const item = slides[index];
 
-  image.classList.add("changing");
+  currentImg?.classList.add("changing");
+  currentVideo?.classList.add("changing");
 
-  const nextImage = new Image();
-
-  nextImage.onload = () => {
-    image.src = slides[index];
-    image.classList.remove("changing");
+  const onReady = () => {
+    currentImg.classList.remove("changing");
+    currentVideo?.classList.remove("changing");
   };
 
-  nextImage.onerror = () => {
-    image.classList.remove("changing");
-    image.alt = "Add your photos to the slideshow folder";
-  };
-
-  nextImage.src = slides[index];
+  if (item.type === "video") {
+    if (currentImg) currentImg.style.display = "none";
+    let video = currentVideo;
+    if (!video) {
+      video = document.createElement("video");
+      video.id = "slideVideo";
+      video.className = "slide-media";
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.autoplay = true;
+      video.preload = "metadata";
+      currentImg.insertAdjacentElement("afterend", video);
+    }
+    video.style.display = "block";
+    video.src = item.src;
+    video.onloadeddata = onReady;
+    video.onerror = onReady;
+    video.play().catch(() => {});
+  } else {
+    if (currentVideo) {
+      currentVideo.pause();
+      currentVideo.style.display = "none";
+    }
+    currentImg.style.display = "block";
+    const nextImage = new Image();
+    nextImage.onload = () => {
+      currentImg.src = item.src;
+      onReady();
+    };
+    nextImage.onerror = onReady;
+    nextImage.src = item.src;
+  }
 
   document.querySelectorAll(".slide-dot").forEach((dot, i) => {
     dot.classList.toggle("active", i === index);
@@ -109,12 +172,10 @@ function showSlide(index) {
 
 function restartSlideshow() {
   clearInterval(slideTimer);
-
   slideTimer = setInterval(() => {
     showSlide((slideIndex + 1) % slides.length);
-  }, 5000);
+  }, 6000);
 }
-
 // =====================================
 // DAILY SONG
 // Uses Kampala's calendar date so both
@@ -141,6 +202,7 @@ function hashString(value) {
 }
 
 function getDailySong() {
+  if (!songs.length) songs = [...LOCAL_SONGS];
   if (!songs.length) return null;
 
   const sorted = [...songs].sort((a, b) =>
@@ -210,27 +272,43 @@ function setArtwork(element, cover) {
 // =====================================
 
 function listenToSongs() {
+  // Render local songs immediately so the page never looks empty.
+  songs = [...LOCAL_SONGS];
+  renderPlaylist();
+  renderDailySong();
+
   if (unsubscribeSongs) unsubscribeSongs();
 
   const songsQuery = query(songCollection, orderBy("createdAt", "asc"));
 
   unsubscribeSongs = onSnapshot(songsQuery, snapshot => {
-    songs = snapshot.docs.map(item => ({
+    const remote = snapshot.docs.map(item => ({
       id: item.id,
       ...item.data()
     }));
+    const remoteUrls = new Set(remote.map(s => (s.audioURL || "").trim()));
+    const localOnly = LOCAL_SONGS.filter(s => !remoteUrls.has(s.audioURL));
+    songs = [...localOnly, ...remote];
 
     renderPlaylist();
     renderDailySong();
     renderPlayerFromCurrent();
   }, error => {
     console.error("Playlist error:", error);
-    showMessage("Could not load the shared playlist. Check your Firestore rules.");
+    songs = [...LOCAL_SONGS];
+    renderPlaylist();
+    renderDailySong();
+    renderPlayerFromCurrent();
+    showMessage("Showing local songs. Shared playlist unavailable.");
   });
 }
-
 function renderPlaylist() {
   const container = $("playlistList");
+  if (!container) return;
+
+  if (!songs.length) {
+    songs = [...LOCAL_SONGS];
+  }
 
   if (!songs.length) {
     container.innerHTML = `
@@ -241,12 +319,10 @@ function renderPlaylist() {
         <button id="emptyAddSong">Add our first song</button>
       </div>
     `;
-
-    $("emptyAddSong").addEventListener("click", openAddSong);
+    $("emptyAddSong")?.addEventListener("click", openAddSong);
     return;
   }
 
-  container.innerHTML = "";
 
   songs.forEach(song => {
     const item = document.createElement("div");
@@ -283,19 +359,27 @@ function renderPlaylist() {
     play.setAttribute("aria-label", `Play ${song.title}`);
     play.addEventListener("click", () => playSong(song));
 
-    const remove = document.createElement("button");
-    remove.className = "remove-song";
-    remove.innerHTML = '<i class="fa-solid fa-trash"></i>';
-    remove.setAttribute("aria-label", `Remove ${song.title}`);
-    remove.addEventListener("click", () => removeSong(song));
+    item.append(cover, details, play);
 
-    item.append(cover, details, play, remove);
+    if (!song.local) {
+      const remove = document.createElement("button");
+      remove.className = "remove-song";
+      remove.innerHTML = '<i class="fa-solid fa-trash"></i>';
+      remove.setAttribute("aria-label", `Remove ${song.title}`);
+      remove.addEventListener("click", () => removeSong(song));
+      item.appendChild(remove);
+    } else {
+      const badge = document.createElement("span");
+      badge.className = "local-song-badge";
+      badge.textContent = "Local";
+      item.appendChild(badge);
+    }
     container.appendChild(item);
   });
 }
 
 async function removeSong(song) {
-  const confirmed = confirm(`Remove "${song.title}" from our shared playlist?`);
+  const confirmed = await (window.cpConfirm ? window.cpConfirm({ title: "Remove song", message: `Remove "${song.title}" from our shared playlist?`, confirmText: "Remove", cancelText: "Cancel", danger: true, icon: "🗑" }) : Promise.resolve(confirm(`Remove "${song.title}" from our shared playlist?`)));
   if (!confirmed) return;
 
   try {
@@ -384,48 +468,66 @@ $("addSongForm").addEventListener("submit", async event => {
 async function playSong(song) {
   if (!song?.audioURL) return;
 
-  try {
-    const url = new URL(song.audioURL);
+  const rawUrl = String(song.audioURL || "").trim();
+  const isLocalPath = song.local === true || /^(music|slideshow|images|assets)\//i.test(rawUrl) || rawUrl.startsWith("./") || rawUrl.startsWith("../");
 
-    if (!["https:", "http:"].includes(url.protocol)) {
-      throw new Error("Invalid audio URL");
+  try {
+    let resolvedUrl = rawUrl;
+    if (!isLocalPath) {
+      const url = new URL(rawUrl, window.location.href);
+      if (!["https:", "http:"].includes(url.protocol)) {
+        throw new Error("Invalid audio URL");
+      }
+      resolvedUrl = url.href;
+    } else {
+      resolvedUrl = new URL(rawUrl, window.location.href).href;
     }
 
-    await setDoc(playerDocument, {
-      songId: song.id,
-      title: song.title,
-      artist: song.artist,
-      audioURL: song.audioURL,
-      cover: song.cover || "",
-      selectedBy: currentUser.uid,
-      selectedByEmail: currentUser.email,
-      selectedAt: serverTimestamp()
-    });
+    const songToPlay = { ...song, audioURL: resolvedUrl };
 
-    await addDoc(recentCollection, {
-      songId: song.id,
-      title: song.title,
-      artist: song.artist,
-      cover: song.cover || "",
-      playedBy: currentUser.uid,
-      playedByEmail: currentUser.email,
-      playedAt: serverTimestamp()
-    });
+    if (!song.local && currentUser) {
+      try {
+        await setDoc(playerDocument, {
+          songId: song.id,
+          title: song.title,
+          artist: song.artist,
+          audioURL: rawUrl,
+          cover: song.cover || "",
+          selectedBy: currentUser.uid,
+          selectedByEmail: currentUser.email,
+          selectedAt: serverTimestamp()
+        });
+      } catch (err) {
+        console.warn("Shared player update failed:", err);
+      }
 
-    loadSongLocally(song);
+      try {
+        await addDoc(recentCollection, {
+          songId: song.id,
+          title: song.title,
+          artist: song.artist,
+          cover: song.cover || "",
+          playedBy: currentUser?.uid || "",
+          playedByEmail: currentUser?.email || "",
+          playedAt: serverTimestamp()
+        });
+      } catch (_) {}
+    }
+
+    loadSongLocally(songToPlay);
 
     try {
       await audio.play();
-    } catch {
+    } catch (playErr) {
+      console.warn("Autoplay/play blocked:", playErr);
       showMessage("Song selected! Press Play to start listening.");
     }
 
   } catch (error) {
-    console.error(error);
-    showMessage("Could not select this song. Check its audio URL.");
+    console.error("Could not play song:", error, song);
+    showMessage("Could not play this song. Check the file path or audio URL.");
   }
 }
-
 function listenToPlayer() {
   if (unsubscribePlayer) unsubscribePlayer();
 
@@ -433,8 +535,9 @@ function listenToPlayer() {
     if (!snapshot.exists()) return;
 
     const data = snapshot.data();
-
-    const song = songs.find(item => item.id === data.songId) || {
+    const byId = songs.find(item => item.id === data.songId);
+    const byUrl = songs.find(item => (item.audioURL || "").trim() === (data.audioURL || "").trim());
+    const song = byId || byUrl || {
       id: data.songId,
       title: data.title,
       artist: data.artist,
@@ -443,7 +546,6 @@ function listenToPlayer() {
     };
 
     if (!song.audioURL) return;
-
     if (currentSongId !== song.id) {
       loadSongLocally(song);
     }
@@ -451,7 +553,6 @@ function listenToPlayer() {
     console.error("Shared player error:", error);
   });
 }
-
 function renderPlayerFromCurrent() {
   if (!currentSongId) return;
 
@@ -468,13 +569,14 @@ function loadSongLocally(song) {
   currentSong = song;
   currentSongId = song.id;
 
-  if (audio.src !== song.audioURL) {
-    audio.src = song.audioURL;
+  const resolved = new URL(song.audioURL, window.location.href).href;
+  if (audio.src !== resolved) {
+    audio.src = resolved;
     audio.load();
   }
 
-  $("playerTitle").textContent = song.title;
-  $("playerArtist").textContent = song.artist;
+  $("playerTitle").textContent = song.title || "Unknown song";
+  $("playerArtist").textContent = song.artist || "Unknown artist";
 
   setArtwork($("playerArtwork"), song.cover);
 
@@ -483,9 +585,6 @@ function loadSongLocally(song) {
 
   changingFromRemote = false;
 }
-
-// =====================================
-// PLAYER CONTROLS
 // =====================================
 
 $("mainPlayButton").addEventListener("click", async () => {
@@ -684,14 +783,27 @@ function showMessage(message) {
 // =====================================
 
 onAuthStateChanged(auth, user => {
-  if (!user) return;
+  if (!user) {
+    if (!songs.length) {
+      songs = [...LOCAL_SONGS];
+      renderPlaylist();
+      renderDailySong();
+    }
+    return;
+  }
 
   currentUser = user;
-
   if (!unsubscribeSongs) listenToSongs();
   if (!unsubscribePlayer) listenToPlayer();
   if (!unsubscribeRecent) listenToRecent();
 });
+
+// Render local songs immediately in case auth is delayed.
+if (!songs.length) {
+  songs = [...LOCAL_SONGS];
+  renderPlaylist();
+  renderDailySong();
+}
 
 startSlideshow();
 
